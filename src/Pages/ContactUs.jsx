@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ContactUs = () => {
-  return (
-    <div>Contact</div>
-  )
+const ContactUs = (props) => {
+  return props.trigger ? (
+    <div>Contact Us!</div>
+  ) : ""
 }
 
 export default ContactUs
