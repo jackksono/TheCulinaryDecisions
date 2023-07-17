@@ -26,36 +26,37 @@ const NavBar = () => {
                 </button>
             </div>
             
-            <div class="nav-links  bg-blackPaper w-[360px] lg:bg-none lg:bg-transparent duration-500 lg:static lg:h-0  lg:flex-row flex-col  lg:pt-12 lg:px-10 lg:block lg:w-auto">
+            <div class="nav-links  bg-blackPaper w-[360px] lg:bg-none lg:bg-transparent duration-500 lg:static lg:h-0  lg:flex-row flex-col  lg:pt-16 lg:px-10 lg:block lg:w-auto">
               <ul class="font-medium left-0 lg:flex lg:justify-between w-full lg:h-full lg:px-20 p-4 lg:p-0 mt-4 pb-4 gap-4 lg:flex-row lg:space-x-8 lg:mt-0"
               >
                 
                   <div className="flex items-center lg:bg-transparent lg:gap-10 ">
                     <Link to="/">
-                      <button className="text-[10px] lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black lg:text-color-shrimp font-Kanit">
+                      <button className="text-[10px] font-Montserrat lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black lg:text-color-shrimp font-Kanit">
                         Home
                       </button>
                     </Link>
                   </div>
                 
-                  <div className="left-0 flex flex-col lg:flex-row lg:bg-transparent lg:items-center lg:flex-non lg:gap-10">
+                  <div className="left-0 flex flex-col lg:flex-row lg:bg-transparent lg:items-center lg:flex-non lg:gap-24">
                   
                     <Link to="/about-me">
-                      <button className="text-[10px] lg:text-xl lg:font-semibold lg:duration-200 md:bg-primary-500 text-black">
+                      <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 md:bg-primary-500 text-black">
                         About Me
                       </button>
                     </Link>
                     
 
                     <Link to="/media">
-                      <button className="text-[10px] lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black ">
+                      <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black ">
                         Media/Articles
                       </button>
                     </Link>
 
                     <span className="" >
-                        <button className="text-[10px] lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black "
-                            value="click">
+                        <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black "
+                            value="click"
+                            onClick={() => setContactPopUp(true)}>
                             Contact Us
                         </button>
                         <ContactUs   trigger={contactPopUp} setTrigger={setContactPopUp}></ContactUs>
@@ -63,7 +64,6 @@ const NavBar = () => {
                   </div>
               </ul>
             </div>
-            
             
         </nav>
         </Headroom>

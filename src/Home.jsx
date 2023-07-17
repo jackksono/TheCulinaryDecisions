@@ -25,7 +25,6 @@ const transitionDuration = 500;
 
 const Home = () => {
   const [ currentIndex, setCurrentIndex ] = useState(0);
-  const [prevIndex, setPrevIndex] = useState(slides.length - 1);
   
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -96,6 +95,9 @@ return (
       >
         <ArrowForwardIosIcon size={60} />
       </div>
+    </div>
+    <div className='pt-40'>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet atque, facere fugiat quidem asperiores voluptatibus, deserunt dolor assumenda, nostrum minus consectetur aspernatur praesentium odio necessitatibus nobis. Deleniti accusamus dolorem aspernatur.
     </div>
   </div>
 );
