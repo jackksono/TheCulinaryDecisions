@@ -74,7 +74,7 @@ const ContactUs = (props) => {
             <div className='flex justify-end pr-5 text-2xl text-black'>    
                 <button  onClick={() => props.setTrigger(false)}>X</button>
             </div>
-            <h1 className="flex justify-center pl-10 pr-10 text-2xl font-extrabold text-black lg:text-4xl font-Montserrat">Contact Our Team</h1>
+            <h1 className="flex justify-center pl-10 pr-10 text-2xl font-extrabold text-black lg:text-4xl font-Montserrat">Business Inquiries</h1>
             
                 
             <div className="pl-6 text-lg italic text-black">

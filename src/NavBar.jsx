@@ -32,7 +32,7 @@ const NavBar = () => {
                 
                   <div className="flex items-center lg:bg-transparent lg:gap-10 ">
                     <Link to="/">
-                      <button className="text-[10px] font-Montserrat lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black lg:text-color-shrimp font-Kanit">
+                      <button className="text-[10px] font-Montserrat lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black lg:text-color-shrimp font-Kanit hover:scale-125 duration-500">
                         Home
                       </button>
                     </Link>
@@ -41,20 +41,20 @@ const NavBar = () => {
                   <div className="left-0 flex flex-col lg:flex-row lg:bg-transparent lg:items-center lg:flex-non lg:gap-24">
                   
                     <Link to="/about-me">
-                      <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 md:bg-primary-500 text-black">
+                      <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-125 duration-500">
                         About Me
                       </button>
                     </Link>
                     
 
                     <Link to="/media">
-                      <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black ">
+                      <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-125 duration-500">
                         Media/Articles
                       </button>
                     </Link>
 
                     <span className="" >
-                        <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black "
+                        <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-125 duration-500"
                             value="click"
                             onClick={() => setContactPopUp(true)}>
                             Contact Us
