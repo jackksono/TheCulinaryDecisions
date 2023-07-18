@@ -91,7 +91,7 @@ const ContactUs = (props) => {
             </div>
 
             <div className="pl-6 text-lg italic text-black lg:pt-2">
-                <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Phone#:</span>
+                <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Phone Number:</span>
                 <input className="flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none rounded-xl focus:border-solid focus:shadow-2xl" 
                 type='phone' name='phone' id="" onChange={handleChange} value={data.phone} placeholder="+1 (xxx)-xxx-xxxx"/>
             </div>
