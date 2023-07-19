@@ -119,19 +119,21 @@ const ContactUs = (props) => {
                   value={serviceRequested} 
                   placeholder="List here..">
                     </input>
-                  <RiArrowDropDownLine className='arrow absolute lg:text-[120px] text-black transform lg:-translate-y-1/2 lg:right-0 lg:mb-10 lg:pb-16 lg:mr-10 lg:cursor-pointer'
+                  <RiArrowDropDownLine className='arrow absolute lg:text-[120px] text-black transform lg:-translate-y-1/2 lg:right-0 lg:mb-10 lg:pb-16 lg:mr-12 lg:cursor-pointer'
                     onClick={toggle}>
                   </RiArrowDropDownLine>
-                  <GrFormClose className='close hidden absolute lg:text-[100px] text-gray-500 transform lg:-translate-y-1/2 lg:right-0 lg:mb-10 lg:pb-16 lg:mr-10 lg:cursor-pointer'
+                  <GrFormClose className='close hidden absolute lg:text-[100px] text-gray-500 transform lg:-translate-y-1/2 lg:right-0 lg:mb-10 lg:pb-16 lg:mr-16 lg:cursor-pointer'
                     onClick={toggle}></GrFormClose>
                   <div className='justify-center lg:pl-4'>
                     <div className='items-center hidden w-1/2 bg-white border border-black toggle rounded-xl'>
                       <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Brand Marketing'); toggle()}}>Brand Marketing</ul>
+                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('FEvent Planning'); toggle()}}>Event Planning</ul>
                       <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Food and Beverage Consulting'); toggle()}}>Food and Beverage Consulting</ul>
                       <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Hospitality Consulting'); toggle()}}>Hospitality Consulting</ul>
                       <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Merchandising'); toggle()}}>Merchandising</ul>
                       <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Nightlife Consulting'); toggle()}}>Nightlife Consulting</ul>
                       <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Open Venue Protocol'); toggle()}}>Open Venue Protocol</ul>
+                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Sourcing'); toggle()}}>Sourcing</ul>
                     </div>
                   </div>
             </div>
