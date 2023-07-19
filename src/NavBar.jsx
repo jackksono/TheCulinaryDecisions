@@ -33,23 +33,23 @@ const NavBar = () => {
                   <div className="flex items-center lg:bg-transparent lg:gap-10 ">
                     <Link to="/">
                       <button className="text-[10px] font-Montserrat lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black lg:text-color-shrimp font-Kanit hover:scale-125 duration-500">
-                        Home
+                        HOME
                       </button>
                     </Link>
                   </div>
                 
                   <div className="left-0 flex flex-col lg:flex-row lg:bg-transparent lg:items-center lg:flex-non lg:gap-24">
                   
-                    <Link to="/about-me">
+                    <Link to="/team">
                       <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-125 duration-500">
-                        About Me
+                        EXECUTIVE LEADERSHIP
                       </button>
                     </Link>
                     
 
                     <Link to="/media">
                       <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-125 duration-500">
-                        Media/Articles
+                        MEDIA
                       </button>
                     </Link>
 
@@ -57,7 +57,7 @@ const NavBar = () => {
                         <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-125 duration-500"
                             value="click"
                             onClick={() => setContactPopUp(true)}>
-                            Contact Us
+                            CONTACT US
                         </button>
                         <ContactUs   trigger={contactPopUp} setTrigger={setContactPopUp}></ContactUs>
                     </span>
@@ -69,7 +69,7 @@ const NavBar = () => {
         </Headroom>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about-me" element={<AboutMe/>} />
+        <Route path="/team" element={<AboutMe/>} />
         <Route path="/media" element={<Media/>} />
         <Route path="/contact-us" element={<ContactUs/>} />
       </Routes>
