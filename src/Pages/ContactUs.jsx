@@ -1,10 +1,13 @@
 import React, {useState} from 'react'
 import { useClickAway } from '@uidotdev/usehooks'
 import emailjs from '@emailjs/browser'
+import { RiArrowDropDownLine } from "react-icons/ri"
+import { GrFormClose } from 'react-icons/gr'
 
 const ContactUs = (props) => {
 
   const [ data, setData ] = useState({name:"", email:"", phone:""})
+  const [ serviceRequested, setServiceRequested ] = useState("")
   const [ message, setMessage ] = useState()
   const [ result, showResult ] = useState(false)
   const [ validEmail, setValidEmail ] = useState(false)
@@ -46,6 +49,15 @@ const ContactUs = (props) => {
       handleChange(e)
   }
 
+  const toggle = () => {
+    const open = document.querySelector('.toggle')
+    open.classList.toggle('hidden')
+    const arrow = document.querySelector('.arrow');
+    arrow.classList.toggle('hidden');
+    const close = document.querySelector('.close')
+    close.classList.toggle('hidden')
+  }
+
     
 
   const sendMail = (e) => { //EmailJS documentation
@@ -68,7 +80,7 @@ const ContactUs = (props) => {
   };
 
   return props.trigger ? (
-    <div className="fixed z-10 lg:mt-40 overflow-auto lg:inset-x-0 justify-center lg:mx-auto w-84 lg:w-1/2 lg:h-[720px] items-center bg-white bg-opacity-80 rounded-xl box-shadow-inset-0--3em-3em-opacity-10" ref={clickAway} >
+    <div className="fixed z-10 lg:mt-40 overflow-auto lg:inset-x-0 justify-center lg:mx-auto w-84 lg:w-1/2 lg:h-[800px] items-center bg-white bg-opacity-80 rounded-xl box-shadow-inset-0--3em-3em-opacity-10" ref={clickAway} >
        
         <form className="" method="post" onSubmit={sendMail}>
             <div className='flex justify-end pr-5 text-2xl text-black'>    
@@ -94,6 +106,34 @@ const ContactUs = (props) => {
                 <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Phone Number:</span>
                 <input className="flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none rounded-xl focus:border-solid focus:shadow-2xl" 
                 type='phone' name='phone' id="" onChange={handleChange} value={data.phone} placeholder="+1 (xxx)-xxx-xxxx"/>
+            </div>
+
+            <div className="pl-6 text-lg italic text-black lg:pt-2">
+                <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Service Requested:</span>
+                  
+                <input className="relative flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none rounded-xl focus:border-solid focus:shadow-2xl " 
+                  type='phone' 
+                  name='phone' 
+                  id="" 
+                  onClick={toggle}
+                  value={serviceRequested} 
+                  placeholder="List here..">
+                    </input>
+                  <RiArrowDropDownLine className='arrow absolute lg:text-[120px] text-black transform lg:-translate-y-1/2 lg:right-0 lg:mb-10 lg:pb-16 lg:mr-10 lg:cursor-pointer'
+                    onClick={toggle}>
+                  </RiArrowDropDownLine>
+                  <GrFormClose className='close hidden absolute lg:text-[100px] text-gray-500 transform lg:-translate-y-1/2 lg:right-0 lg:mb-10 lg:pb-16 lg:mr-10 lg:cursor-pointer'
+                    onClick={toggle}></GrFormClose>
+                  <div className='justify-center lg:pl-4'>
+                    <div className='items-center hidden w-1/2 bg-white border border-black toggle rounded-xl'>
+                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Brand Marketing'); toggle()}}>Brand Marketing</ul>
+                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Food and Beverage Consulting'); toggle()}}>Food and Beverage Consulting</ul>
+                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Hospitality Consulting'); toggle()}}>Hospitality Consulting</ul>
+                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Merchandising'); toggle()}}>Merchandising</ul>
+                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Nightlife Consulting'); toggle()}}>Nightlife Consulting</ul>
+                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Open Venue Protocol'); toggle()}}>Open Venue Protocol</ul>
+                    </div>
+                  </div>
             </div>
 
             <div className="pl-6 text-lg italic text-black lg:pt-2">
