@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import ContactUs from './ContactUs'
-import Headshot from '../Images/Headshot for media.jpg'
+import Drew from '../Images/DrewHead.jpg'
+import Mich from '../Images/MichelleHead.jpg'
+import Lev from '../Images/LevanHead.jpg'
 
 const AboutMe = () => {
 
@@ -8,16 +10,16 @@ const AboutMe = () => {
 
   return (
     <div>
-      <div className='grid justify-center w-screen h-full grid-cols-2 p-5 text-black place-items-center '>
+      <div className='grid justify-center w-screen h-full grid-cols-2 p-5 text-black shadow-sm place-items-center '>
       <ContactUs className='' trigger={contactPopUp} setTrigger={setContactPopUp}></ContactUs>
         <img 
-        className='shadow-xl rounded-2xl'
+        className='shadow-xl rounded-full h-[500px] w-auto' 
         alt='Headshot'
-        src={Headshot}>
+        src={Drew}>
         </img>
-        <div className=''>
-          <h1 className='text-2xl font-extrabold'>Chef Andrew Carroll</h1>
-          <p className='relative pt-5 font-sans text-lg text-black '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
+        <div className='h-auto pr-20 '>
+          <h1 className='text-4xl font-extrabold'>Chef Andrew Carroll</h1>
+          <p className='relative pt-5 font-sans text-xl text-black '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
           animi nisi dignissimos. Quo, aspernatur? Sapiente, cumque velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur dolorem ab, commodi ducimus corrupti harum a quam quidem, dolores id nostrum voluptatibus cumque vel? Reprehenderit nisi distinctio consequatur atque!
           Perspiciatis mollitia numquam harum hic praesentium laborum aliquid labore in voluptates? Repellat non voluptatibus illo officia quaerat, laudantium recusandae modi ipsam enim a in quis, beatae reprehenderit? Sunt, enim odit?
           Veritatis aliquid assumenda ad aperiam velit error ea similique cumque laborum, unde provident dolor earum ullam at eligendi vel id enim excepturi consectetur exercitationem illo consequuntur nesciunt. Accusamus, quidem ipsam.
@@ -25,10 +27,10 @@ const AboutMe = () => {
           Pariatur deleniti omnis nesciunt numquam eius obcaecati, ipsa quibusdam dicta exercitationem quis nulla vero aliquid officia. Perferendis eaque praesentium laudantium exercitationem vero sunt eum nostrum dolorem nemo. Temporibus, error totam?</p>
         </div>
       </div>
-      <div className='grid justify-center w-screen h-full grid-cols-2 p-5 text-black place-items-center '>
-        <div className=''>
-          <h1 className='text-2xl font-extrabold'>Chef Andrew Carroll</h1>
-          <p className='relative pt-5 font-sans text-lg text-black '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
+      <div className='grid justify-center w-screen h-full grid-cols-2 p-5 text-black shadow-sm place-items-center '>
+        <div className='pl-20'>
+          <h1 className='text-4xl font-extrabold'>Michelle Tran</h1>
+          <p className='relative pt-5 font-sans text-xl text-black '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
           animi nisi dignissimos. Quo, aspernatur? Sapiente, cumque velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur dolorem ab, commodi ducimus corrupti harum a quam quidem, dolores id nostrum voluptatibus cumque vel? Reprehenderit nisi distinctio consequatur atque!
           Perspiciatis mollitia numquam harum hic praesentium laborum aliquid labore in voluptates? Repellat non voluptatibus illo officia quaerat, laudantium recusandae modi ipsam enim a in quis, beatae reprehenderit? Sunt, enim odit?
           Veritatis aliquid assumenda ad aperiam velit error ea similique cumque laborum, unde provident dolor earum ullam at eligendi vel id enim excepturi consectetur exercitationem illo consequuntur nesciunt. Accusamus, quidem ipsam.
@@ -36,20 +38,20 @@ const AboutMe = () => {
           Pariatur deleniti omnis nesciunt numquam eius obcaecati, ipsa quibusdam dicta exercitationem quis nulla vero aliquid officia. Perferendis eaque praesentium laudantium exercitationem vero sunt eum nostrum dolorem nemo. Temporibus, error totam?</p>
         </div>
         <img 
-        className='shadow-xl rounded-2xl'
+        className='shadow-xl rounded-full  h-[500px] w-auto'
         alt='Headshot'
-        src={Headshot}>
+        src={Mich}>
         </img>
       </div>
-      <div className='grid justify-center w-screen h-full grid-cols-2 p-5 text-black place-items-center '>
+      <div className='grid justify-center w-screen h-full grid-cols-2 p-5 text-black shadow-sm place-items-center '>
         <img 
-        className='shadow-xl rounded-2xl'
+        className='shadow-xl rounded-full  h-[500px] w-auto'
         alt='Headshot'
-        src={Headshot}>
+        src={Lev}>
         </img>
-        <div className=''>
-          <h1 className='text-2xl font-extrabold'>Chef Andrew Carroll</h1>
-          <p className='relative pt-5 font-sans text-lg text-black '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
+        <div className='pr-20'>
+          <h1 className='text-4xl font-extrabold'>Levan James</h1>
+          <p className='relative pt-5 font-sans text-xl text-black '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
           animi nisi dignissimos. Quo, aspernatur? Sapiente, cumque velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur dolorem ab, commodi ducimus corrupti harum a quam quidem, dolores id nostrum voluptatibus cumque vel? Reprehenderit nisi distinctio consequatur atque!
           Perspiciatis mollitia numquam harum hic praesentium laborum aliquid labore in voluptates? Repellat non voluptatibus illo officia quaerat, laudantium recusandae modi ipsam enim a in quis, beatae reprehenderit? Sunt, enim odit?
           Veritatis aliquid assumenda ad aperiam velit error ea similique cumque laborum, unde provident dolor earum ullam at eligendi vel id enim excepturi consectetur exercitationem illo consequuntur nesciunt. Accusamus, quidem ipsam.
