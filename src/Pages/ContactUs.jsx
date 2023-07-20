@@ -14,7 +14,7 @@ const ContactUs = (props) => {
   
   const Result = () => {
     return (
-        <p>Your message has been successfully sent!</p>
+        <p className='text-black'>Your message has been successfully sent!</p>
     )
   }
 
@@ -60,33 +60,43 @@ const ContactUs = (props) => {
 
     
 
-  const sendMail = (e) => { //EmailJS documentation
+  const sendMail = (e, serviceRequested) => { //EmailJS documentation
+    const formData = {
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+     message: message,
+     serviceRequested: serviceRequested
+    }
     // console.log(e)
     e.preventDefault()
     if(!validEmail) {
         emailjs
-    .sendForm('', '', e.target, '') //(Service key, templateID, target, PK)
+    .sendForm('service_nznrnso', 'template_5kja3h8', e.target, '5Gj3usQUeUTfCkRdY') //(Service key, templateID, target, PK)
     .then((result) => {
         console.log(result.text);
     }, (error) => {
         console.log(error.text);
     });
+   
+    
     e.target.reset();
     setData("")
     setMessage("")
+    setServiceRequested("")
     showResult(true)
   }
   else (setValidEmail(true))
   };
 
   return props.trigger ? (
-    <div className="fixed z-10 lg:mt-40 overflow-auto lg:inset-x-0 justify-center lg:mx-auto w-84 lg:w-1/2 lg:h-[800px] items-center bg-white bg-opacity-80 rounded-xl box-shadow-inset-0--3em-3em-opacity-10" ref={clickAway} >
+    <div className="fixed z-10 lg:mt-40 overflow-auto lg:inset-x-0 justify-center lg:mx-auto w-84 lg:w-1/2 lg:h-[850px] items-center bg-white bg-opacity-80 rounded-xl box-shadow-inset-0--3em-3em-opacity-10" ref={clickAway} >
        
-        <form className="" method="post" onSubmit={sendMail}>
+        <form className="" method="post" onSubmit={(e) => sendMail(e, serviceRequested)}>
             <div className='flex justify-end pr-5 text-2xl text-black'>    
                 <button  onClick={() => props.setTrigger(false)}>X</button>
             </div>
-            <h1 className="flex justify-center pl-10 pr-10 text-2xl font-extrabold text-black lg:text-4xl font-Montserrat">Business Inquiries</h1>
+            <h1 className="flex justify-center text-2xl font-extrabold text-black lg:text-4xl font-Montserrat">Business Inquiries</h1>
             
                 
             <div className="pl-6 text-lg italic text-black">
@@ -99,7 +109,7 @@ const ContactUs = (props) => {
                 <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Email:</span>
                 <input className="flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto border-2  border-black border-solid lg:text-lg focus:outline-none rounded-xl focus:border-solid focus:shadow-2xl" 
                 type='email' name='email' id="" onChange={twoCalls}  value={data.email} placeholder="example@gmail.com"/>
-                <h2 className= "font-semibold text-center text-red-900 underline text-md ">{validEmail ? <EmailResponse/> : null }</h2>  {/*Hidden message has been sent*/}
+                <h2 className= "font-semibold text-center text-red-900 underline text-md ">{validEmail ? <EmailResponse/> : null }</h2> 
             </div>
 
             <div className="pl-6 text-lg italic text-black lg:pt-2">
@@ -110,10 +120,9 @@ const ContactUs = (props) => {
 
             <div className="pl-6 text-lg italic text-black lg:pt-2">
                 <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Service Requested:</span>
-                  
                 <input className="relative flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none rounded-xl focus:border-solid focus:shadow-2xl " 
-                  type='phone' 
-                  name='phone' 
+                  type='serviceRequested' 
+                  name='serviceRequested' 
                   id="" 
                   onClick={toggle}
                   value={serviceRequested} 
@@ -127,7 +136,7 @@ const ContactUs = (props) => {
                   <div className='justify-center lg:pl-4'>
                     <div className='items-center hidden w-1/2 bg-white border border-black toggle rounded-xl'>
                       <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Brand Marketing'); toggle()}}>Brand Marketing</ul>
-                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('FEvent Planning'); toggle()}}>Event Planning</ul>
+                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Event Planning'); toggle()}}>Event Planning</ul>
                       <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Food and Beverage Consulting'); toggle()}}>Food and Beverage Consulting</ul>
                       <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Hospitality Consulting'); toggle()}}>Hospitality Consulting</ul>
                       <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Merchandising'); toggle()}}>Merchandising</ul>

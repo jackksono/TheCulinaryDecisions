@@ -11,14 +11,13 @@ const AboutMe = () => {
   return (
     <div>
       <div className='grid justify-center w-screen h-full grid-cols-2 p-5 text-black shadow-sm place-items-center '>
-      <ContactUs className='' trigger={contactPopUp} setTrigger={setContactPopUp}></ContactUs>
         <img 
-        className='shadow-xl rounded-full h-[500px] w-auto' 
+        className='shadow-xl rounded-full  h-[500px] w-auto'
         alt='Headshot'
-        src={Drew}>
+        src={Lev}>
         </img>
-        <div className='h-auto pr-20 '>
-          <h1 className='text-4xl font-extrabold'>Chef Andrew Carroll</h1>
+        <div className='pr-20'>
+          <h1 className='text-4xl font-extrabold'>Levan James</h1>
           <p className='relative pt-5 font-sans text-xl text-black '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
           animi nisi dignissimos. Quo, aspernatur? Sapiente, cumque velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur dolorem ab, commodi ducimus corrupti harum a quam quidem, dolores id nostrum voluptatibus cumque vel? Reprehenderit nisi distinctio consequatur atque!
           Perspiciatis mollitia numquam harum hic praesentium laborum aliquid labore in voluptates? Repellat non voluptatibus illo officia quaerat, laudantium recusandae modi ipsam enim a in quis, beatae reprehenderit? Sunt, enim odit?
@@ -43,14 +42,16 @@ const AboutMe = () => {
         src={Mich}>
         </img>
       </div>
+      
       <div className='grid justify-center w-screen h-full grid-cols-2 p-5 text-black shadow-sm place-items-center '>
+      <ContactUs className='' trigger={contactPopUp} setTrigger={setContactPopUp}></ContactUs>
         <img 
-        className='shadow-xl rounded-full  h-[500px] w-auto'
+        className='shadow-xl rounded-full h-[500px] w-auto' 
         alt='Headshot'
-        src={Lev}>
+        src={Drew}>
         </img>
-        <div className='pr-20'>
-          <h1 className='text-4xl font-extrabold'>Levan James</h1>
+        <div className='h-auto pr-20 '>
+          <h1 className='text-4xl font-extrabold'>Chef Andrew Carroll</h1>
           <p className='relative pt-5 font-sans text-xl text-black '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
           animi nisi dignissimos. Quo, aspernatur? Sapiente, cumque velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur dolorem ab, commodi ducimus corrupti harum a quam quidem, dolores id nostrum voluptatibus cumque vel? Reprehenderit nisi distinctio consequatur atque!
           Perspiciatis mollitia numquam harum hic praesentium laborum aliquid labore in voluptates? Repellat non voluptatibus illo officia quaerat, laudantium recusandae modi ipsam enim a in quis, beatae reprehenderit? Sunt, enim odit?
