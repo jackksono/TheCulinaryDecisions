@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import { useEffect } from 'react'
 
-import One from '../src/Images/One.jpg'
-import Two from '../src/Images/OnePOne.jpg'
-import Three from '../src/Images/Two.jpg'
-import Four from '../src/Images/TwoPOne.jpg'
-import Five from '../src/Images/Three.jpg'
+import One from '../src/Images/Slideshow/One.jpg'
+import Two from '../src/Images/Slideshow/OnePOne.jpg'
+import Three from '../src/Images/Slideshow/Two.jpg'
+import Four from '../src/Images/Slideshow/TwoPOne.jpg'
+import Five from '../src/Images/Slideshow/Three.jpg'
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';

@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-import Article1 from '../Images/Article1.png'
-import Article2 from '../Images/Article2.png'
-import Article3 from '../Images/Article3.png'
-import Article4 from '../Images/Article4.png'
+import Article1 from '../Images/Articles/Article1.png'
+import Article2 from '../Images/Articles/Article2.png'
+import Article3 from '../Images/Articles/Article3.png'
+import Article4 from '../Images/Articles/Article4.png'
 
 
 

@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import ContactUs from './ContactUs'
-import Drew from '../Images/DrewHead.jpg'
-import Mich from '../Images/MichelleHead.jpg'
-import Lev from '../Images/LevanHead.jpg'
+import Drew from '../Images/Headshots/DrewHead.jpg'
+import Mich from '../Images/Headshots/MichelleHead.jpg'
+import Lev from '../Images/Headshots/LevanHead.jpg'
 
 const AboutMe = () => {
 
