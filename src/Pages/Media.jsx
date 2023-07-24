@@ -1,11 +1,13 @@
 import React from 'react'
 
+import BarPhoto from '../Images/StockImages/BarPhoto.jpg'
 
 import Article1 from '../Images/Articles/Article1.png'
 import Article2 from '../Images/Articles/Article2.png'
 import Article3 from '../Images/Articles/Article3.png'
 import Article4 from '../Images/Articles/Article4.png'
 
+import Zoom from 'react-reveal/Zoom'
 
 
 const Media = () => {
@@ -14,8 +16,19 @@ const Media = () => {
 
   return (
     <div>
+      <div>
+        <img 
+        src={BarPhoto}
+        alt='barPhoto'
+        className='relative object-cover w-screen object-top h-[700px]'
+        ></img>
+        <div className='absolute top-0 left-0 flex items-center justify-center w-full h-full'>
+          <h1 className='flex p-2 font-bold text-white border border-white font-Montserrat text-7xl'>Media and Articles</h1>
+        </div>
+      </div>
       
-      <div className='grid w-screen grid-cols-4 pt-40'>
+      <Zoom bottom>
+      <div className='grid w-screen grid-cols-4 pt-20'>
         <a href='https://www.lamag.com/digestblog/chef-andrew-carroll-catch-shares-10-favorite-dishes-l/' 
           target='_blank'
           rel="noopener noreferrer"
@@ -45,6 +58,7 @@ const Media = () => {
           <img src={Article4} alt='Article4' className='mt-20 absolute w-[400px] h-[200px] hover:scale-125 cursor-pointer'></img>
         </a>
       </div>
+      </Zoom>
     </div>
   )
 }
