@@ -61,13 +61,7 @@ const ContactUs = (props) => {
     
 
   const sendMail = (e, serviceRequested) => { //EmailJS documentation
-    const formData = {
-      name: data.name,
-      email: data.email,
-      phone: data.phone,
-     message: message,
-     serviceRequested: serviceRequested
-    }
+    
     // console.log(e)
     e.preventDefault()
     if(!validEmail) {

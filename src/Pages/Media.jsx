@@ -12,23 +12,24 @@ import Zoom from 'react-reveal/Zoom'
 
 const Media = () => {
   
-  
+
 
   return (
     <div>
-      <div>
+      <div className='shadow-lg'>
         <img 
         src={BarPhoto}
         alt='barPhoto'
-        className='relative object-cover w-screen object-top h-[700px]'
+        className='relative object-cover w-screen object-top h-[700px] shadow-lg'
         ></img>
         <div className='absolute top-0 left-0 flex items-center justify-center w-full h-full'>
           <h1 className='flex p-2 font-bold text-white border border-white font-Montserrat text-7xl'>Media and Articles</h1>
         </div>
       </div>
+      <div className='pt-40 font-sans text-5xl italic text-black underline'>Check us out on Social Media!</div>
       
-      <Zoom bottom>
-      <div className='grid w-screen grid-cols-4 pt-20'>
+      <Zoom bottom className='duration-1000'>
+      <div className='grid w-screen grid-cols-4 pt-20 pb-20'>
         <a href='https://www.lamag.com/digestblog/chef-andrew-carroll-catch-shares-10-favorite-dishes-l/' 
           target='_blank'
           rel="noopener noreferrer"
