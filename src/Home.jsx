@@ -67,7 +67,7 @@ return (
             ></div>
           ))}
         </div>
-        <div className='absolute items-center justify-center pb-10 bottom-24 left-1/2 place-content-center'>
+        <div className='absolute items-center justify-center pb-10 transform -translate-x-1/2 bottom-24 left-1/2 place-content-center'>
           {slides.map((_, slideIndex) => (
             <div
               key={slideIndex}

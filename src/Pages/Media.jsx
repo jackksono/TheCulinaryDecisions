@@ -2,6 +2,8 @@ import React from 'react'
 
 import BarPhoto from '../Images/StockImages/BarPhoto.jpg'
 
+import { useInView } from 'react-intersection-observer'
+
 import Article1 from '../Images/Articles/Article1.png'
 import Article2 from '../Images/Articles/Article2.png'
 import Article3 from '../Images/Articles/Article3.png'
@@ -12,6 +14,11 @@ import Zoom from 'react-reveal/Zoom'
 
 const Media = () => {
   
+  const zoomOptions = {
+    threshold: 0.1, // Adjust this threshold value to your desired visibility trigger point
+    triggerOnce: false, // Set to true so that the animation only happens once
+  };
+  const { ref: zoom1Ref, inView: zoom1InView } = useInView(zoomOptions);
 
 
   return (
@@ -26,40 +33,43 @@ const Media = () => {
           <h1 className='flex p-2 font-bold text-white border border-white font-Montserrat text-7xl'>Media and Articles</h1>
         </div>
       </div>
+      
       <div className='pt-40 font-sans text-5xl italic text-black underline'>Check us out on Social Media!</div>
       
-      <Zoom bottom className='duration-1000'>
-      <div className='grid w-screen grid-cols-4 pt-20 pb-20'>
-        <a href='https://www.lamag.com/digestblog/chef-andrew-carroll-catch-shares-10-favorite-dishes-l/' 
-          target='_blank'
-          rel="noopener noreferrer"
-          className='flex items-center justify-center w-auto h-auto font-bold text-black '>
-          <p className='flex pb-48 text-xl italic text-black'>Andrew Caroll Shares his top 10 Dishes!</p>
-          <img src={Article1} alt='Article1' className='mt-20 absolute w-[400px] h-[200px] hover:scale-125 cursor-pointer'></img>
-        </a>
-        <a href='https://observer.com/2016/10/catch-takes-scene-dining-to-new-heights-in-la/'
-          target='_blank'
-          rel="noopener noreferrer"
-          className='flex items-center justify-center w-auto h-auto font-bold text-black'>
-          <p className='flex pb-48 text-xl italic text-black'>Catch Takes Dining Scences to new Heights</p>
-          <img src={Article2} alt='Article2' className='mt-20 absolute w-[400px] h-[200px] hover:scale-125 cursor-pointer'></img>
-        </a>
-        <a href='https://www.reviewjournal.com/entertainment/food/las-vegas-chefs-prepare-vegan-feast-that-was-a-hit-in-new-york-1835770/'
-          target='_blank'
-          rel="noopener noreferrer"
-          className='flex items-center justify-center w-auto h-auto font-bold text-black'>
-          <p className='flex pb-48 text-xl italic text-black'>Chef Prepares Vegan Feast in New York!</p>
-          <img src={Article3} alt='Article3' className='mt-20 absolute w-[400px] h-[200px] hover:scale-125 cursor-pointer'></img>
-        </a>
-        <a href='https://www.visitwesthollywood.com/stories/award-winning-chefs-restaurants-in-weho/'
-          target='_blank'
-          rel="noopener noreferrer"
-          className='flex items-center justify-center w-auto h-auto font-bold text-black'>
-          <p className='flex pb-48 text-xl italic text-black'>Where to Find Award Winning Chefs in West Hollywood</p>
-          <img src={Article4} alt='Article4' className='mt-20 absolute w-[400px] h-[200px] hover:scale-125 cursor-pointer'></img>
-        </a>
+      <div ref={zoom1Ref}>
+        <Zoom bottom duration={2000} when={zoom1InView}>
+          <div className='grid w-screen grid-cols-4 pt-20 pb-20'>
+            <a href='https://www.lamag.com/digestblog/chef-andrew-carroll-catch-shares-10-favorite-dishes-l/' 
+              target='_blank'
+              rel="noopener noreferrer"
+              className='flex items-center justify-center w-auto h-auto font-bold text-black '>
+              <p className='flex pb-48 text-xl italic text-black'>Andrew Caroll Shares his top 10 Dishes!</p>
+              <img src={Article1} alt='Article1' className='mt-20 absolute w-[400px] h-[200px] hover:scale-125 cursor-pointer'></img>
+            </a>
+            <a href='https://observer.com/2016/10/catch-takes-scene-dining-to-new-heights-in-la/'
+              target='_blank'
+              rel="noopener noreferrer"
+              className='flex items-center justify-center w-auto h-auto font-bold text-black'>
+              <p className='flex pb-48 text-xl italic text-black'>Catch Takes Dining Scences to new Heights</p>
+              <img src={Article2} alt='Article2' className='mt-20 absolute w-[400px] h-[200px] hover:scale-125 cursor-pointer'></img>
+            </a>
+            <a href='https://www.reviewjournal.com/entertainment/food/las-vegas-chefs-prepare-vegan-feast-that-was-a-hit-in-new-york-1835770/'
+              target='_blank'
+              rel="noopener noreferrer"
+              className='flex items-center justify-center w-auto h-auto font-bold text-black'>
+              <p className='flex pb-48 text-xl italic text-black'>Chef Prepares Vegan Feast in New York!</p>
+              <img src={Article3} alt='Article3' className='mt-20 absolute w-[400px] h-[200px] hover:scale-125 cursor-pointer'></img>
+            </a>
+            <a href='https://www.visitwesthollywood.com/stories/award-winning-chefs-restaurants-in-weho/'
+              target='_blank'
+              rel="noopener noreferrer"
+              className='flex items-center justify-center w-auto h-auto font-bold text-black'>
+              <p className='flex pb-48 text-xl italic text-black'>Where to Find Award Winning Chefs in West Hollywood</p>
+              <img src={Article4} alt='Article4' className='mt-20 absolute w-[400px] h-[200px] hover:scale-125 cursor-pointer'></img>
+            </a>
+          </div>
+        </Zoom>
       </div>
-      </Zoom>
     </div>
   )
 }
