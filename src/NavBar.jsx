@@ -1,12 +1,20 @@
 import React, { useState } from 'react'
+import { lazy, Suspense } from 'react'
 import { Route, Routes, Link } from 'react-router-dom'
 import Headroom from 'react-headroom'
 import {useClickAway} from '@uidotdev/usehooks'
 
-import ContactUs from './Pages/ContactUs'
-import Home from './Home'
-import AboutMe from './Pages/AboutMe'
-import Media from './Pages/Media'
+// import ContactUs from './Pages/ContactUs'
+// import Home from './Home'
+// import AboutMe from './Pages/AboutMe'
+// import Media from './Pages/Media'
+// import AboutUs from './Pages/AboutUs'
+
+const AboutUs = lazy(() => import('./Pages/AboutUs'))
+const Media = lazy(() => import('./Pages/Media'))
+const AboutMe = lazy(() => import('./Pages/AboutMe'))
+const Home = lazy(() => import('./Home'))
+const ContactUs = lazy(() => import('./Pages/ContactUs'))
 
 const NavBar = () => {
     const [ contactPopUp, setContactPopUp ] = useState(false)
@@ -67,12 +75,15 @@ const NavBar = () => {
             
         </nav>
         </Headroom>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/team" element={<AboutMe/>} />
-        <Route path="/media" element={<Media/>} />
-        <Route path="/contact-us" element={<ContactUs/>} />
-      </Routes>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/team" element={<AboutMe />} />
+            <Route path="/media" element={<Media />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/contact" element={<ContactUs />} />
+          </Routes>
+      </Suspense>
     </>
   )
 }

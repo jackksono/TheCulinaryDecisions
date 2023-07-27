@@ -20,7 +20,7 @@ const slides = [
   {url:Five}
 ]
 
-const delay = 5000;
+const delay = 3000;
 const transitionDuration = 500;
 
 const Home = () => {
