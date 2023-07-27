@@ -46,8 +46,14 @@ const NavBar = () => {
                     </Link>
                   </div>
                 
-                  <div className="left-0 flex flex-col lg:flex-row lg:bg-transparent lg:items-center lg:flex-non lg:gap-24">
+                  <div className="left-0 flex flex-col lg:flex-row lg:bg-transparent lg:items-center lg:flex-non lg:gap-16">
                   
+                    <Link to="/about-us">
+                      <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-125 duration-500">
+                        SERVICES
+                      </button>
+                    </Link>
+
                     <Link to="/team">
                       <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-125 duration-500">
                         EXECUTIVE LEADERSHIP
