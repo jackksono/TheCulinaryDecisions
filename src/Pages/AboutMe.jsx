@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+//Make changes to show everyone side by side and on hover for bios
 import Drew from '../Images/Headshots/DrewHead.jpg'
 import Mich from '../Images/Headshots/MichelleHead.jpg'
 import Lev from '../Images/Headshots/LevanHead.jpg'

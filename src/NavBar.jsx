@@ -2,13 +2,7 @@ import React, { useState } from 'react'
 import { lazy, Suspense } from 'react'
 import { Route, Routes, Link } from 'react-router-dom'
 import Headroom from 'react-headroom'
-import {useClickAway} from '@uidotdev/usehooks'
 
-// import ContactUs from './Pages/ContactUs'
-// import Home from './Home'
-// import AboutMe from './Pages/AboutMe'
-// import Media from './Pages/Media'
-// import AboutUs from './Pages/AboutUs'
 
 const AboutUs = lazy(() => import('./Pages/AboutUs'))
 const Media = lazy(() => import('./Pages/Media'))
@@ -18,6 +12,7 @@ const ContactUs = lazy(() => import('./Pages/ContactUs'))
 
 const NavBar = () => {
     const [ contactPopUp, setContactPopUp ] = useState(false)
+
   return (
     <>
     <Headroom>
@@ -35,8 +30,7 @@ const NavBar = () => {
             </div>
             
             <div class="nav-links  bg-blackPaper w-[360px] lg:bg-none lg:bg-transparent duration-500 lg:static lg:h-0  lg:flex-row flex-col  lg:pt-16 lg:px-10 lg:block lg:w-auto">
-              <ul class="font-medium left-0 lg:flex lg:justify-between w-full lg:h-full lg:px-20 p-4 lg:p-0 mt-4 pb-4 gap-4 lg:flex-row lg:space-x-8 lg:mt-0"
-              >
+              <ul class="font-medium left-0 lg:flex lg:justify-between w-full lg:h-full lg:px-20 p-4 lg:p-0 mt-4 pb-4 gap-4 lg:flex-row lg:space-x-8 lg:mt-0">
                 
                   <div className="flex items-center lg:bg-transparent lg:gap-10 ">
                     <Link to="/">
@@ -47,7 +41,6 @@ const NavBar = () => {
                   </div>
                 
                   <div className="left-0 flex flex-col lg:flex-row lg:bg-transparent lg:items-center lg:flex-non lg:gap-16">
-                  
                     <Link to="/about-us">
                       <button className="font-Montserrat text-[10px] lg:text-xl lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-125 duration-500">
                         SERVICES
@@ -73,7 +66,7 @@ const NavBar = () => {
                             onClick={() => setContactPopUp(true)}>
                             CONTACT US
                         </button>
-                        <ContactUs   trigger={contactPopUp} setTrigger={setContactPopUp}></ContactUs>
+                        <ContactUs trigger={contactPopUp} setTrigger={setContactPopUp}></ContactUs>
                     </span>
                   </div>
               </ul>
