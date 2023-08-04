@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-//Make changes to show everyone side by side and on hover for bios
 import Drew from '../Images/Headshots/DrewHead.jpg'
 import Mich from '../Images/Headshots/MichelleHead.jpg'
 import Lev from '../Images/Headshots/LevanHead.jpg'
@@ -19,7 +18,7 @@ const AboutMe = () => {
   };
   const { ref: zoom1Ref, inView: zoom1InView } = useInView(zoomOptions);
   const { ref: zoom2Ref, inView: zoom2InView } = useInView(zoomOptions);
-  const { ref: zoom3Ref, inView: zoom3InView } = useInView(zoomOptions);
+
 
 
   
@@ -37,15 +36,17 @@ const AboutMe = () => {
       </div>
 
       <div className='grid justify-center grid-cols-2 gap-8 p-5'>
-        <div className='flex flex-col items-center justify-center text-center group'>
+        <div className='flex flex-col items-center justify-center text-center group' ref={zoom1Ref}>
             <h1 className='text-4xl font-extrabold lg:mr-40'>Levan Denatto</h1>
             <p className='italic text-gray-500 lg:pb-5 lg:mr-40'>Managing Partner</p>
             <div className='relative'>
-              <img 
-                className='shadow-xl rounded-full h-[500px] w-auto lg:mr-40'
-                alt='Headshot'
-                src={Lev}
-              />
+              <Fade left when={zoom1InView}>
+                <img 
+                  className='shadow-xl rounded-full h-[500px] w-auto lg:mr-40'
+                  alt='Headshot'
+                  src={Lev}
+                />
+              </Fade>
               <div className='absolute bottom-0 left-0 justify-center duration-700 opacity-0 lg:ml-72 group-hover:opacity-100 '>
               <p className='pt-5 m-5 font-sans text-black bg-transparent rounded-2xl border border-gray-600 lg:h-[500px] lg:w-[500px] text-md  opacity-0 group-hover:opacity-100'>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
@@ -59,15 +60,17 @@ const AboutMe = () => {
           </div>
         </div>
         
-        <div className='flex flex-col items-center justify-center text-center group'>
+        <div className='flex flex-col items-center justify-center text-center group' ref={zoom2Ref}>
             <h1 className='text-4xl font-extrabold lg:ml-40'>Michelle Tran</h1>
             <p className='italic text-gray-500 lg:ml-40 lg:pb-5'>Managing Partner</p>
             <div className='relative'>
-              <img 
-                className='shadow-xl rounded-full h-[500px] w-auto lg:ml-40'
-                alt='Headshot'
-                src={Mich}
-              />
+              <Fade right when={zoom2InView}>
+                <img 
+                  className='shadow-xl rounded-full h-[500px] w-auto lg:ml-40'
+                  alt='Headshot'
+                  src={Mich}
+                />
+              </Fade>
               <div className='absolute bottom-0 right-0 justify-center duration-700 opacity-0 lg:mr-72 group-hover:opacity-100'>
               <p className=' pt-5 m-5 font-sans text-black bg-transparent border lg:h-[500px] lg:w-[500px] border-gray-600 text-md  rounded-2xl opacity-0 group-hover:opacity-100'> 
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
@@ -105,7 +108,7 @@ const AboutMe = () => {
         </Fade>
       </div> */}
       
-      <div className='pt-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum nulla dicta ipsam explicabo commodi possimus. Tempore quaerat facilis similique incidunt dolores? Corrupti ea inventore quis, voluptatem corporis qui ipsum. Laboriosam sunt debitis quasi voluptas id totam maiores esse omnis dolorum, ad porro et, voluptatibus iusto laborum, perferendis est. Doloribus ab temporibus nobis impedit, illum iure praesentium magni deleniti quisquam sint voluptatem soluta pariatur fugiat quam voluptas. Laborum, nobis exercitationem aut molestias ipsa, tempore at molestiae sapiente quas vitae culpa eum architecto facere nulla ab non nesciunt, quaerat delectus obcaecati. Quod inventore cum harum deleniti amet numquam quae dicta doloribus ut sed pariatur culpa non, odio, nam accusantium rem illum ipsam aliquam impedit, quis cupiditate eum? Molestiae voluptatibus, labore maiores et nisi voluptatum cumque eligendi. Accusantium maxime esse libero ex labore? Placeat laudantium labore totam voluptate debitis. Doloremque architecto illum quas alias vitae aperiam iste provident molestiae ullam unde, quia nostrum laudantium a nihil sunt voluptatibus ut, officiis commodi iure quo. Optio placeat consequatur non praesentium dolorem ad corrupti, asperiores fugiat esse exercitationem voluptas recusandae voluptatibus dolor eaque rerum? Voluptate sed magni voluptatum quos ducimus tempora deleniti magnam alias eligendi, officiis iste consequatur odit tenetur eum dignissimos? Corporis eveniet commodi veritatis ipsa eos. Tenetur rerum fuga minus magni doloremque. Necessitatibus doloribus dolorem pariatur, laudantium dolore cum nihil exercitationem error facilis modi eius fugit veniam nemo? Doloribus recusandae inventore voluptatibus, cupiditate obcaecati eveniet quo aliquid unde velit exercitationem suscipit atque libero quis a magni cum voluptatum repudiandae vero ipsum quam quia perferendis, maiores rerum? Suscipit possimus omnis fugiat aliquam alias quis assumenda, libero enim aliquid perspiciatis. Rerum tempore dicta nemo! Itaque quasi minima cupiditate, provident excepturi hic sit dolorem. Exercitationem odit aspernatur laudantium, amet dolorem molestiae et expedita reprehenderit debitis dicta? Magnam, architecto exercitationem nobis illo molestiae ipsam quo, neque minus recusandae aut ipsum deserunt? Porro repellat eveniet temporibus dolorem rerum labore accusantium omnis, beatae, corporis recusandae voluptatum magni commodi facilis explicabo maxime fugiat id ut odio fugit sunt natus praesentium, mollitia minima ratione. Soluta quis quas consequatur modi neque expedita, corporis et doloremque sunt, vero vitae inventore perspiciatis sapiente quos? Error commodi non fugiat itaque aliquam nisi culpa temporibus vitae distinctio amet quo nemo rerum, earum tempore! Aspernatur libero doloremque, maiores modi nostrum et? Corrupti rem libero corporis eius placeat laboriosam sed eaque veritatis quae recusandae asperiores minima, a doloremque, voluptates incidunt! Quam minima facilis soluta maxime provident, consequatur eos. In ad omnis a perspiciatis repudiandae minus recusandae porro maiores earum, sint quod, saepe dignissimos similique quia nisi dolores, beatae optio eaque provident sed modi unde. Porro, cupiditate ex sunt sit magni ipsa voluptatum, inventore similique veniam debitis quo harum possimus fugiat impedit nostrum animi, a vitae soluta reiciendis tempore eveniet unde saepe natus atque. Obcaecati, ab facere! Necessitatibus veritatis itaque suscipit optio, soluta quo nesciunt, vero velit aliquid adipisci, veniam ab magnam. Impedit magnam laudantium consequatur voluptatem tempora maxime repudiandae rerum libero laboriosam fugit minus dolores nihil ut, quo et cumque. Fuga ducimus vel culpa et sit sint sed.</div>
+      {/* <div className='pt-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum nulla dicta ipsam explicabo commodi possimus. Tempore quaerat facilis similique incidunt dolores? Corrupti ea inventore quis, voluptatem corporis qui ipsum. Laboriosam sunt debitis quasi voluptas id totam maiores esse omnis dolorum, ad porro et, voluptatibus iusto laborum, perferendis est. Doloribus ab temporibus nobis impedit, illum iure praesentium magni deleniti quisquam sint voluptatem soluta pariatur fugiat quam voluptas. Laborum, nobis exercitationem aut molestias ipsa, tempore at molestiae sapiente quas vitae culpa eum architecto facere nulla ab non nesciunt, quaerat delectus obcaecati. Quod inventore cum harum deleniti amet numquam quae dicta doloribus ut sed pariatur culpa non, odio, nam accusantium rem illum ipsam aliquam impedit, quis cupiditate eum? Molestiae voluptatibus, labore maiores et nisi voluptatum cumque eligendi. Accusantium maxime esse libero ex labore? Placeat laudantium labore totam voluptate debitis. Doloremque architecto illum quas alias vitae aperiam iste provident molestiae ullam unde, quia nostrum laudantium a nihil sunt voluptatibus ut, officiis commodi iure quo. Optio placeat consequatur non praesentium dolorem ad corrupti, asperiores fugiat esse exercitationem voluptas recusandae voluptatibus dolor eaque rerum? Voluptate sed magni voluptatum quos ducimus tempora deleniti magnam alias eligendi, officiis iste consequatur odit tenetur eum dignissimos? Corporis eveniet commodi veritatis ipsa eos. Tenetur rerum fuga minus magni doloremque. Necessitatibus doloribus dolorem pariatur, laudantium dolore cum nihil exercitationem error facilis modi eius fugit veniam nemo? Doloribus recusandae inventore voluptatibus, cupiditate obcaecati eveniet quo aliquid unde velit exercitationem suscipit atque libero quis a magni cum voluptatum repudiandae vero ipsum quam quia perferendis, maiores rerum? Suscipit possimus omnis fugiat aliquam alias quis assumenda, libero enim aliquid perspiciatis. Rerum tempore dicta nemo! Itaque quasi minima cupiditate, provident excepturi hic sit dolorem. Exercitationem odit aspernatur laudantium, amet dolorem molestiae et expedita reprehenderit debitis dicta? Magnam, architecto exercitationem nobis illo molestiae ipsam quo, neque minus recusandae aut ipsum deserunt? Porro repellat eveniet temporibus dolorem rerum labore accusantium omnis, beatae, corporis recusandae voluptatum magni commodi facilis explicabo maxime fugiat id ut odio fugit sunt natus praesentium, mollitia minima ratione. Soluta quis quas consequatur modi neque expedita, corporis et doloremque sunt, vero vitae inventore perspiciatis sapiente quos? Error commodi non fugiat itaque aliquam nisi culpa temporibus vitae distinctio amet quo nemo rerum, earum tempore! Aspernatur libero doloremque, maiores modi nostrum et? Corrupti rem libero corporis eius placeat laboriosam sed eaque veritatis quae recusandae asperiores minima, a doloremque, voluptates incidunt! Quam minima facilis soluta maxime provident, consequatur eos. In ad omnis a perspiciatis repudiandae minus recusandae porro maiores earum, sint quod, saepe dignissimos similique quia nisi dolores, beatae optio eaque provident sed modi unde. Porro, cupiditate ex sunt sit magni ipsa voluptatum, inventore similique veniam debitis quo harum possimus fugiat impedit nostrum animi, a vitae soluta reiciendis tempore eveniet unde saepe natus atque. Obcaecati, ab facere! Necessitatibus veritatis itaque suscipit optio, soluta quo nesciunt, vero velit aliquid adipisci, veniam ab magnam. Impedit magnam laudantium consequatur voluptatem tempora maxime repudiandae rerum libero laboriosam fugit minus dolores nihil ut, quo et cumque. Fuga ducimus vel culpa et sit sint sed.</div> */}
     </div> //Maybe compile media and about me
   )
 }
