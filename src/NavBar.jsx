@@ -3,6 +3,7 @@ import { lazy, Suspense } from 'react'
 import { Route, Routes, Link } from 'react-router-dom'
 import Headroom from 'react-headroom'
 
+import Logo from '../src/Images/Logo/PNG-03.png'
 
 const AboutUs = lazy(() => import('./Pages/AboutUs'))
 const Media = lazy(() => import('./Pages/Media'))
@@ -19,9 +20,9 @@ const NavBar = () => {
         <nav className="w-screen p-2 top-0 lg:static fixed inset-x-0 bg-white h-[100px] drop-shadow-2xl justify-content-end">
             <div className="">
               <img 
-            //   src={Logo1}
+              src={Logo}
               alt="logo"
-              className="h-[100px] w-[100px] lg:h-[200px] lg:w-[225px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-10"></img>
+              className="h-[100px] w-[100px] lg:h-[200px] lg:w-[400px] absolute top-1/2 left-1/2 transform scale-150 -translate-x-1/2 -translate-y-1/2 mt-8"></img>
             </div>
             <div className="pt-6 text-2xl text-black lg:hidden">
               <button >
