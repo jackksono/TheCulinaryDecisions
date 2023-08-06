@@ -9,6 +9,9 @@ module.exports = {
         Montserrat:['Montserrat'],
         sans: ["var(--font-sophia)", ...fontFamily.sans]
       },
+      backgroundImage: {
+        'Logo':"url('../src/Images/Logo/BackgroundLogo.jpg')"
+      }
     },
   },
   plugins: [],

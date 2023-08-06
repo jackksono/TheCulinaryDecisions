@@ -6,3 +6,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.transition-opacity {
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Home.css */
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
