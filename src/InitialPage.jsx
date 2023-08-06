@@ -23,6 +23,8 @@ const InitialPage = ({ onFadeOutComplete }) => {
     }
   }, [fadeOut, onFadeOutComplete]);
 
+  
+
   return (
     <div
       className={`fixed w-screen h-screen bg-Logo bg-center bg-contain flex items-center justify-center transition-opacity ${

@@ -78,7 +78,7 @@ const Media = () => {
               target='_blank'
               rel="noopener noreferrer"
               className='flex items-center justify-center w-auto h-auto font-bold text-black hover:scale-110'>
-              <p className='flex pb-48 text-xl italic text-black '>Where to Find Award Winning Chefs in West Hollywood</p>
+              <p className='flex pb-48 text-xl italic text-black '>Winning Chefs in West Hollywood</p>
               <img src={Article4} alt='Article4' className='mt-20 absolute w-[400px] h-[200px] hover:scale-125 cursor-pointer'></img>
             </a>
           </div>

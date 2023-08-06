@@ -35,7 +35,7 @@ const NavBar = () => {
               <img 
               src={Logo}
               alt="logo"
-              className="h-[100px] w-[100px] lg:h-[200px] lg:w-[400px] absolute top-1/2 left-1/2 transform scale-150 -translate-x-1/2 -translate-y-1/2"></img>
+              className="h-[100px] w-[100px] lg:h-[200px] lg:w-[400px] absolute top-1/2 left-1/2 transform scale-150 mt-2  -translate-x-1/2 -translate-y-1/2"></img>
             </div>
             <div className="pt-6 text-2xl text-black lg:hidden">
               <button >
