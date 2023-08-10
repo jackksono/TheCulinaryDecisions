@@ -31,9 +31,9 @@ const Media = () => {
         alt='barPhoto'
         className='relative object-cover w-screen object-top h-[700px] shadow-lg'
         ></img>
-        <div className='absolute top-0 left-0 flex items-center justify-center w-full '>
+        {/* <div className='absolute top-0 left-0 flex items-center justify-center w-full '>
           <h1 className='flex p-2 font-bold text-white border border-white font-Montserrat text-7xl lg:mt-96'>Media and Articles</h1>
-        </div>
+        </div> */}
       </div>
       
       <div className='z-10 flex items-center justify-center pt-20 space-x-4 font-sans text-5xl italic text-black underline'>

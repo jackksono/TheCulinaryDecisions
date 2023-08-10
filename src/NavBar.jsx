@@ -17,7 +17,7 @@ const NavBar = () => {
   const [ contactPopUp, setContactPopUp ] = useState(false)
 
   useEffect(() => {
-    const toggle = document.querySelector('.toggle');
+    const toggle = document.querySelector('.nav');
     
     const timeoutId = setTimeout(() => {
       toggle.classList.remove('hidden');
@@ -30,7 +30,7 @@ const NavBar = () => {
     <>
     <Headroom>
       <Fade duration={3000}>
-        <nav className="hidden toggle w-screen p-2 top-0 lg:static fixed inset-x-0 bg-white h-[100px] drop-shadow-2xl justify-content-end">
+        <nav className="hidden nav w-screen p-2 top-0 lg:static fixed inset-x-0 bg-white h-[100px] drop-shadow-2xl justify-content-end">
             <div className="">
               <img 
               src={Logo}

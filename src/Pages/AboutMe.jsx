@@ -29,15 +29,15 @@ const AboutMe = () => {
           alt='diningPhoto'
           className='relative object-cover w-screen object-center h-[700px] shadow-lg'
         ></img>
-        <div className='absolute top-0 left-0 flex items-center justify-center w-full h-full'>
+        {/* <div className='absolute top-0 left-0 flex items-center justify-center w-full h-full'>
           <h1 className='flex p-2 font-bold text-white border border-white font-Montserrat text-7xl'>Meet The Team</h1>
-        </div>
+        </div> */}
       </div>
 
       <div className='grid justify-center grid-cols-2 gap-8 p-5 xl:pt-20'>
         <div className='flex flex-col items-center justify-center text-center group' ref={zoom1Ref}>
-            <h1 className='text-4xl font-extrabold lg:mr-40 lg:text-6xl'>Levan Denatto</h1>
-            <p className='italic text-gray-500 lg:pb-5 lg:mr-40 lg:text-2xl'>Managing Partner</p>
+            <h1 className='text-4xl font-extrabold lg:mr-40 lg:text-6xl font-Montserrat'>Levan Donato</h1>
+            <p className='text-black lg:pb-5 lg:mr-40 lg:text-2xl font-Montserrat'>Managing Partner</p>
             <div className='relative'>
               <Fade left when={zoom1InView}>
                 <img 
@@ -47,7 +47,7 @@ const AboutMe = () => {
                 />
               </Fade>
               <div className='absolute bottom-0 left-0 justify-center duration-700 opacity-0 lg:ml-72 group-hover:opacity-100 '>
-                <p className='pt-5 m-5 lg:m-12 lg:p-5 font-sans text-black bg-transparent border lg:h-auto lg:text-xl lg:leading-8 lg:w-[500px] border-gray-600 text-md rounded-2xl opacity-0 group-hover:opacity-100'>
+                <p className='pt-5 m-5 lg:m-12 lg:p-5  text-black bg-transparent border lg:h-auto lg:text-xl font-Montserrat lg:leading-8 lg:w-[500px] border-gray-600 text-md rounded-2xl opacity-0 group-hover:opacity-100'>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
                   animi nisi dignissimos. Quo, aspernatur? Sapiente, cumque velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur dolorem ab, commodi ducimus corrupti harum a quam quidem, dolores id nostrum voluptatibus cumque vel? Reprehenderit nisi distinctio consequatur atque!
                   Perspiciatis mollitia numquam harum hic praesentium laborum aliquid labore in voluptates? Repellat non voluptatibus illo officia quaerat, laudantium recusandae modi ipsam enim a in quis, beatae reprehenderit? Sunt, enim odit?
@@ -60,8 +60,8 @@ const AboutMe = () => {
         </div>
         
         <div className='flex flex-col items-center justify-center text-center group' ref={zoom2Ref}>
-            <h1 className='text-4xl font-extrabold lg:ml-40 lg:text-6xl'>Michelle Tran</h1>
-            <p className='italic text-gray-500 lg:ml-40 lg:pb-5 lg:text-2xl'>Managing Partner</p>
+            <h1 className='text-4xl font-extrabold lg:ml-40 lg:text-6xl font-Montserrat'>Michelle Tran</h1>
+            <p className='text-black lg:ml-40 lg:pb-5 lg:text-2xl font-Montserrat'>Managing Partner</p>
             <div className='relative'>
               <Fade right when={zoom2InView}>
                 <img 
@@ -71,7 +71,7 @@ const AboutMe = () => {
                 />
               </Fade>
               <div className='absolute justify-center duration-700 shadow-2xl opacity-0 bg-slate-200 rounded-2xl right-12 bottom-10 lg:mr-72 group-hover:opacity-80'>
-                <p className='pt-5 m-5 lg:m-0 lg:p-5 font-sans text-black bg-transparent border lg:h-auto lg:text-xl lg:leading-8 lg:w-[500px] text-md rounded-2xl opacity-0 group-hover:opacity-100'> 
+                <p className='pt-5 m-5 lg:m-0 lg:p-5 text-black bg-transparent border lg:h-auto lg:text-xl font-semibold lg:leading-8 lg:w-[500px] text-md rounded-2xl opacity-0 group-hover:opacity-100 font-Montserrat'> 
                   With a passion for hospitality and a keen eye for delectable menu curation, Michelle has managed operations in food and beverage 
                   for various luxury high-volume establishments on the Las Vegas strip. Collecting experience from the finest openings with notable 
                   mention from Catch Las Vegas to Resorts World Allē on 66 and now creating a hospitality brand that aims to assist others in building

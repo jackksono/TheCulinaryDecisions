@@ -93,39 +93,41 @@ const ContactUs = (props) => {
             <h1 className="flex justify-center text-2xl font-extrabold text-black lg:text-4xl font-Montserrat">Business Inquiries</h1>
             
                 
-            <div className="pl-6 text-lg italic text-black">
+            <div className="pl-6 text-lg text-black">
                 <span className="pl-3 text-sm font-bold text-black lg:flex lg:text-2xl font-Montserrat">Name:</span>
                 <input className="flex justify-center p-1 m-1 lg:m-3 border-2 h-[25px] lg:h-auto border-black border-solid  w-11/12 text-md lg:text-lg focus:outline-none focus:border-4 focus:border-solid focus:shadow-2xl bg-opacity-90 rounded-xl" 
                 type='text' name='name' id="" onChange={handleChange} value={data.name} placeholder="Enter name"/>
             </div>
 
-            <div className="pl-6 text-lg italic text-black lg:pt-2">
+            <div className="pl-6 text-lg text-black lg:pt-2">
                 <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Email:</span>
                 <input className="flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto border-2  border-black border-solid lg:text-lg focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
                 type='email' name='email' id="" onChange={twoCalls}  value={data.email} placeholder="example@gmail.com"/>
                 <h2 className= "font-semibold text-center text-red-900 underline text-md ">{validEmail ? <EmailResponse/> : null }</h2> 
             </div>
 
-            <div className="pl-6 text-lg italic text-black lg:pt-2">
+            <div className="pl-6 text-lg text-black lg:pt-2">
                 <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Phone Number:</span>
                 <input className="flex justify-center p-1 m-1 lg:m-3 border-2 h-[25px] lg:h-auto border-black border-solid  w-11/12 text-md lg:text-lg focus:outline-none focus:border-4 focus:border-solid focus:shadow-2xl bg-opacity-90 rounded-xl" 
                 type='phone' name='phone' id="" onChange={handleChange} value={data.phone} placeholder="+1 (xxx)-xxx-xxxx"/>
             </div>
 
-            <div className="pl-6 text-lg italic text-black lg:pt-2">
+            <div className="pl-6 text-lg text-black lg:pt-2">
                 <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Service Requested:</span>
-                <input className="relative flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
-                  type='serviceRequested' 
-                  name='serviceRequested' 
-                  id="" 
-                  onClick={toggle}
-                  value={serviceRequested} 
-                  placeholder="List of Services...">
-                    </input>
-                  <RiArrowDropDownLine className='arrow absolute lg:text-[120px] text-black transform lg:-translate-y-1/2 lg:right-0 lg:mb-10 lg:pb-16 lg:mr-12 lg:cursor-pointer'
+                  <input className="relative flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
+                    type='serviceRequested' 
+                    name='serviceRequested' 
+                    id="" 
+                    onClick={toggle}
+                    value={serviceRequested} 
+                    placeholder="List of Services...">
+                  </input>
+                  <RiArrowDropDownLine 
+                    className='arrow absolute lg:text-[120px] text-black transform lg:-translate-y-1/2 lg:right-0 lg:mb-10 lg:pb-16 lg:mr-12 lg:cursor-pointer'
                     onClick={toggle}>
                   </RiArrowDropDownLine>
-                  <GrFormClose className='close hidden absolute lg:text-[100px] text-gray-500 transform lg:-translate-y-1/2 lg:right-0 lg:mb-10 lg:pb-16 lg:mr-16 lg:cursor-pointer'
+                  <GrFormClose 
+                    className='close hidden absolute lg:text-[100px] text-gray-500 transform lg:-translate-y-1/2 lg:right-0 lg:mb-10 lg:pb-16 lg:mr-16 lg:cursor-pointer'
                     onClick={toggle}>
                   </GrFormClose>
                   <div className='justify-center lg:pl-4'>
@@ -142,7 +144,7 @@ const ContactUs = (props) => {
                   </div>
             </div>
 
-            <div className="pl-6 text-lg italic text-black lg:pt-2">
+            <div className="pl-6 text-lg text-black lg:pt-2">
                 <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Message:</span>
                 <textarea className="flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[75px] lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none focus:border-4 rounded-xl focus:border-solid focus:shadow-2xl" 
                 name='message' id='' cols='30' rows='7' onChange={messageChange} value={message} placeholder="Enter message here..."/>
