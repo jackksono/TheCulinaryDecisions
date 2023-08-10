@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import Drew from '../Images/Headshots/DrewHead.jpg'
 import Mich from '../Images/Headshots/MichelleHead.jpg'
 import Lev from '../Images/Headshots/LevanHead.jpg'
 import Dining from '../Images/StockImages/Dining.jpg'
@@ -26,19 +25,19 @@ const AboutMe = () => {
     <div>
       <div className='shadow-lg'>
         <img 
-        src={Dining}
-        alt='diningPhoto'
-        className='relative object-cover w-screen object-top h-[700px] shadow-lg'
+          src={Dining}
+          alt='diningPhoto'
+          className='relative object-cover w-screen object-center h-[700px] shadow-lg'
         ></img>
         <div className='absolute top-0 left-0 flex items-center justify-center w-full h-full'>
           <h1 className='flex p-2 font-bold text-white border border-white font-Montserrat text-7xl'>Meet The Team</h1>
         </div>
       </div>
 
-      <div className='grid justify-center grid-cols-2 gap-8 p-5'>
+      <div className='grid justify-center grid-cols-2 gap-8 p-5 xl:pt-20'>
         <div className='flex flex-col items-center justify-center text-center group' ref={zoom1Ref}>
-            <h1 className='text-4xl font-extrabold lg:mr-40'>Levan Denatto</h1>
-            <p className='italic text-gray-500 lg:pb-5 lg:mr-40'>Managing Partner</p>
+            <h1 className='text-4xl font-extrabold lg:mr-40 lg:text-6xl'>Levan Denatto</h1>
+            <p className='italic text-gray-500 lg:pb-5 lg:mr-40 lg:text-2xl'>Managing Partner</p>
             <div className='relative'>
               <Fade left when={zoom1InView}>
                 <img 
@@ -48,21 +47,21 @@ const AboutMe = () => {
                 />
               </Fade>
               <div className='absolute bottom-0 left-0 justify-center duration-700 opacity-0 lg:ml-72 group-hover:opacity-100 '>
-              <p className='pt-5 m-5 font-sans text-black bg-transparent rounded-2xl border border-gray-600 lg:h-[500px] lg:w-[500px] text-md  opacity-0 group-hover:opacity-100'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
-                animi nisi dignissimos. Quo, aspernatur? Sapiente, cumque velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur dolorem ab, commodi ducimus corrupti harum a quam quidem, dolores id nostrum voluptatibus cumque vel? Reprehenderit nisi distinctio consequatur atque!
-                Perspiciatis mollitia numquam harum hic praesentium laborum aliquid labore in voluptates? Repellat non voluptatibus illo officia quaerat, laudantium recusandae modi ipsam enim a in quis, beatae reprehenderit? Sunt, enim odit?
-                Veritatis aliquid assumenda ad aperiam velit error ea similique cumque laborum, unde provident dolor earum ullam at eligendi vel id enim excepturi consectetur exercitationem illo consequuntur nesciunt. Accusamus, quidem ipsam.
-                Eum aliquam, architecto, aspernatur animi corrupti inventore ab numquam necessitatibus ad voluptas illum a maxime, reiciendis ipsa. Dolorum, nisi sit vitae animi libero, illo in ullam aperiam quo aliquid distinctio.
-                Pariatur deleniti omnis nesciunt numquam eius obcaecati, ipsa quibusdam dicta exercitationem quis nulla vero aliquid officia. Perferendis eaque praesentium laudantium exercitationem vero sunt eum nostrum dolorem nemo. Temporibus, error totam?
-              </p>
+                <p className='pt-5 m-5 lg:m-12 lg:p-5 font-sans text-black bg-transparent border lg:h-auto lg:text-xl lg:leading-8 lg:w-[500px] border-gray-600 text-md rounded-2xl opacity-0 group-hover:opacity-100'>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
+                  animi nisi dignissimos. Quo, aspernatur? Sapiente, cumque velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur dolorem ab, commodi ducimus corrupti harum a quam quidem, dolores id nostrum voluptatibus cumque vel? Reprehenderit nisi distinctio consequatur atque!
+                  Perspiciatis mollitia numquam harum hic praesentium laborum aliquid labore in voluptates? Repellat non voluptatibus illo officia quaerat, laudantium recusandae modi ipsam enim a in quis, beatae reprehenderit? Sunt, enim odit?
+                  Veritatis aliquid assumenda ad aperiam velit error ea similique cumque laborum, unde provident dolor earum ullam at eligendi vel id enim excepturi consectetur exercitationem illo consequuntur nesciunt. Accusamus, quidem ipsam.
+                  Eum aliquam, architecto, aspernatur animi corrupti inventore ab numquam necessitatibus ad voluptas illum a maxime, reiciendis ipsa. Dolorum, nisi sit vitae animi libero, illo in ullam aperiam quo aliquid distinctio.
+                  Pariatur deleniti omnis nesciunt numquam eius obcaecati, ipsa quibusdam dicta exercitationem quis nulla vero aliquid officia. Perferendis eaque praesentium laudantium exercitationem vero sunt eum nostrum dolorem nemo. Temporibus, error totam?
+                </p>
               </div>
           </div>
         </div>
         
         <div className='flex flex-col items-center justify-center text-center group' ref={zoom2Ref}>
-            <h1 className='text-4xl font-extrabold lg:ml-40'>Michelle Tran</h1>
-            <p className='italic text-gray-500 lg:ml-40 lg:pb-5'>Managing Partner</p>
+            <h1 className='text-4xl font-extrabold lg:ml-40 lg:text-6xl'>Michelle Tran</h1>
+            <p className='italic text-gray-500 lg:ml-40 lg:pb-5 lg:text-2xl'>Managing Partner</p>
             <div className='relative'>
               <Fade right when={zoom2InView}>
                 <img 
@@ -71,15 +70,15 @@ const AboutMe = () => {
                   src={Mich}
                 />
               </Fade>
-              <div className='absolute bottom-0 right-0 justify-center duration-700 opacity-0 lg:mr-72 group-hover:opacity-100'>
-              <p className=' pt-5 m-5 font-sans text-black bg-transparent border lg:h-[500px] lg:w-[500px] border-gray-600 text-md  rounded-2xl opacity-0 group-hover:opacity-100'> 
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, dicta temporibus id sapiente aut veniam natus ad neque expedita nulla ea commodi 
-                animi nisi dignissimos. Quo, aspernatur? Sapiente, cumque velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur dolorem ab, commodi ducimus corrupti harum a quam quidem, dolores id nostrum voluptatibus cumque vel? Reprehenderit nisi distinctio consequatur atque!
-                Perspiciatis mollitia numquam harum hic praesentium laborum aliquid labore in voluptates? Repellat non voluptatibus illo officia quaerat, laudantium recusandae modi ipsam enim a in quis, beatae reprehenderit? Sunt, enim odit?
-                Veritatis aliquid assumenda ad aperiam velit error ea similique cumque laborum, unde provident dolor earum ullam at eligendi vel id enim excepturi consectetur exercitationem illo consequuntur nesciunt. Accusamus, quidem ipsam.
-                Eum aliquam, architecto, aspernatur animi corrupti inventore ab numquam necessitatibus ad voluptas illum a maxime, reiciendis ipsa. Dolorum, nisi sit vitae animi libero, illo in ullam aperiam quo aliquid distinctio.
-                Pariatur deleniti omnis nesciunt numquam eius obcaecati, ipsa quibusdam dicta exercitationem quis nulla vero aliquid officia. Perferendis eaque praesentium laudantium exercitationem vero sunt eum nostrum dolorem nemo. Temporibus, error totam?
-              </p>
+              <div className='absolute justify-center duration-700 shadow-2xl opacity-0 bg-slate-200 rounded-2xl right-12 bottom-10 lg:mr-72 group-hover:opacity-80'>
+                <p className='pt-5 m-5 lg:m-0 lg:p-5 font-sans text-black bg-transparent border lg:h-auto lg:text-xl lg:leading-8 lg:w-[500px] text-md rounded-2xl opacity-0 group-hover:opacity-100'> 
+                  With a passion for hospitality and a keen eye for delectable menu curation, Michelle has managed operations in food and beverage 
+                  for various luxury high-volume establishments on the Las Vegas strip. Collecting experience from the finest openings with notable 
+                  mention from Catch Las Vegas to Resorts World Allē on 66 and now creating a hospitality brand that aims to assist others in building
+                  and polishing their business goals. Collaborating with the industry’s finest located in Las Vegas, Michelle takes pride in Culinary
+                  Decisions to assist others in effective operational execution while creating the proper training programs to maintain consistency 
+                  and financial literacy. 
+                </p>
               </div>
           </div>
         </div>

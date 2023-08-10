@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import { useEffect } from 'react'
 
-import One from '../src/Images/Slideshow/One.jpg'
+import One from '../src/Images/Slideshow/SlideshowBarDiner.jpg'
 import Two from '../src/Images/Slideshow/OnePOne.jpg'
-import Three from '../src/Images/Slideshow/Two.jpg'
+import Three from '../src/Images/Slideshow/SlideshowBarDiner2.jpg'
 import Four from '../src/Images/Slideshow/TwoPOne.jpg'
-import Five from '../src/Images/Slideshow/Three.jpg'
+import Five from '../src/Images/Slideshow/SlideshowCocktail.jpg'
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -15,11 +15,11 @@ import InitialPage from './InitialPage'
 import Fade from 'react-reveal/Fade'
 
 const slides = [
-  {url: Two},
   {url: One},
-  {url: Three},
   {url: Four},
-  {url:Five}
+  {url: Two},
+  {url: Five},
+  {url:Three}
 ]
 
 const delay = 3000;
@@ -69,13 +69,13 @@ return (
   <div>
     {showContent ? (
       <Fade duration={5000}>
-        <div className='relative bg-white bg-center bg-cover shadow-lg lg:w-screen fade-in'>
+        <div className='relative bg-white bg-center bg-cover shadow-lg fade-in'>
           <div className='justify-center'>
-            <div className='w-[375px] h-[300px] justify-center lg:w-screen lg:h-screen relative'>
+            <div className='w-[375px] h-[300px] justify-center  lg:h-screen relative'>
               {slides.map((slide, slideIndex) => (
                 <div
                   key={slideIndex}
-                  className={`w-[375px] h-[300px] lg:w-full lg:h-full bg-no-repeat bg-cover bg-center rounded-2xl absolute transition-transform duration-${transitionDuration}`}
+                  className={`w-[375px] h-[300px] sm:w-screen lg:h-full bg-no-repeat bg-cover bg-center rounded-2xl absolute transition-transform duration-${transitionDuration}`}
                   style={{
                     backgroundImage: `url(${slide.url})`,
                     transform: `translateX(${-100 * (currentIndex - slideIndex)}%)`,
@@ -104,14 +104,14 @@ return (
             className='group-hover:block absolute lg:top-[50%] top-[25%] -translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 bg-black/20 text-white cursor-pointer hover:bg-white hover:text-black'
             onClick={prevSlide}
           >
-            <ArrowBackIosIcon size={60} />
+            <ArrowBackIosIcon size={80} />
           </div>
           {/* Right Arrow */}
           <div
             className='group-hover:block absolute lg:top-[50%] top-[25%] -translate-x-0 translate-y-[-50%] right-5 rounded-full p-2 bg-black/20 text-white cursor-pointer hover:bg-white hover:text-black'
             onClick={nextSlide}
           >
-            <ArrowForwardIosIcon size={60} />
+            <ArrowForwardIosIcon size={80} />
           </div>
         </div>
     </Fade>
