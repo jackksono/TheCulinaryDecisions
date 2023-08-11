@@ -1,11 +1,14 @@
 import React, {useState} from 'react'
 import { useEffect } from 'react'
 
-import One from '../src/Images/Slideshow/SlideshowBarDiner.jpg'
 import Two from '../src/Images/Slideshow/OnePOne.jpg'
 import Three from '../src/Images/Slideshow/SlideshowBarDiner2.jpg'
 import Four from '../src/Images/Slideshow/TwoPOne.jpg'
 import Five from '../src/Images/Slideshow/SlideshowCocktail.jpg'
+import Six from '../src/Images/Slideshow/Slideshow6.jpg'
+import Seven from '../src/Images/Slideshow/Slideshow7.jpg'
+import Eight from '../src/Images/Slideshow/Slideshow8.jpg'
+import Nine from '../src/Images/Slideshow/Slideshow9.jpg'
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -14,12 +17,15 @@ import InitialPage from './InitialPage'
 
 import Fade from 'react-reveal/Fade'
 
-const slides = [
-  {url: One},
-  {url: Four},
-  {url: Two},
-  {url: Five},
-  {url:Three}
+const slides = [ 
+  {url: Two}, //scallop crudo
+  {url: Three},  //another bar diner
+  {url: Eight}, //pool side 
+  {url: Five}, //five is cocktail
+  {url: Six}, //pool side 
+  {url: Seven}, //resteraunt 
+  {url: Four}, //anotehr food
+  {url: Nine} //villa
 ]
 
 const delay = 3000;
@@ -69,16 +75,16 @@ return (
   <div>
     {showContent ? (
       <Fade duration={5000}>
-        <div className='relative bg-white bg-center bg-cover shadow-lg fade-in'>
+        <div className='relative overflow-auto bg-white shadow-lg fade-in'>
           <div className='justify-center'>
-            <div className='w-[375px] h-[300px] justify-center  lg:h-screen relative'>
+            <div className='relative justify-center overflow-x-hidden sm:w-screen lg:h-screen'>
               {slides.map((slide, slideIndex) => (
                 <div
                   key={slideIndex}
-                  className={`w-[375px] h-[300px] sm:w-screen lg:h-full bg-no-repeat bg-cover bg-center rounded-2xl absolute transition-transform duration-${transitionDuration}`}
+                  className={`w-[375px] h-[300px] sm:w-screen  sm:h-full bg-no-repeat bg-cover bg-center rounded-2xl absolute transition-transform duration-${transitionDuration}`}
                   style={{
                     backgroundImage: `url(${slide.url})`,
-                    transform: `translateX(${-100 * (currentIndex - slideIndex)}%)`,
+                    transform: `translateX(${100 * (currentIndex - slideIndex)}%)`,
                     opacity: currentIndex === slideIndex ? 1 : 0,
                     transition: `opacity ${transitionDuration}ms ease-in-out, transform ${transitionDuration}ms ease-in-out`,
                   }}
