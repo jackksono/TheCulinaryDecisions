@@ -94,15 +94,32 @@ const ContactUs = (props) => {
             
                 
             <div className="pl-6 text-lg text-black">
-                <span className="pl-3 text-sm font-bold text-black lg:flex lg:text-2xl font-Montserrat">Name:</span>
-                <input className="flex justify-center p-1 m-1 lg:m-3 border-2 h-[25px] lg:h-auto border-black border-solid  w-11/12 text-md lg:text-lg focus:outline-none focus:border-4 focus:border-solid focus:shadow-2xl bg-opacity-90 rounded-xl" 
-                type='text' name='name' id="" onChange={handleChange} value={data.name} placeholder="Enter name"/>
+                <span className="pl-3 text-sm font-bold text-black lg:flex lg:text-2xl font-Montserrat">Name <span className='lg:text-sm'>(required)</span></span>
+                <input 
+                  className="flex justify-center p-1 m-1 lg:m-3 border-2 h-[25px] lg:h-auto border-black border-solid  w-11/12 text-md lg:text-lg focus:outline-none focus:border-4 focus:border-solid focus:shadow-2xl bg-opacity-90 rounded-xl" 
+                  type='text' 
+                  name='name' 
+                  id=""
+                  onChange={handleChange} 
+                  value={data.name} 
+                  placeholder="Enter name"
+                  required
+                 />
             </div>
 
             <div className="pl-6 text-lg text-black lg:pt-2">
-                <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Email:</span>
-                <input className="flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto border-2  border-black border-solid lg:text-lg focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
-                type='email' name='email' id="" onChange={twoCalls}  value={data.email} placeholder="example@gmail.com"/>
+                <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Email <span className='lg:text-sm'>(required)</span></span>
+                <input 
+                  className="flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto border-2  border-black border-solid lg:text-lg focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
+                  type='email' 
+                  name='email' 
+                  id="" 
+                  onChange={twoCalls}  
+                  value={data.email} 
+                  placeholder="example@gmail.com"
+                  required>
+                </input>
+               
                 <h2 className= "font-semibold text-center text-red-900 underline text-md ">{validEmail ? <EmailResponse/> : null }</h2> 
             </div>
 
@@ -113,14 +130,15 @@ const ContactUs = (props) => {
             </div>
 
             <div className="pl-6 text-lg text-black lg:pt-2">
-                <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Service Requested:</span>
+                <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Service Requested <span className='lg:text-sm'>(required)</span></span>
                   <input className="relative flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
                     type='serviceRequested' 
                     name='serviceRequested' 
                     id="" 
                     onClick={toggle}
                     value={serviceRequested} 
-                    placeholder="List of Services...">
+                    placeholder="List of Services..."
+                    required>
                   </input>
                   <RiArrowDropDownLine 
                     className='arrow absolute lg:text-[120px] text-black transform lg:-translate-y-1/2 lg:right-0 lg:mb-10 lg:pb-16 lg:mr-12 lg:cursor-pointer'
@@ -140,14 +158,24 @@ const ContactUs = (props) => {
                       <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Nightlife Consulting'); toggle()}}>Nightlife Consulting</ul>
                       <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Open Venue Protocol'); toggle()}}>Open Venue Protocol</ul>
                       <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Sourcing'); toggle()}}>Sourcing</ul>
+                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Other'); toggle()}}>Other</ul>
                     </div>
                   </div>
             </div>
 
-            <div className="pl-6 text-lg text-black lg:pt-2">
-                <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Message:</span>
-                <textarea className="flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[75px] lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none focus:border-4 rounded-xl focus:border-solid focus:shadow-2xl" 
-                name='message' id='' cols='30' rows='7' onChange={messageChange} value={message} placeholder="Enter message here..."/>
+            <div className="pl-6 text-black align-baseline lg:pt-2">
+                <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Message <span className='lg:text-sm'>(required)</span></span>
+                <textarea 
+                  className="flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[75px] lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none focus:border-4 rounded-xl focus:border-solid focus:shadow-2xl" 
+                  name='message' 
+                  id='' 
+                  cols='30' 
+                  rows='7' 
+                  onChange={messageChange} 
+                  value={message} 
+                  placeholder="Enter message here..."
+                  required>
+                </textarea>
             </div>
             
             <h2 className= "justify-center pb-2 text-lg text-center text-white">{result ? <Result/> : null}</h2>
