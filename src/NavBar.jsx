@@ -7,7 +7,7 @@ import Logo from '../src/Images/Logo/PNG-02.png'
 
 import Fade from 'react-reveal/Fade'
 
-const AboutUs = lazy(() => import('./Pages/AboutUs'))
+const Services = lazy(() => import('./Pages/Services'))
 const Media = lazy(() => import('./Pages/Media'))
 const AboutMe = lazy(() => import('./Pages/AboutMe'))
 const Home = lazy(() => import('./Home'))
@@ -30,7 +30,7 @@ const NavBar = () => {
     <>
     <Headroom>
       <Fade duration={3000}>
-        <nav className="hidden nav w-screen p-2 top-0 lg:static fixed inset-x-0 bg-white h-[100px] drop-shadow-2xl justify-content-end">
+        <nav className="hidden nav w-screen p-2 top-0 lg:static fixed inset-x-0 bg-white h-[100px] drop-shadow-lg justify-content-end">
             <div className="">
               <img 
               src={Logo}
@@ -61,7 +61,7 @@ const NavBar = () => {
                   
                 
                   <div className="left-0 flex flex-col lg:flex-row lg:bg-transparent lg:items-center lg:flex-non lg:gap-10">
-                    <Link to="/about-us">
+                    <Link to="/services">
                       <button className="font-Montserrat text-[10px] lg:text-lg lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500">
                         SERVICES
                       </button>
@@ -95,7 +95,7 @@ const NavBar = () => {
             <Route path="/" element={<Home />} />
             <Route path="/team" element={<AboutMe />} />
             <Route path="/media" element={<Media />} />
-            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
       </Suspense>
