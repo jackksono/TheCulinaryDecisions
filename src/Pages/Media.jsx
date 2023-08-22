@@ -14,12 +14,12 @@ import Titos from '../Images/Icons/Titos.jpg'
 const Media = () => {
 
   return (
-    <div className='flex flex-col items-center justify-center h-screen bg-white pt-96'>
+    <div className='flex flex-col items-center justify-center bg-white lg:pt-40'>
       <div className='relative flex items-center justify-center w-3/4 py-5 mx-auto text-center bg-black left-1/8 top-1/4'>
           <h1 className='flex items-center justify-center font-extrabold text-white xl:text-4xl font-Montserrat '>PRESS + AWARDS</h1>
       </div>
 
-    <div className='flex mt-96 lg:pt-0 lg:mt-60'>
+    <div className='flex mt-96 lg:mt-20'>
         <div className='grid items-center justify-center grid-cols-3 overflow-y-hidden auto-cols-max lg:gap-4 lg:grid-cols-5 place-content-center '>
         
           <img className='w-[337px] h-[337px]' alt='icon1' src='https://static.wixstatic.com/media/355ff6_dc41f715debd4e9d89f0a2592adeaeaa~mv2.jpg/v1/fill/w_337,h_337,q_90/355ff6_dc41f715debd4e9d89f0a2592adeaeaa~mv2.webp'></img>
@@ -37,9 +37,9 @@ const Media = () => {
 
           <img className='w-[337px] h-[337px] grayscale transform scale-75' alt='icon5' src={Catch}></img>
           <img className='w-[337px] h-[337px] grayscale transform scale-75 ' alt='icon5' src={Titos}></img>
+          {/* <img className='w-[337px] h-[337px] grayscale transform scale-50' alt='icon5' src={Icon5}></img>
           <img className='w-[337px] h-[337px] grayscale transform scale-50' alt='icon5' src={Icon5}></img>
-          <img className='w-[337px] h-[337px] grayscale transform scale-50' alt='icon5' src={Icon5}></img>
-          <img className='w-[337px] h-[337px] grayscale transform scale-50' alt='icon5' src={Icon5}></img>
+          <img className='w-[337px] h-[337px] grayscale transform scale-50' alt='icon5' src={Icon5}></img> */}
         </div>
       </div>
     </div>
