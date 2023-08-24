@@ -20,7 +20,7 @@ const Media = () => {
       </div>
 
     <div className='flex mt-96 lg:mt-20'>
-        <div className='grid items-center justify-center grid-cols-3 overflow-y-hidden auto-cols-max lg:gap-4 lg:grid-cols-5 place-content-center '>
+        <div className='grid items-center justify-center grid-cols-3 overflow-y-hidden auto-cols-max lg:gap-4 lg:grid-cols-4 place-content-center '>
         
           <img className='w-[337px] h-[337px]' alt='icon1' src='https://static.wixstatic.com/media/355ff6_dc41f715debd4e9d89f0a2592adeaeaa~mv2.jpg/v1/fill/w_337,h_337,q_90/355ff6_dc41f715debd4e9d89f0a2592adeaeaa~mv2.webp'></img>
           <img className='w-[337px] h-[337px]' alt='icon2' src={Icon2}></img>

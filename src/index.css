@@ -22,3 +22,13 @@
     opacity: 1;
     transition: opacity 1s ease-in-out;
   }
+
+  .rec.rec-arrow-right:hover {
+    background-color: black !important;
+    color: white !important
+  }
+
+  .rec.rec-arrow-left:hover {
+    background-color: black !important;
+    color: white !important
+  }

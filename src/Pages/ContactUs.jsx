@@ -84,7 +84,7 @@ const ContactUs = (props) => {
   };
 
   return props.trigger ? (
-    <div className="fixed z-10 lg:mb-28 overflow-auto lg:inset-x-0 justify-center lg:mx-auto w-84 lg:w-1/2 lg:h-[820px] items-center bg-white bg-opacity-80 rounded-xl box-shadow-inset-0--3em-3em-opacity-10" ref={clickAway} >
+    <div className="fixed z-10 lg:mb-28 overflow-auto lg:inset-x-0 justify-center lg:mx-auto w-84 lg:w-1/2 lg:h-[820px] items-center bg-white  rounded-xl box-shadow-inset-0--3em-3em-opacity-10" ref={clickAway} >
        
         <form className="" method="post" onSubmit={(e) => sendMail(e, serviceRequested)}>
             <div className='flex justify-end pr-5 text-2xl text-black'>    
@@ -94,7 +94,7 @@ const ContactUs = (props) => {
             
                 
             <div className="pl-6 text-lg text-black">
-                <span className="pl-3 text-sm font-bold text-black lg:flex lg:text-2xl font-Montserrat">Name <span className='lg:text-sm'>(required)</span></span>
+                <span className="pl-3 text-sm font-bold text-black lg:flex lg:text-2xl font-Montserrat">Name (required)</span>
                 <input 
                   className="flex justify-center p-1 m-1 lg:m-3 border-2 h-[25px] lg:h-auto border-black border-solid  w-11/12 text-md lg:text-lg focus:outline-none focus:border-4 focus:border-solid focus:shadow-2xl bg-opacity-90 rounded-xl" 
                   type='text' 
