@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { lazy, Suspense } from 'react'
 import { Route, Routes, Link } from 'react-router-dom'
-import Headroom from 'react-headroom'
 
 import Logo from '../src/Images/Logo/PNG-02.png'
 
@@ -28,9 +27,9 @@ const NavBar = () => {
 
   return (
     <>
-    <Headroom>
+    
       <Fade duration={3000}>
-        <nav className="hidden nav w-screen p-2 top-0 lg:static fixed inset-x-0 bg-white h-[100px] drop-shadow-lg justify-content-end">
+        <nav className="hidden nav w-screen p-2 top-0 lg:fixed inset-x-0 bg-white h-[100px] drop-shadow-lg justify-content-end z-10">
             <div className="">
               <img 
               src={Logo}
@@ -89,7 +88,7 @@ const NavBar = () => {
             </div>
           </nav>
         </Fade>
-        </Headroom>
+        
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
