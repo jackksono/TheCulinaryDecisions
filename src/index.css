@@ -27,6 +27,14 @@
     background-color: black !important;
     color: white !important
   }
+  .rec.rec-arrow-right {
+    background-color: white !important;
+    color: black !important
+  }
+  .rec.rec-arrow-left {
+    background-color: white !important;
+    color: black !important
+  }
 
   .rec.rec-arrow-left:hover {
     background-color: black !important;
