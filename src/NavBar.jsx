@@ -32,9 +32,11 @@ const NavBar = () => {
         <nav className="hidden nav w-screen p-2 top-0 lg:fixed inset-x-0 bg-white h-[100px] drop-shadow-lg justify-content-end z-10">
             <div className="">
               <img 
-              src={Logo}
-              alt="logo"
-              className="h-[100px] w-[100px] lg:h-[200px] lg:w-[400px] absolute top-1/2 left-1/2 transform scale-150 mt-2  -translate-x-1/2 -translate-y-1/2"></img>
+                src={Logo}
+                alt="logo"
+                className="h-[100px] w-[100px] lg:h-[200px] lg:w-[400px] absolute top-1/2 left-1/2 transform scale-150 mt-2  -translate-x-1/2 -translate-y-1/2"
+                loading='lazy'>
+              </img>
             </div>
             <div className="pt-6 text-2xl text-black lg:hidden">
               <button >

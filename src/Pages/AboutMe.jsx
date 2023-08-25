@@ -28,10 +28,8 @@ const AboutMe = () => {
           src={Dining}
           alt='diningPhoto'
           className='relative object-cover w-screen object-center h-[700px] shadow-lg'
-        ></img>
-        {/* <div className='absolute top-0 left-0 flex items-center justify-center w-full h-full'>
-          <h1 className='flex p-2 font-bold text-white border border-white font-Montserrat text-7xl'>Meet The Team</h1>
-        </div> */}
+          loading='lazy'>
+        </img>
       </div>
 
       <div className='grid justify-center grid-cols-2 gap-8 p-5 xl:pt-20'>
@@ -44,6 +42,7 @@ const AboutMe = () => {
                   className='shadow-xl rounded-full h-[500px] w-auto lg:mr-40'
                   alt='Headshot'
                   src={Lev}
+                  loading='lazy'
                 />
               </Fade>
               <div className='absolute bottom-0 justify-center duration-700 shadow-2xl opacity-0 bg-slate-200 rounded-2xl left-12 lg:ml-72 group-hover:opacity-80'>
@@ -68,6 +67,7 @@ const AboutMe = () => {
                   className='shadow-xl rounded-full h-[500px] w-auto lg:ml-40'
                   alt='Headshot'
                   src={Mich}
+                  loading='lazy'
                 />
               </Fade>
               <div className='absolute justify-center duration-700 shadow-2xl opacity-0 bg-slate-200 rounded-2xl right-12 bottom-10 lg:mr-72 group-hover:opacity-80'>

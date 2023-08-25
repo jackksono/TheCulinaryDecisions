@@ -82,6 +82,7 @@ return (
                 <div
                   key={slideIndex}
                   className={`w-[375px] h-[300px] sm:w-screen  sm:h-full bg-no-repeat bg-cover bg-center rounded-2xl absolute transition-transform duration-${transitionDuration}`}
+                  loading='lazy'
                   style={{
                     backgroundImage: `url(${slide.url})`,
                     transform: `translateX(${100 * (currentIndex - slideIndex)}%)`,
@@ -99,6 +100,7 @@ return (
                   className={`inline-block mx-2 text-4xl transition duration-150 ease-in-out cursor-pointer hover:text-white hover:scale-150 ${
                     currentIndex === slideIndex ? 'text-white' : 'text-gray-300'
                   }`}
+                  loading='lazy'
                 >
                   <RxDotFilled />
                 </div>

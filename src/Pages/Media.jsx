@@ -22,21 +22,21 @@ const Media = () => {
     <div className='flex mt-96 lg:mt-20'>
         <div className='grid items-center justify-center grid-cols-3 overflow-y-hidden auto-cols-max lg:gap-4 lg:grid-cols-4 place-content-center '>
         
-          <img className='w-[337px] h-[337px]' alt='icon1' src='https://static.wixstatic.com/media/355ff6_dc41f715debd4e9d89f0a2592adeaeaa~mv2.jpg/v1/fill/w_337,h_337,q_90/355ff6_dc41f715debd4e9d89f0a2592adeaeaa~mv2.webp'></img>
-          <img className='w-[337px] h-[337px]' alt='icon2' src={Icon2}></img>
-          <img className='w-[337px] h-[337px]' alt='icon3' src='https://static.wixstatic.com/media/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.jpg/v1/fill/w_337,h_337,q_90/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.webp%201x,%20https://static.wixstatic.com/media/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.jpg/v1/fill/w_674,h_674,q_90/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.webp%202x,%20https://static.wixstatic.com/media/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.jpg/v1/fill/w_1011,h_1011,q_90/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.webp%203x,%20https://static.wixstatic.com/media/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.jpg/v1/fill/w_1348,h_1348,q_90/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.webp%204x,%20https://static.wixstatic.com/media/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.jpg/v1/fill/w_1685,h_1685,q_90/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.webp%205x'></img>
-          <img className='w-[337px] h-[337px] grayscale' alt='icon4' src={Icon4}></img>
-          <img className='w-[337px] h-[337px] grayscale transform scale-50' alt='icon5' src={Icon5}></img>
+          <img className='w-[337px] h-[337px]' alt='icon1' src='https://static.wixstatic.com/media/355ff6_dc41f715debd4e9d89f0a2592adeaeaa~mv2.jpg/v1/fill/w_337,h_337,q_90/355ff6_dc41f715debd4e9d89f0a2592adeaeaa~mv2.webp' loading='lazy'></img>
+          <img className='w-[337px] h-[337px]' alt='icon2' src={Icon2} loading='lazy'></img>
+          <img className='w-[337px] h-[337px]' alt='icon3' src='https://static.wixstatic.com/media/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.jpg/v1/fill/w_337,h_337,q_90/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.webp%201x,%20https://static.wixstatic.com/media/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.jpg/v1/fill/w_674,h_674,q_90/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.webp%202x,%20https://static.wixstatic.com/media/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.jpg/v1/fill/w_1011,h_1011,q_90/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.webp%203x,%20https://static.wixstatic.com/media/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.jpg/v1/fill/w_1348,h_1348,q_90/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.webp%204x,%20https://static.wixstatic.com/media/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.jpg/v1/fill/w_1685,h_1685,q_90/355ff6_59ba58f4fefa4adba75d4d9b66d243ee~mv2.webp%205x' loading='lazy'></img>
+          <img className='w-[337px] h-[337px] grayscale' alt='icon4' src={Icon4} loading='lazy'></img>
+          <img className='w-[337px] h-[337px] grayscale transform scale-50' alt='icon5' src={Icon5} loading='lazy'></img>
 
           
-          <img className='lg:w-[337px] lg:h-[337px] grayscale lg:transform lg:scale-75' alt='mgm' src={Mgm}></img>
-          <img className='lg:w-[337px] lg:h-[337px] grayscale lg:transform lg:scale-75' alt='mirage' src={Mirage}></img>
-          <img className='lg:w-[337px] lg:h-[337px] grayscale lg:transform lg:scale-75' alt='resortsworld' src={ResortWorld}></img>
-          <img className='w-[337px] h-[337px] grayscale transform scale-50' alt='icon5' src={FiftyEggs}></img>
-          <img className='w-[337px] h-[337px] grayscale transform ' alt='icon5' src={BrownForeman}></img>
+          <img className='lg:w-[337px] lg:h-[337px] grayscale lg:transform lg:scale-75' alt='mgm' src={Mgm} loading='lazy'></img>
+          <img className='lg:w-[337px] lg:h-[337px] grayscale lg:transform lg:scale-75' alt='mirage' src={Mirage} loading='lazy'></img>
+          <img className='lg:w-[337px] lg:h-[337px] grayscale lg:transform lg:scale-75' alt='resortsworld' src={ResortWorld} loading='lazy'></img>
+          <img className='w-[337px] h-[337px] grayscale transform scale-50' alt='icon5' src={FiftyEggs} loading='lazy'></img>
+          <img className='w-[337px] h-[337px] grayscale transform ' alt='icon5' src={BrownForeman} loading='lazy'></img>
 
-          <img className='w-[337px] h-[337px] grayscale transform scale-75' alt='icon5' src={Catch}></img>
-          <img className='w-[337px] h-[337px] grayscale transform scale-75 ' alt='icon5' src={Titos}></img>
+          <img className='w-[337px] h-[337px] grayscale transform scale-75' alt='icon5' src={Catch} loading='lazy'></img>
+          <img className='w-[337px] h-[337px] grayscale transform scale-75 ' alt='icon5' src={Titos} loading='lazy'></img>
           {/* <img className='w-[337px] h-[337px] grayscale transform scale-50' alt='icon5' src={Icon5}></img>
           <img className='w-[337px] h-[337px] grayscale transform scale-50' alt='icon5' src={Icon5}></img>
           <img className='w-[337px] h-[337px] grayscale transform scale-50' alt='icon5' src={Icon5}></img> */}
