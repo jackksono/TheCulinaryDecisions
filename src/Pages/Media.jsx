@@ -1,16 +1,16 @@
 import React from 'react'
 
 import LasVegasWoman from '../Images/Icons/LasVegasWoman.jpg'
-
+import ResortsWorld from '../Images/Icons/resortsWorld.jpg'
 import NevadaWBC from '../Images/Icons/NevadaWBC.jpg'
 import Mirage from '../Images/Icons/mirage.jpg'
 import Mgm from '../Images/Icons/mgmgrand.png'
-import ResortWorld from '../Images/Icons/ze4carnpjqzdyuvcsi3m.webp'
 import FiftyEggs from '../Images/Icons/50eggs.jpg'
 import BrownForeman from '../Images/Icons/brownforeman.jpg'
 import Catch from '../Images/Icons/catch.jpg'
 import Titos from '../Images/Icons/Titos.jpg'
 import ReviewJournal from '../Images/Icons/ReviewJournal.jpg'
+import Forbes from '../Images/Icons/forbes.jpg'
 
 const Media = () => {
 
@@ -29,12 +29,13 @@ const Media = () => {
           <img className='lg:w-[337px] lg:h-[337px] grayscale lg:transform lg:scale-75' alt='Mgm' src={Mgm} loading='lazy'></img>
           
           <img className='lg:w-[337px] lg:h-[337px] grayscale lg:transform lg:scale-75' alt='Mirage' src={Mirage} loading='lazy'></img>
-          <img className='lg:w-[337px] lg:h-[337px] grayscale lg:transform lg:scale-75' alt='ResortWorld' src={ResortWorld} loading='lazy'></img>
+          <img className='lg:w-[337px] lg:h-[337px] grayscale lg:transform lg:scale-75' alt='ResortWorld' src={ResortsWorld} loading='lazy'></img>
           <img className='w-[337px] h-[337px] grayscale transform scale-50' alt='FiftyEggs' src={FiftyEggs} loading='lazy'></img>
           <img className='w-[337px] h-[337px] grayscale transform' alt='BrownForeman' src={BrownForeman} loading='lazy'></img>
 
           <img className='w-[337px] h-[337px] grayscale transform scale-75' alt='Catch' src={Catch} loading='lazy'></img>
           <img className='w-[337px] h-[337px] grayscale transform scale-75 ' alt='Titos' src={Titos} loading='lazy'></img>
+          <img className='w-[337px] h-[337px] grayscale transform scale-75 ' alt='Forbes' src={Forbes} loading='lazy'></img>
          
         </div>
       </div>

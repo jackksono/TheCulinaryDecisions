@@ -12,7 +12,7 @@ const breakPoints = [
 
 const AboutUs = () => {
   return (
-      <div className='flex flex-col h-screen bg-white lg:mt-0 pt-60 lg:pt-0'>
+      <div className='flex flex-col h-screen pt-40 bg-white lg:mt-0 lg:pt-0'>
         <div className='relative flex justify-center w-3/4 py-5 mx-auto text-center bg-black lg:top-1/4 left-1/8'>
             <h1 className='flex items-center justify-center font-extrabold text-white xl:text-4xl font-Montserrat '>SERVICES</h1>
         </div>
