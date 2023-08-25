@@ -91,7 +91,7 @@ const NavBar = () => {
           </nav>
         </Fade>
         
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className='items-center justify-center'><div>Loading...</div></div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/team" element={<AboutMe />} />
