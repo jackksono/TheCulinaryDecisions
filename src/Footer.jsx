@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>Do we want to include a footer in the file?</div>
   )
 }
 
