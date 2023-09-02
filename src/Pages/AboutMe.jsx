@@ -45,8 +45,8 @@ const AboutMe = () => {
                   loading='lazy'
                 />
               </Fade>
-              <div className='absolute bottom-0 justify-center duration-700 shadow-2xl opacity-0 bg-slate-200 rounded-2xl left-12 lg:ml-72 group-hover:opacity-80'>
-                <p className='pt-5 m-5 lg:m-0 lg:p-5 text-black bg-transparent border lg:h-auto lg:text-xl font-semibold lg:leading-8 lg:w-[500px] text-md rounded-2xl opacity-0 group-hover:opacity-100 font-Montserrat'>
+              <div className='absolute justify-center duration-700 shadow-2xl opacity-0 bottom-20 bg-slate-200 rounded-2xl left-12 lg:ml-72 group-hover:opacity-80'>
+                <p className='pt-5 m-5 lg:m-0 lg:p-5 text-black bg-transparent border lg:h-auto lg:text-sm font-semibold lg:leading-8 lg:w-[500px] text-md rounded-2xl opacity-0 group-hover:opacity-100 font-Montserrat'>
                 A first-generation American, Levan offers a diverse and unique perspective. With over 20 years' experience in luxury resort 
                 operations and leadership, she has collaborated with a variety of hospitality powerhouses across the Las Vegas strip. 
                 Her passion for curating new and innovative concepts led her to spearhead the opening of Resorts World Las Vegas as the Director
@@ -70,11 +70,16 @@ const AboutMe = () => {
                   loading='lazy'
                 />
               </Fade>
-              <div className='absolute justify-center duration-700 shadow-2xl opacity-0 bg-slate-200 rounded-2xl right-12 bottom-10 lg:mr-72 group-hover:opacity-80'>
+              <div className='absolute justify-center duration-700 shadow-2xl opacity-0 bottom-5 bg-slate-200 rounded-2xl right-12 lg:mr-72 group-hover:opacity-80'>
                 <p className='pt-5 m-5 lg:m-0 lg:p-5 text-black bg-transparent border lg:h-auto lg:text-sm font-semibold lg:leading-8 lg:w-[500px] text-md rounded-2xl opacity-0 group-hover:opacity-100 font-Montserrat'> 
-                Michelle, fueled by her unwavering dedication to the hospitality industry and an impeccable knack for crafting exquisite menus, boasts an impressive track record of overseeing operations at prestigious high-volume establishments nestled along the illustrious Las Vegas Strip. Her journey has been punctuated by stints at renowned venues such as Catch Las Vegas and Resorts World Allē on 66, where her contributions earned notable recognition. Presently, she is at the helm of an ambitious venture dedicated to elevating the hospitality landscape by providing invaluable support for entrepreneurs seeking to refine and elevate their business objectives.
+                  Michelle, fueled by her unwavering dedication to the hospitality industry and an impeccable knack for crafting exquisite menus, 
+                  boasts an impressive track record of overseeing operations at prestigious high-volume establishments nestled along the 
+                  illustrious Las Vegas Strip. Her journey has been punctuated by stints at renowned venues such as Catch Las Vegas and Resorts 
+                  World Allē on 66, where her contributions earned notable recognition. Presently, she is at the helm of an ambitious venture 
+                  dedicated to elevating the hospitality landscape by providing invaluable support for entrepreneurs seeking to refine and elevate 
+                  their business objectives. Here, she leverages her expertise to facilitate effective operational execution while developing comprehensive training programs
+                   that emphasize consistency and financial acumen. 
 
-In her role as a collaborator with some of Las Vegas's most esteemed industry professionals, Michelle takes immense pride in her role at Culinary Decisions. Here, she leverages her expertise to facilitate effective operational execution while developing comprehensive training programs that emphasize consistency and financial acumen. Her commitment to excellence shines as she assists others in navigating the complex intricacies of the culinary world and ensures their businesses flourish.
                 </p>
               </div>
           </div>

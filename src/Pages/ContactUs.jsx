@@ -84,19 +84,16 @@ const ContactUs = (props) => {
   };
 
   return props.trigger ? (
-    <div className="fixed z-10 lg:mb-28 overflow-auto lg:inset-x-0 justify-center lg:mx-auto w-84 lg:w-1/2 lg:h-[820px] items-center bg-white  rounded-xl box-shadow-inset-0--3em-3em-opacity-10" ref={clickAway} >
-       
+    <div className="fixed z-10 overflow-auto  lg:inset-x-0 justify-center lg:mx-auto w-84 lg:w-1/2 lg:h-[700px] items-center bg-white  rounded-xl box-shadow-inset-0--3em-3em-opacity-10" ref={clickAway}>
         <form className="" method="post" onSubmit={(e) => sendMail(e, serviceRequested)}>
-            <div className='flex justify-end pr-5 text-2xl text-black'>    
+            <div className='flex justify-end pr-5 text-2xl text-black font-Montserrat'>    
                 <button  onClick={() => props.setTrigger(false)}>X</button>
             </div>
-            <h1 className="flex justify-center text-2xl font-extrabold text-black lg:text-4xl font-Montserrat">Business Inquiries</h1>
-            
-                
+            <h1 className="flex justify-center text-2xl font-extrabold text-black lg:text-4xl font-Montserrat">Business Inquiries</h1> 
             <div className="pl-6 text-lg text-black">
-                <span className="pl-3 text-sm font-bold text-black lg:flex lg:text-2xl font-Montserrat">Name (required)</span>
+                <span className="pl-3 text-sm font-bold text-black lg:flex lg:text-2xl font-Montserrat">Name  <span className='lg:text-sm'>(required)</span></span>
                 <input 
-                  className="flex justify-center p-1 m-1 lg:m-3 border-2 h-[25px] lg:h-auto border-black border-solid  w-11/12 text-md lg:text-lg focus:outline-none focus:border-4 focus:border-solid focus:shadow-2xl bg-opacity-90 rounded-xl" 
+                  className="flex justify-center p-1 m-1 lg:m-3 border-2 h-[25px] lg:h-auto border-black border-solid font-Montserrat w-11/12 text-md lg:text-lg focus:outline-none focus:border-4 focus:border-solid focus:shadow-2xl bg-opacity-90 rounded-xl" 
                   type='text' 
                   name='name' 
                   id=""
@@ -110,7 +107,7 @@ const ContactUs = (props) => {
             <div className="pl-6 text-lg text-black lg:pt-2">
                 <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Email <span className='lg:text-sm'>(required)</span></span>
                 <input 
-                  className="flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto border-2  border-black border-solid lg:text-lg focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
+                  className="flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto border-2 font-Montserrat  border-black border-solid lg:text-lg focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
                   type='email' 
                   name='email' 
                   id="" 
@@ -120,18 +117,18 @@ const ContactUs = (props) => {
                   required>
                 </input>
                
-                <h2 className= "font-semibold text-center text-red-900 underline text-md ">{validEmail ? <EmailResponse/> : null }</h2> 
+                <h2 className= "font-semibold text-center text-red-900 underline text-md font-Montserrat">{validEmail ? <EmailResponse/> : null }</h2> 
             </div>
 
             <div className="pl-6 text-lg text-black lg:pt-2">
                 <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Phone Number:</span>
-                <input className="flex justify-center p-1 m-1 lg:m-3 border-2 h-[25px] lg:h-auto border-black border-solid  w-11/12 text-md lg:text-lg focus:outline-none focus:border-4 focus:border-solid focus:shadow-2xl bg-opacity-90 rounded-xl" 
+                <input className="flex justify-center p-1 m-1 lg:m-3 border-2 h-[25px] lg:h-auto border-black border-solid font-Montserrat w-11/12 text-md lg:text-lg focus:outline-none focus:border-4 focus:border-solid focus:shadow-2xl bg-opacity-90 rounded-xl" 
                 type='phone' name='phone' id="" onChange={handleChange} value={data.phone} placeholder="+1 (xxx)-xxx-xxxx"/>
             </div>
 
             <div className="pl-6 text-lg text-black lg:pt-2">
                 <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Service Requested <span className='lg:text-sm'>(required)</span></span>
-                  <input className="relative flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
+                  <input className="relative flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[25px] font-Montserrat lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
                     type='serviceRequested' 
                     name='serviceRequested' 
                     id="" 
@@ -166,7 +163,7 @@ const ContactUs = (props) => {
             <div className="pl-6 text-black align-baseline lg:pt-2">
                 <span className="pl-3 text-sm font-bold lg:flex lg:text-2xl font-Montserrat">Message <span className='lg:text-sm'>(required)</span></span>
                 <textarea 
-                  className="flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[75px] lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none focus:border-4 rounded-xl focus:border-solid focus:shadow-2xl" 
+                  className="flex justify-center w-11/12 p-1 m-1 lg:m-3 h-[75px] font-Montserrat lg:h-auto text-md lg:text-lg border-2 border-black border-solid focus:outline-none focus:border-4 rounded-xl focus:border-solid focus:shadow-2xl" 
                   name='message' 
                   id='' 
                   cols='30' 

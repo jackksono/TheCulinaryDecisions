@@ -20,7 +20,16 @@ const breakPoints = [
 
 const AboutUs = () => {
 
-  const [learnMoreActive, setLearnMoreActive ] = useState(false)
+  const [ brandMarketingScreen, setbrandMarketingScreen ] = useState(false)
+  const [ customMerchandiseScreen, setcustomMerchandiseScreen ] = useState(false)
+  const [ eventPlanningScreen, setEventPlanningScreen ] = useState(false)
+  const [ foodandBeverageScreen, setFoodAndBeverageScreen ] = useState(false)
+  const [ hospitalityConsultingScreen, setHospitalityConsultingScreen ] = useState(false);
+  const [ nightLifeConsultingScreen, setNightLifeConsultingScreen ]  = useState(false);
+  const [ openVenueProtocolScreen, setOpenVenueProtocolScreen ] = useState(false)
+  const [ sourcingScreen, setSourcingScreen ] = useState(false);
+  const [ webDevelopmentScreen, setWebDevelopmentScreen ] = useState(false)
+
   return (
       <div className='flex flex-col h-screen pt-40 bg-white lg:mt-0 lg:pt-0'>
         <div className='relative flex justify-center w-3/4 py-5 mx-auto text-center bg-black lg:top-1/4 left-1/8'>
@@ -48,91 +57,247 @@ const AboutUs = () => {
           </p>
       </div>
 
-        <div className='mt-20 sm:mt-20'>
+        <div className='justify-center mt-20 sm:mt-20'>
             <Carousel breakPoints={breakPoints} className='px-2'>
-              <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
-                <img className='' alt='service1' src={BrandMarketing} loading='lazy'></img>
-                <div className='flex flex-col items-start w-full'>
-                  <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-3xl'>BRAND MARKETING</h1>
-                  <button className='text-blue-300 lg:px-10 lg:pt-5 hover:text-blue-500' onClick={() => setLearnMoreActive(true)}>Learn more...</button>
-                </div>
-              </div>
+
 
               <div>
-                <div className='relative mr-[20px]'>
-                  <img className='' alt='service1' src={MerchandiseProduction} loading='lazy'></img>
-                  {learnMoreActive ? (
+                <div className='relative sm:mr-[20px]'>
+                  <img className='' alt='service1' src={BrandMarketing} loading='lazy'></img>
+                  {brandMarketingScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
-                      <button className='absolute z-20 pt-10 pr-12 text-2xl text-white top-2 right-2' onClick={() => setLearnMoreActive(false)}>X</button>
-                      <p className='text-white'>Hello</p>
+                      <button className='absolute z-20 pt-20 pr-12 text-2xl text-white top-2 right-2' onClick={() => setbrandMarketingScreen(false)}>X</button>
+                      <p className='px-10 text-lg font-bold text-white font-Montserrat'>
+                        In the competitive hospitality industry, our specialized consulting team crafts unique brand strategies 
+                        to drive growth. We analyze markets, understand trends, and create compelling brand identities tailored to
+                        your audience. Whether launching a new concept or revitalizing an existing property, we define your value proposition, 
+                        refine positioning, and establish a memorable brand presence. Our expertise equips you to navigate the complex hospitality landscape and connect with guests, ensuring sustained success.</p>
                     </div>
                   ) : null}
                 </div>
                 <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
                   <div className='flex flex-col items-start w-full'>
-                    <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-3xl'>CUSTOM MERCHANDISE PRODUCTION</h1>
-                    <button className='text-blue-300 lg:px-10 lg:pt-5 hover:text-blue-500' onClick={() => setLearnMoreActive(true)}>Learn more...</button>
+                    <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-xl'>BRAND MARKETING</h1>
                   </div>
                 </div>
+                <div className='flex flex-row justify-start'>
+                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setbrandMarketingScreen(true)}>Learn more...</button>
+                </div>
+              </div>
+
+              <div>
+                <div className='relative sm:mr-[20px]'>
+                  <img className='' alt='service1' src={MerchandiseProduction} loading='lazy'></img>
+                  {customMerchandiseScreen ? (
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                      <button className='absolute z-20 pt-20 pr-12 text-2xl text-white top-2 right-2' onClick={() => setcustomMerchandiseScreen(false)}>X</button>
+                      <p className='px-10 text-lg font-bold text-white font-Montserrat'>
+                        We understand that one size does not fit all. Our custom product manufacturing service is tailored to your unique 
+                        hospitality needs. Whether it's elevating your ambiance, adding luxury and comfort, or creating memorable amenities, 
+                        our experts bring your vision to life. With our extensive network of skilled artisans, we ensure every detail aligns with 
+                        your brand identity. Differentiate yourself and thrive in the marketplace with our custom solutions, leaving a legacy of 
+                        excellence.
+                      </p>
+                    </div>
+                  ) : null}
+                </div>
+                <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
+                  <div className='flex flex-col items-start w-full'>
+                    <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-xl'>CUSTOM MERCHANDISE PRODUCTION</h1>
+                    
+                  </div>
+                </div>
+                <div className='flex flex-row justify-start'>
+                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setcustomMerchandiseScreen(true)}>Learn more...</button>
+                </div>
               </div>
               
 
-              <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
-                <img className='' alt='service1' src={EventPlanner} loading='lazy'></img>
-                <div className='flex flex-col items-start w-full'>
-                  <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-3xl'>EVENT PLANNING</h1>
-                  <button className='text-blue-300 lg:px-10 lg:pt-5 hover:text-blue-500' onClick={() => setLearnMoreActive(true)}>Learn more...</button>
+              <div>
+                <div className='relative sm:mr-[20px]'>
+                  <img className='' alt='service1' src={EventPlanner} loading='lazy'></img>
+                  {eventPlanningScreen ? (
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                      <button className='absolute z-20 pt-20 pr-12 text-2xl text-white top-2 right-2' onClick={() => setEventPlanningScreen(false)}>X</button>
+                      <p className='px-10 text-lg font-bold text-white font-Montserrat'>
+                        We are dedicated to crafting unforgettable experiences that leave lasting impressions. Our comprehensive range of services 
+                        is designed to transform your event dreams into reality, ensuring every detail is meticulously curated and flawlessly 
+                        executed. From the initial concept to the final flourish, we offer a full spectrum of event planning services. Our 
+                        experienced team of event professionals will work closely with you to understand your vision, goals, and preferences, 
+                        tailoring our services to suit your unique needs.
+                      </p>
+                    </div>
+                  ) : null}
+                </div>
+                <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
+                  <div className='flex flex-col items-start w-full'>
+                    <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-xl'>EVENT PLANNING</h1>
+                  </div>
+                </div>
+                <div className='flex flex-row justify-start'>
+                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setEventPlanningScreen(true)}>Learn more...</button>
                 </div>
               </div>
 
-              <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
-                <img className='' alt='service1' src={FoodandBeverage} loading='lazy'></img>
-                <div className='flex flex-col items-start w-full'>
-                  <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-3xl'>FOOD & BEVERAGE CONSULTING</h1>
-                  <button className='text-blue-300 lg:px-10 lg:pt-5 hover:text-blue-500' onClick={() => setLearnMoreActive(true)}>Learn more...</button>
+              <div>
+                <div className='relative sm:mr-[20px]'>
+                  <img className='' alt='service1' src={FoodandBeverage} loading='lazy'></img>
+                  {foodandBeverageScreen ? (
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                      <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2' onClick={() => setFoodAndBeverageScreen(false)}>X</button>
+                      <p className='px-10 text-lg font-bold text-white font-Montserrat'>
+                        Our team of industry experts brings a wealth of knowledge in culinary trends, menu development, kitchen operations, 
+                        sourcing the finest ingredients, and optimizing cost-efficiency. We work closely with you to understand your brand's 
+                        identity and target audience, tailoring strategies that align with your vision while maximizing profitability. Whether 
+                        you're seeking to revamp your existing menu, launch a new culinary concept, or streamline kitchen operations for efficiency,
+                        our food and beverage consulting service will provide you with the tools and expertise needed to thrive in the competitive 
+                        world of hospitality, ensuring your guests enjoy remarkable dining experiences that set your establishment apart.
+                       </p>
+                    </div>
+                  ) : null}
+                </div>
+                <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
+                  <div className='flex flex-col items-start w-full'>
+                    <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-xl'>FOOD & BEVERAGE CONSULTING</h1>
+                  </div>
+                </div>
+                <div className='flex flex-row justify-start'>
+                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setFoodAndBeverageScreen(true)}>Learn more...</button>
                 </div>
               </div>
 
-              <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
-                <img className='' alt='service1' src={HospitalityConsulting} loading='lazy'></img>
-                <div className='flex flex-col items-start w-full'>
-                  <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-3xl'>HOSPITALITY CONSULTING</h1>
-                  <button className='text-blue-300 lg:px-10 lg:pt-5 hover:text-blue-500' onClick={() => setLearnMoreActive(true)}>Learn more...</button>
+              <div>
+                <div className='relative sm:mr-[20px]'>
+                  <img className='' alt='service1' src={HospitalityConsulting} loading='lazy'></img>
+                  {hospitalityConsultingScreen ? (
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                      <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2' onClick={() => setHospitalityConsultingScreen(false)}>X</button>
+                      <p className='px-10 text-lg font-bold text-white font-Montserrat'>
+                        Our hospitality consulting services are designed to empower your business in the dynamic and competitive world of 
+                        hospitality. With a team of seasoned experts and a deep understanding of industry trends, we provide comprehensive solutions 
+                        tailored to your unique needs. Whether you're looking to optimize operations, enhance guest experiences, or improve 
+                        profitability, our consulting services cover a wide spectrum, including brand strategy, custom product manufacturing, 
+                        and food and beverage optimization. We work closely with you to identify opportunities, craft effective strategies, and 
+                        implement solutions that drive success. 
+                      </p>
+                    </div>
+                  ) : null}
+                </div>
+                <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
+                  <div className='flex flex-col items-start w-full'>
+                    <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-xl'>HOSPITALITY CONSULTING</h1>
+                  </div>
+                </div>
+                <div className='flex flex-row justify-start'>
+                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setHospitalityConsultingScreen(true)}>Learn more...</button>
                 </div>
               </div>
 
               
 
-              <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
-                <img className='' alt='service1' src={NightlifeConsulting} loading='lazy'></img>
-                <div className='flex flex-col items-start w-full'>
-                  <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-3xl'>NIGHTLIFE CONSULTING</h1>
-                  <button className='text-blue-300 lg:px-10 lg:pt-5 hover:text-blue-500' onClick={() => setLearnMoreActive(true)}>Learn more...</button>
+              <div>
+                <div className='relative sm:mr-[20px]'>
+                  <img className='' alt='service1' src={NightlifeConsulting} loading='lazy'></img>
+                  {nightLifeConsultingScreen ? (
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                      <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2' onClick={() => setNightLifeConsultingScreen(false)}>X</button>
+                      <p className='px-10 text-lg font-bold text-white font-Montserrat'>
+                        Our nightlife consulting services are your ticket to creating vibrant and unforgettable entertainment experiences within 
+                        the hospitality industry. With a team of nightlife experts deeply attuned to the pulse of trends and innovation, we offer
+                        a comprehensive suite of solutions tailored to elevate your venue. Whether you're aiming to reinvigorate an existing 
+                        nightlife spot, launch a new concept, or fine-tune your entertainment offerings, our services cover it all. We specialize 
+                        in crafting unique and immersive experiences, optimizing operational efficiency, and ensuring regulatory compliance. 
+                       </p>
+                    </div>
+                  ) : null}
+                </div>
+                <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
+                  <div className='flex flex-col items-start w-full'>
+                    <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-xl'>NIGHTLIFE CONSULTING</h1>
+                  </div>
+                </div>
+                <div className='flex flex-row justify-start'>
+                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setNightLifeConsultingScreen(true)}>Learn more...</button>
                 </div>
               </div>
 
-              <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
-                <img className='' alt='service1' src={OpenVenueProtocol} loading='lazy'></img>
-                <div className='flex flex-col items-start w-full'>
-                  <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-3xl'>OPEN VENUE PROTOCOL</h1>
-                  
-                  <button className='text-blue-300 lg:px-10 lg:pt-5 hover:text-blue-500' onClick={() => setLearnMoreActive(true)}>Learn more...</button>
+              <div>
+                <div className='relative sm:mr-[20px]'>
+                  <img className='' alt='service1' src={OpenVenueProtocol} loading='lazy'></img>
+                  {openVenueProtocolScreen ? (
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                      <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2' onClick={() => setOpenVenueProtocolScreen(false)}>X</button>
+                      <p className='px-10 text-lg font-bold text-white font-Montserrat'>
+                        Our Open Venue Protocol services for hotels and restaurants set the diamond standard. We understand that creating a safe 
+                        and welcoming environment for patrons is a top priority, especially in the face of evolving health and safety concerns. Our 
+                        specialized services focus on implementing cutting-edge protocols and guidelines to ensure your venue is not only compliant 
+                        with health regulations but also goes above and beyond in providing a secure and enjoyable experience for guests. From crowd 
+                        management strategies to advanced sanitation measures, we tailor our services to your specific venue, helping you regain 
+                        customer confidence and stay ahead.
+                      </p>
+                    </div>
+                  ) : null}
+                </div>
+                <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
+                  <div className='flex flex-col items-start w-full'>
+                    <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-xl'>OPEN VENUE PROTOCOL</h1>
+                  </div>
+                </div>
+                <div className='flex flex-row justify-start'>
+                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setOpenVenueProtocolScreen(true)}>Learn more...</button>
                 </div>
               </div>
 
-              <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
-                <img className='' alt='service1' src={Sourcing} loading='lazy'></img>
-                <div className='flex flex-col items-start w-full'>
-                  <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-3xl'>SOURCING</h1>
-                  <button href='https://youtube.com' target="_blank" rel="noopener noreferrer" className='text-blue-300 lg:px-10 lg:pt-5 hover:text-blue-500' onClick={() => setLearnMoreActive(true)}>Learn more...</button>
+              <div>
+                <div className='relative sm:mr-[20px]'>
+                  <img className='' alt='service1' src={Sourcing} loading='lazy'></img>
+                  {sourcingScreen ? (
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                      <button className='absolute z-20 pt-20 pr-12 text-2xl text-white top-2 right-2' onClick={() => setSourcingScreen(false)}>X</button>
+                      <p className='px-10 text-lg font-bold text-white font-Montserrat'>
+                        Our sourcing services in hospitality are all about delivering quality while managing costs. With expertise in market trends 
+                        and a vast supplier network, we ensure you access top-notch ingredients, furnishings, and amenities aligned with your brand's
+                        identity. Whether you're focused on sustainability, procurement efficiency, or guest experience enhancement, our experts 
+                        optimize your sourcing for excellence and profitability. Partner with us to elevate your offerings and thrive in the 
+                        competitive hospitality industry.
+                      </p>
+                    </div>
+                  ) : null}
+                </div>
+                <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
+                  <div className='flex flex-col items-start w-full'>
+                    <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-xl'>SOURCING</h1>
+                  </div>
+                </div>
+                <div className='flex flex-row justify-start'>
+                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setSourcingScreen(true)}>Learn more...</button>
                 </div>
               </div>
 
-              <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
-                <img className='' alt='service1' src={WebDevelopment} loading='lazy'></img>
-                <div className='flex flex-col items-start w-full'>
-                  <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-3xl'>WEB DEVELOPMENT</h1>
-                  <button href='https://youtube.com' target="_blank" rel="noopener noreferrer" className='text-blue-300 lg:px-10 lg:pt-5 hover:text-blue-500' onClick={() => setLearnMoreActive(true)}>Learn more...</button>
+              <div>
+                <div className='relative sm:mr-[20px]'>
+                  <img className='' alt='service1' src={WebDevelopment} loading='lazy'></img>
+                  {webDevelopmentScreen ? (
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                      <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2' onClick={() => setWebDevelopmentScreen(false)}>X</button>
+                      <p className='px-10 text-lg font-bold text-white font-Montserrat'>
+                        Our custom web development services are tailored to enhance your presence and performance in the ever-evolving hospitality 
+                        industry. Our team of experienced developers specializes in creating bespoke web solutions that not only showcase your 
+                        brand's unique identity but also optimize user experience and functionality. Whether you need a cutting-edge booking platform,
+                        a seamless mobile app, or a website that tells your story effectively, our experts are here to bring your vision to life. 
+                        With our custom web development services, you'll gain a competitive edge, increase online visibility, and provide your guests 
+                        with a seamless and engaging digital experience.
+                      </p>
+                    </div>
+                  ) : null}
+                </div>
+                <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
+                  <div className='flex flex-col items-start w-full'>
+                    <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-xl'>WEB DEVEVLOPMENT</h1>
+                  </div>
+                </div>
+                <div className='flex flex-row justify-start'>
+                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setWebDevelopmentScreen(true)}>Learn more...</button>
                 </div>
               </div>
               </Carousel>
