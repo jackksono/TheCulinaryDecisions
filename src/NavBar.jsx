@@ -54,7 +54,7 @@ const NavBar = () => {
                     <Link to="/">
                       <button 
                         ref={homeLinkRef}
-                        className="text-[10px] font-Montserrat lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black font-Kanit hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4 border-none focus:border-none"
+                        className="text-[10px] font-Montserrat focus:outline-none lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black font-Kanit hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         tabIndex={0}>
                         HOME
                       </button>
