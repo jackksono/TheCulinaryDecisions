@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { lazy, Suspense } from 'react'
 import { Route, Routes, Link } from 'react-router-dom'
 
@@ -14,7 +14,7 @@ const ContactUs = lazy(() => import('./Pages/ContactUs'))
 
 const NavBar = () => {
   const [ contactPopUp, setContactPopUp ] = useState(false)
-
+  const [ isTransitionComplete, setIsTransitionComplete ] = useState(false)
   useEffect(() => {
     const toggle = document.querySelector('.nav');
     
@@ -25,10 +25,17 @@ const NavBar = () => {
     return () => clearTimeout(timeoutId);
   }, []);
 
+  const homeLinkRef = useRef(null); 
+  useEffect(() => {
+    if (isTransitionComplete && homeLinkRef.current) {
+      homeLinkRef.current.focus();
+    }
+  }, [isTransitionComplete]);
+  
   return (
     <>
     
-      <Fade duration={3000}>
+      <Fade duration={3000} onReveal={() => setIsTransitionComplete(true)}>
         <nav className="hidden nav w-screen p-2 top-0 lg:fixed inset-x-0 bg-white h-[100px] drop-shadow-lg justify-content-end z-10">
             <div className="">
               <img 
@@ -38,23 +45,22 @@ const NavBar = () => {
                 loading='lazy'>
               </img>
             </div>
-            <div className="pt-6 text-2xl text-black lg:hidden">
-              <button >
-                  
-                </button>
-            </div>
+            
             
             <div class="nav-links  bg-blackPaper w-[360px] lg:bg-none lg:bg-transparent duration-500 lg:static lg:h-0  lg:flex-row flex-col  lg:pt-16 lg:px-5 lg:block lg:w-auto">
               <ul class="font-medium left-0 lg:flex lg:justify-between w-full lg:h-full lg:px-20 p-4 lg:p-0 mt-4 pb-4 gap-4 lg:flex-row lg:space-x-8 lg:mt-0">
                 
                   <div className="flex items-center lg:bg-transparent lg:gap-10 ">
                     <Link to="/">
-                      <button className="text-[10px] font-Montserrat lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black lg:text-color-shrimp font-Kanit hover:scale-110 duration-500">
+                      <button 
+                        ref={homeLinkRef}
+                        className="text-[10px] font-Montserrat lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black font-Kanit hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4 border-none focus:border-none"
+                        tabIndex={0}>
                         HOME
                       </button>
                     </Link>
                     <Link to="/team">
-                      <button className="font-Montserrat text-[10px] lg:text-lg lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500">
+                      <button className="font-Montserrat text-[10px] lg:text-lg lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4">
                         EXECUTIVE LEADERSHIP
                       </button>
                     </Link>
@@ -63,7 +69,7 @@ const NavBar = () => {
                 
                   <div className="left-0 flex flex-col lg:flex-row lg:bg-transparent lg:items-center lg:flex-non lg:gap-10">
                     <Link to="/services">
-                      <button className="font-Montserrat text-[10px] lg:text-lg lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500">
+                      <button className="font-Montserrat text-[10px] lg:text-lg lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4">
                         SERVICES
                       </button>
                     </Link>
@@ -72,13 +78,13 @@ const NavBar = () => {
                     
 
                     <Link to="/media">
-                      <button className="font-Montserrat text-[10px] lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-110 duration-500">
+                      <button className="font-Montserrat text-[10px] lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4">
                         MEDIA
                       </button>
                     </Link>
 
                     <span className="" >
-                        <button className="font-Montserrat text-[10px] lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-110 duration-500"
+                        <button className="font-Montserrat text-[10px] lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                             value="click"
                             onClick={() => setContactPopUp(true)}>
                             CONTACT US

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './index.css'
 
 const InitialPage = ({ onFadeOutComplete }) => {
   const [fadeOut, setFadeOut] = useState(false);
+  const navigate = useNavigate(); // Get the navigate function from react-router-dom
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -16,15 +18,13 @@ const InitialPage = ({ onFadeOutComplete }) => {
     if (fadeOut) {
       const fadeOutAnimationDuration = 1000;
       const timer = setTimeout(() => {
-        onFadeOutComplete();
+        navigate('/'); // Navigate to the home page when the transition is complete
       }, fadeOutAnimationDuration);
 
       return () => clearTimeout(timer);
     }
-  }, [fadeOut, onFadeOutComplete]);
-
+  }, [fadeOut, navigate]);
   
-
   return (
     <div
       className={`fixed w-screen h-screen bg-Logo bg-center bg-contain flex items-center justify-center transition-opacity ${
