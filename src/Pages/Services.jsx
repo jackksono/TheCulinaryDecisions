@@ -54,7 +54,7 @@ const AboutUs = () => {
               </div>
 
               <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
-                <img className='h-[657.5px]' alt='service1' src={FoodandBeverage} loading='lazy'></img>
+                <img className='' alt='service1' src={FoodandBeverage} loading='lazy'></img>
                 <div className='flex flex-col items-start w-full'>
                   <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-3xl'>FOOD & BEVERAGE CONSULTING</h1>
                   <a href='youtube.com' target="_blank" rel="noopener noreferrer" className='text-blue-300 lg:px-10 lg:pt-5 hover:text-blue-500'>Learn more...</a>
