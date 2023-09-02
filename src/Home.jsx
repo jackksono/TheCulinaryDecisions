@@ -126,20 +126,27 @@ return (
     ) : (
      <InitialPage className='fade-out' onFadeOutComplete={() => setShowContent(true)}/>
     )}
-    <div className='flex justify-center pt-10 text-center '>
-      <div className='flex w-3/4 text-3xl font-extrabold text-black font-Montserrat'>
-        Culinary Decisions, make the best informed decision for <br></br> Luxury Lifestyle Hospitality Development, Management and Consulting.
-      </div>
-    </div>
+    
+    <div>
+      {showContent ? (
+        <>
+        <div className='flex justify-center pt-10 text-center '>
+          <div className='flex w-3/4 text-3xl font-extrabold text-black font-Montserrat'>
+            Culinary Decisions, make the best informed decision for <br /> Luxury Lifestyle Hospitality Development, Management and Consulting.
+          </div>
+        </div>
 
-    <div className='flex justify-center pt-10 text-center '>
-    <div className='flex w-3/4 text-lg font-semibold text-justify text-black font-Montserrat'>
-        Dedicated and engaged at all levels, Culinary Decisions is intimately involved in curating, developing, and managing successful 
-        luxury concepts for hotels and restaurants. Achieve synergetic results with a well experienced team in all aspects of luxury hospitality 
-        with consistency of high level standards. Operate efficiently and effectively after a thorough evaluation with curated consulting to best 
-        suit company culture and dynamic. Allow Culinary Decisions to create the perfect balance of luxury and effectiveness to enhance the connection 
-        between clients, community and team members alike in our commitment to excellence.
-      </div>
+        <div className='flex justify-center pt-10 text-center '>
+          <div className='flex w-3/4 text-lg font-semibold text-justify text-black font-Montserrat'>
+            Dedicated and engaged at all levels, Culinary Decisions is intimately involved in curating, developing, and managing successful 
+            luxury concepts for hotels and restaurants. Achieve synergetic results with a well-experienced team in all aspects of luxury hospitality 
+            with consistency of high-level standards. Operate efficiently and effectively after a thorough evaluation with curated consulting to best 
+            suit company culture and dynamic. Allow Culinary Decisions to create the perfect balance of luxury and effectiveness to enhance the connection 
+            between clients, community and team members alike in our commitment to excellence.
+          </div>
+        </div>
+        </>
+      ) : null}
     </div>
   </div>
 );
