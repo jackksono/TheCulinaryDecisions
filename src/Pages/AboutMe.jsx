@@ -71,13 +71,10 @@ const AboutMe = () => {
                 />
               </Fade>
               <div className='absolute justify-center duration-700 shadow-2xl opacity-0 bg-slate-200 rounded-2xl right-12 bottom-10 lg:mr-72 group-hover:opacity-80'>
-                <p className='pt-5 m-5 lg:m-0 lg:p-5 text-black bg-transparent border lg:h-auto lg:text-xl font-semibold lg:leading-8 lg:w-[500px] text-md rounded-2xl opacity-0 group-hover:opacity-100 font-Montserrat'> 
-                  With a passion for hospitality and a keen eye for delectable menu curation, Michelle has managed operations in food and beverage 
-                  for various luxury high-volume establishments on the Las Vegas strip. Collecting experience from the finest openings with notable 
-                  mention from Catch Las Vegas to Resorts World Allē on 66 and now creating a hospitality brand that aims to assist others in building
-                  and polishing their business goals. Collaborating with the industry’s finest located in Las Vegas, Michelle takes pride in Culinary
-                  Decisions to assist others in effective operational execution while creating the proper training programs to maintain consistency 
-                  and financial literacy. 
+                <p className='pt-5 m-5 lg:m-0 lg:p-5 text-black bg-transparent border lg:h-auto lg:text-sm font-semibold lg:leading-8 lg:w-[500px] text-md rounded-2xl opacity-0 group-hover:opacity-100 font-Montserrat'> 
+                Michelle, fueled by her unwavering dedication to the hospitality industry and an impeccable knack for crafting exquisite menus, boasts an impressive track record of overseeing operations at prestigious high-volume establishments nestled along the illustrious Las Vegas Strip. Her journey has been punctuated by stints at renowned venues such as Catch Las Vegas and Resorts World Allē on 66, where her contributions earned notable recognition. Presently, she is at the helm of an ambitious venture dedicated to elevating the hospitality landscape by providing invaluable support for entrepreneurs seeking to refine and elevate their business objectives.
+
+In her role as a collaborator with some of Las Vegas's most esteemed industry professionals, Michelle takes immense pride in her role at Culinary Decisions. Here, she leverages her expertise to facilitate effective operational execution while developing comprehensive training programs that emphasize consistency and financial acumen. Her commitment to excellence shines as she assists others in navigating the complex intricacies of the culinary world and ensures their businesses flourish.
                 </p>
               </div>
           </div>
