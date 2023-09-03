@@ -81,7 +81,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setbrandMarketingScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setbrandMarketingScreen(true)}>Learn more...</button>
                 </div>
               </div>
 
@@ -108,7 +108,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setcustomMerchandiseScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setcustomMerchandiseScreen(true)}>Learn more...</button>
                 </div>
               </div>
               
@@ -135,7 +135,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setEventPlanningScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setEventPlanningScreen(true)}>Learn more...</button>
                 </div>
               </div>
 
@@ -162,7 +162,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setFoodAndBeverageScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setFoodAndBeverageScreen(true)}>Learn more...</button>
                 </div>
               </div>
 
@@ -189,7 +189,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setHospitalityConsultingScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setHospitalityConsultingScreen(true)}>Learn more...</button>
                 </div>
               </div>
 
@@ -217,7 +217,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setNightLifeConsultingScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setNightLifeConsultingScreen(true)}>Learn more...</button>
                 </div>
               </div>
 
@@ -244,7 +244,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setOpenVenueProtocolScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setOpenVenueProtocolScreen(true)}>Learn more...</button>
                 </div>
               </div>
 
@@ -270,7 +270,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setSourcingScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setSourcingScreen(true)}>Learn more...</button>
                 </div>
               </div>
 
@@ -297,7 +297,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex text-blue-300 sm:px-5 hover:text-blue-500' onClick={() => setWebDevelopmentScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setWebDevelopmentScreen(true)}>Learn more...</button>
                 </div>
               </div>
               </Carousel>
