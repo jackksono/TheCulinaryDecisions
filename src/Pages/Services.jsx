@@ -36,7 +36,7 @@ const AboutUs = () => {
             <h1 className='flex items-center justify-center font-extrabold text-white xl:text-4xl font-Montserrat '>SERVICES</h1>
         </div>
 
-      <div className='flex flex-col text-justify sm:px-32 pt-60'>
+      <div className='flex flex-col pt-40 text-justify sm:px-32 sm:mt-20 xl:mt-40'>
         <p className='flex items-center justify-center font-extrabold text-black sm:text-lg font-Montserrat '>
             At Culinary Decisions, we are dedicated to elevating the hospitality industry through our comprehensive and innovative 
             consulting services. With years of experience and a team of seasoned professionals, we offer a wide range of tailored solutions 
