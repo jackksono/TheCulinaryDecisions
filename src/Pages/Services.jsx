@@ -65,7 +65,7 @@ const AboutUs = () => {
                 <div className='relative sm:mr-[20px]'>
                   <img className='cursor-pointer' alt='service1' src={BrandMarketing} loading='lazy' onClick={() => setbrandMarketingScreen(true)}></img>
                   {brandMarketingScreen ? (
-                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setbrandMarketingScreen(false)}>
                       <button className='absolute z-20 pt-20 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setbrandMarketingScreen(false)}>X</button>
                       <p className='px-10 text-lg font-bold text-white font-Montserrat'>
                         In the competitive hospitality industry, our specialized consulting team crafts unique brand strategies 
@@ -81,7 +81,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setbrandMarketingScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setbrandMarketingScreen(true)}>See More Details...</button>
                 </div>
               </div>
 
@@ -89,7 +89,7 @@ const AboutUs = () => {
                 <div className='relative sm:mr-[20px]'>
                   <img className='cursor-pointer' alt='service1' src={MerchandiseProduction} loading='lazy' onClick={() => setcustomMerchandiseScreen(true)}></img>
                   {customMerchandiseScreen ? (
-                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setcustomMerchandiseScreen(false)}>
                       <button className='absolute z-20 pt-20 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setcustomMerchandiseScreen(false)}>X</button>
                       <p className='px-10 text-lg font-bold text-white font-Montserrat'>
                         We understand that one size does not fit all. Our custom product manufacturing service is tailored to your unique 
@@ -108,7 +108,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setcustomMerchandiseScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setcustomMerchandiseScreen(true)}>See More Details...</button>
                 </div>
               </div>
               
@@ -117,7 +117,7 @@ const AboutUs = () => {
                 <div className='relative sm:mr-[20px]'>
                   <img className='cursor-pointer' alt='service1' src={EventPlanner} loading='lazy' onClick={() => setEventPlanningScreen(true)}></img>
                   {eventPlanningScreen ? (
-                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setEventPlanningScreen(false)}>
                       <button className='absolute z-20 pt-20 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setEventPlanningScreen(false)}>X</button>
                       <p className='px-10 text-lg font-bold text-white font-Montserrat'>
                         We are dedicated to crafting unforgettable experiences that leave lasting impressions. Our comprehensive range of services 
@@ -135,7 +135,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setEventPlanningScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setEventPlanningScreen(true)}>See More Details...</button>
                 </div>
               </div>
 
@@ -143,7 +143,7 @@ const AboutUs = () => {
                 <div className='relative sm:mr-[20px]'>
                   <img className='cursor-pointer' alt='service1' src={FoodandBeverage} loading='lazy' onClick={() => setFoodAndBeverageScreen(true)}></img>
                   {foodandBeverageScreen ? (
-                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setFoodAndBeverageScreen(false)}>
                       <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2 font-Montserrat' onClick={() => setFoodAndBeverageScreen(false)}>X</button>
                       <p className='px-10 text-lg font-bold text-white font-Montserrat'>
                         Our team of industry experts brings a wealth of knowledge in culinary trends, menu development, kitchen operations, 
@@ -162,7 +162,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setFoodAndBeverageScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setFoodAndBeverageScreen(true)}>See More Details...</button>
                 </div>
               </div>
 
@@ -170,7 +170,7 @@ const AboutUs = () => {
                 <div className='relative sm:mr-[20px]'>
                   <img className='cursor-pointer' alt='service1' src={HospitalityConsulting} loading='lazy' onClick={() => setHospitalityConsultingScreen(true)}></img>
                   {hospitalityConsultingScreen ? (
-                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setHospitalityConsultingScreen(false)}>
                       <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2 font-Montserrat' onClick={() => setHospitalityConsultingScreen(false)}>X</button>
                       <p className='px-10 text-lg font-bold text-white font-Montserrat'>
                         Our hospitality consulting services are designed to empower your business in the dynamic and competitive world of 
@@ -189,7 +189,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setHospitalityConsultingScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setHospitalityConsultingScreen(true)}>See More Details...</button>
                 </div>
               </div>
 
@@ -199,7 +199,7 @@ const AboutUs = () => {
                 <div className='relative sm:mr-[20px]'>
                   <img className='cursor-pointer' alt='service1' src={NightlifeConsulting} loading='lazy' onClick={() => setNightLifeConsultingScreen(true)}></img>
                   {nightLifeConsultingScreen ? (
-                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setNightLifeConsultingScreen(false)}>
                       <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2 font-Montserrat' onClick={() => setNightLifeConsultingScreen(false)}>X</button>
                       <p className='px-10 text-lg font-bold text-white font-Montserrat'>
                         Our nightlife consulting services are your ticket to creating vibrant and unforgettable entertainment experiences within 
@@ -217,7 +217,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setNightLifeConsultingScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setNightLifeConsultingScreen(true)}>See More Details...</button>
                 </div>
               </div>
 
@@ -225,7 +225,7 @@ const AboutUs = () => {
                 <div className='relative sm:mr-[20px]'>
                   <img className='cursor-pointer' alt='service1' src={OpenVenueProtocol} loading='lazy' onClick={() => setOpenVenueProtocolScreen(true)}></img>
                   {openVenueProtocolScreen ? (
-                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setOpenVenueProtocolScreen(false)}>
                       <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2 font-Montserrat' onClick={() => setOpenVenueProtocolScreen(false)}>X</button>
                       <p className='px-10 text-lg font-bold text-white font-Montserrat'>
                         Our Open Venue Protocol services for hotels and restaurants set the diamond standard. We understand that creating a safe 
@@ -244,7 +244,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setOpenVenueProtocolScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setOpenVenueProtocolScreen(true)}>See More Details...</button>
                 </div>
               </div>
 
@@ -252,7 +252,7 @@ const AboutUs = () => {
                 <div className='relative sm:mr-[20px]'>
                   <img className='cursor-pointer' alt='service1' src={Sourcing} loading='lazy' onClick={() => setSourcingScreen(true)}></img>
                   {sourcingScreen ? (
-                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setSourcingScreen(false)}>
                       <button className='absolute z-20 pt-20 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setSourcingScreen(false)}>X</button>
                       <p className='px-10 text-lg font-bold text-white font-Montserrat'>
                         Our sourcing services in hospitality are all about delivering quality while managing costs. With expertise in market trends 
@@ -270,17 +270,17 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setSourcingScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setSourcingScreen(true)}>See More Details...</button>
                 </div>
               </div>
 
               <div>
                 <div className='relative sm:mr-[20px]'>
-                  <img className='cursor-pointer' alt='service1' src={WebDevelopment} loading='lazy'></img>
+                  <img className='cursor-pointer' alt='service1' src={WebDevelopment} loading='lazy' onClick={() => setWebDevelopmentScreen(true)}></img>
                   {webDevelopmentScreen ? (
-                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80'>
+                    <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setWebDevelopmentScreen(false)}>
                       <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2 font-Montserrat' onClick={() => setWebDevelopmentScreen(false)}>X</button>
-                      <p className='px-10 text-lg font-bold text-white font-Montserrat'>
+                      <p className='px-10 text-lg font-bold text-white font-Montserrat' >
                         Our custom web development services are tailored to enhance your presence and performance in the ever-evolving hospitality 
                         industry. Our team of experienced developers specializes in creating bespoke web solutions that not only showcase your 
                         brand's unique identity but also optimize user experience and functionality. Whether you need a cutting-edge booking platform,
@@ -297,7 +297,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className='flex flex-row justify-start'>
-                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setWebDevelopmentScreen(true)}>Learn more...</button>
+                  <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setWebDevelopmentScreen(true)}>See More Details...</button>
                 </div>
               </div>
               </Carousel>
