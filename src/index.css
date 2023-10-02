@@ -55,4 +55,12 @@
     box-shadow: 0 0 1px 3px rgb(0, 0, 0);
   }
 
-  
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Position below the mobile menu button */
+  left: 0;
+  background-color: #fff; /* Background color of the dropdown menu */
+  border: 1px solid #ccc; /* Border style */
+  padding: 10px; /* Add padding to menu items */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}

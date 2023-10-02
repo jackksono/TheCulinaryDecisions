@@ -27,26 +27,26 @@ const AboutMe = () => {
         <img 
           src={Dining}
           alt='diningPhoto'
-          className='relative object-cover w-screen object-center h-[700px] shadow-lg'
+          className='relative object-cover w-screen sm:object-center h-screen sm:h-[700px] shadow-lg'
           loading='lazy'>
         </img>
       </div>
 
-      <div className='grid justify-center grid-cols-2 gap-8 p-5 xl:pt-20'>
+      <div className='justify-center pt-10 sm:grid sm:grid-cols-2 sm:gap-8 sm:p-5 xl:pt-20'>
         <div className='flex flex-col items-center justify-center text-center group' ref={zoom1Ref}>
-            <h1 className='text-4xl font-extrabold lg:mr-40 lg:text-6xl font-Montserrat'>Levan Donato</h1>
+            <h1 className='text-3xl font-extrabold sm:text-4xl lg:mr-40 lg:text-6xl font-Montserrat'>Levan Donato</h1>
             <p className='text-black lg:pb-5 lg:mr-40 lg:text-2xl font-Montserrat'>Managing Partner</p>
             <div className='relative'>
               <Fade left when={zoom1InView}>
                 <img 
-                  className='shadow-xl rounded-full h-[500px] w-auto lg:mr-40'
+                  className='shadow-xl sm:rounded-full sm:h-[500px] w-auto lg:mr-40'
                   alt='Headshot'
                   src={Lev}
                   loading='lazy'
                 />
               </Fade>
-              <div className='absolute justify-center duration-700 shadow-2xl opacity-0 bottom-20 bg-slate-200 rounded-2xl left-12 lg:ml-72 group-hover:opacity-80'>
-                <p className='pt-5 m-5 lg:m-0 lg:p-5 text-black bg-transparent border lg:h-auto lg:text-sm font-semibold lg:leading-8 lg:w-[500px] text-md rounded-2xl opacity-0 group-hover:opacity-100 font-Montserrat'>
+              <div className='justify-center duration-700 sm:shadow-2xl sm:absolute sm:opacity-0 sm:bottom-20 sm:bg-slate-200 sm:outline-none rounded-2xl sm:left-12 lg:ml-72 sm:group-hover:opacity-80'>
+                <p className='sm:pt-5 sm:m-5 m-2 lg:m-0 lg:p-5 text-black bg-transparent sm:border lg:h-auto lg:text-sm font-semibold lg:leading-8 leading-6 lg:w-[500px] text-sm rounded-2xl sm:opacity-0 sm:group-hover:opacity-100 font-Montserrat'>
                 A first-generation American, Levan offers a diverse and unique perspective. With over 20 years' experience in luxury resort 
                 operations and leadership, she has collaborated with a variety of hospitality powerhouses across the Las Vegas strip. 
                 Her passion for curating new and innovative concepts led her to spearhead the opening of Resorts World Las Vegas as the Director
@@ -58,20 +58,20 @@ const AboutMe = () => {
           </div>
         </div>
         
-        <div className='flex flex-col items-center justify-center text-center group' ref={zoom2Ref}>
-            <h1 className='text-4xl font-extrabold lg:ml-40 lg:text-6xl font-Montserrat'>Michelle Tran</h1>
+        <div className='flex flex-col items-center justify-center pt-10 text-center group' ref={zoom2Ref}>
+            <h1 className='text-3xl font-extrabold sm:text-4xl lg:ml-40 lg:text-6xl font-Montserrat'>Michelle Tran</h1>
             <p className='text-black lg:ml-40 lg:pb-5 lg:text-2xl font-Montserrat'>Managing Partner</p>
             <div className='relative'>
               <Fade right when={zoom2InView}>
                 <img 
-                  className='shadow-xl rounded-full h-[500px] w-auto lg:ml-40'
+                  className='shadow-xl sm:rounded-full sm:h-[500px] w-auto lg:ml-40'
                   alt='Headshot'
                   src={Mich}
                   loading='lazy'
                 />
               </Fade>
-              <div className='absolute justify-center duration-700 shadow-2xl opacity-0 bottom-5 bg-slate-200 rounded-2xl right-12 lg:mr-72 group-hover:opacity-80'>
-                <p className='pt-5 m-5 lg:m-0 lg:p-5 text-black bg-transparent border lg:h-auto lg:text-sm font-semibold lg:leading-8 lg:w-[500px] text-md rounded-2xl opacity-0 group-hover:opacity-100 font-Montserrat'> 
+              <div className='justify-center duration-700 sm:shadow-2xl sm:absolute sm:opacity-0 sm:bottom-5 sm:bg-slate-200 rounded-2xl sm:right-12 lg:mr-72 sm:group-hover:opacity-80'>
+                <p className='sm:pt-5 sm:m-5 m-2 lg:m-0 lg:p-5 text-black bg-transparent sm:border lg:h-auto lg:text-sm font-semibold lg:leading-8 leading-6 lg:w-[500px] text-sm rounded-2xl sm:opacity-0 sm:group-hover:opacity-100 font-Montserrat'> 
                   Michelle, fueled by her unwavering dedication to the hospitality industry and an impeccable knack for crafting exquisite menus, 
                   boasts an impressive track record of overseeing operations at prestigious high-volume establishments nestled along the 
                   illustrious Las Vegas Strip. Her journey has been punctuated by stints at renowned venues such as Catch Las Vegas and Resorts 
@@ -85,7 +85,7 @@ const AboutMe = () => {
           </div>
         </div>
     </div>
-    </div> //Maybe compile media and about me
+    </div> 
   )
 }
 

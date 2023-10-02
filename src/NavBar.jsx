@@ -6,6 +6,8 @@ import Logo from '../src/Images/Logo/PNG-02.png'
 
 import Fade from 'react-reveal/Fade'
 
+import './index.css'
+
 const Services = lazy(() => import('./Pages/Services'))
 const Media = lazy(() => import('./Pages/Media'))
 const AboutMe = lazy(() => import('./Pages/AboutMe'))
@@ -13,6 +15,7 @@ const Home = lazy(() => import('./Home'))
 const ContactUs = lazy(() => import('./Pages/ContactUs'))
 
 const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   const [ contactPopUp, setContactPopUp ] = useState(false)
   const [ isTransitionComplete, setIsTransitionComplete ] = useState(false)
   useEffect(() => {
@@ -31,6 +34,18 @@ const NavBar = () => {
       homeLinkRef.current.focus();
     }
   }, [isTransitionComplete]);
+
+  const onToggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  <button className='hover:text-black' onClick={onToggleMenu}>
+    <ion-icon name="menu" id="mobile-menu-icon"></ion-icon>
+  </button>
+
+  
+
+
   
   return (
     <>
@@ -48,7 +63,7 @@ const NavBar = () => {
             
             
             <div class="nav-links  bg-blackPaper w-[360px] lg:bg-none lg:bg-transparent duration-500 lg:static lg:h-0  lg:flex-row flex-col  lg:pt-16 lg:px-5 lg:block lg:w-auto">
-              <ul class="font-medium left-0 lg:flex lg:justify-between w-full lg:h-full lg:px-20 p-4 lg:p-0 mt-4 pb-4 gap-4 lg:flex-row lg:space-x-8 lg:mt-0">
+              <ul class={`font-medium left-0 lg:flex lg:justify-between w-full lg:h-full lg:px-20 p-4 lg:p-0 mt-4 pb-4 gap-4 lg:flex-row lg:space-x-8 lg:mt-0 ${menuOpen ? 'visible opacity-100' : 'hidden opacity-0'}`}>
                 
                   <div className="flex items-center lg:bg-transparent lg:gap-10 ">
                     <Link to="/">
