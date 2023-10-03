@@ -6,6 +6,8 @@ import Logo from '../src/Images/Logo/PNG-02.png'
 
 import Fade from 'react-reveal/Fade'
 
+import { useClickAway } from "@uidotdev/usehooks";
+
 import './index.css'
 
 const Services = lazy(() => import('./Pages/Services'))
@@ -48,6 +50,17 @@ const NavBar = () => {
     tag.name = tag.name === "menu" ? "close" : "menu"
     navLinks.classList.toggle('hidden')
   }
+
+  const clickAway = useClickAway(() => {
+    const navLinks = document.querySelector('.nav-links')
+    let tag = document.getElementById("menu")
+    if (tag.name === "menu") { 
+      return;
+    }
+    tag.name = tag.name === "close" ? "menu" : "close"
+    navLinks.classList.toggle('hidden')
+    // console.log(navLinks.classList)
+  })
   
   return (
     <>
@@ -58,7 +71,7 @@ const NavBar = () => {
               <img 
                 src={Logo}
                 alt="logo"
-                className="z-0 h-[150px] w-[250px] sm:h-[200px] sm:w-[400px] absolute top-1/2 left-1/2 sm:transform sm:scale-150 mt-2 -translate-x-1/2 -translate-y-1/2"
+                className="z-0 h-[175px] w-[300px] sm:h-[200px] sm:w-[400px] absolute top-1/2 left-1/2 sm:transform sm:scale-150 mt-2 -translate-x-1/2 -translate-y-1/2"
                 loading='lazy'
                 style={{ zIndex: 0 }}>
               </img>
@@ -70,10 +83,11 @@ const NavBar = () => {
               </button>
             </div>
 
-            <div class="nav-links hidden sm:visible bg-gray-300 w-[160px] mt-7 h-screen lg:bg-none lg:bg-transparent duration-500 lg:static lg:h-0 lg:flex-row flex-col lg:pt-16 lg:px-5 lg:block lg:w-auto z-20">
+            <div class="nav-links hidden sm:visible bg-gray-200 w-[160px] mt-7 sm:mt-0 h-screen lg:bg-none lg:bg-transparent duration-500 lg:static lg:h-0 lg:flex-row flex-col lg:pt-16 lg:px-5 lg:block lg:w-auto z-20"
+            ref={clickAway}>
               <ul class={`font-medium left-0 lg:flex lg:justify-between w-full lg:h-full lg:px-20 px-4 sm:p-4 lg:p-0 mt-4 sm:pb-4 sm:gap-4 lg:flex-row lg:space-x-8 lg:mt-0 `}>
                 
-                  <div className="z-10 flex flex-col items-start sm:items-center sm:flex-row lg:bg-transparent lg:gap-10">
+                  <div className="z-10 flex flex-col items-start pt-8 sm:pt-0 sm:items-center sm:flex-row lg:bg-transparent lg:gap-10">
                     <Link to="/">
                       <button 
                         ref={homeLinkRef}
