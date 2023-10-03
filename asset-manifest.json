@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/TheCulinaryDecisions/static/css/main.dc982fc5.css",
-    "main.js": "/TheCulinaryDecisions/static/js/main.f7fc1bf5.js",
-    "static/js/250.09235979.chunk.js": "/TheCulinaryDecisions/static/js/250.09235979.chunk.js",
-    "static/js/505.6fb35d58.chunk.js": "/TheCulinaryDecisions/static/js/505.6fb35d58.chunk.js",
-    "static/js/423.f2488294.chunk.js": "/TheCulinaryDecisions/static/js/423.f2488294.chunk.js",
-    "static/js/916.1e028213.chunk.js": "/TheCulinaryDecisions/static/js/916.1e028213.chunk.js",
-    "static/js/617.4deb566f.chunk.js": "/TheCulinaryDecisions/static/js/617.4deb566f.chunk.js",
+    "main.css": "/TheCulinaryDecisions/static/css/main.12590893.css",
+    "main.js": "/TheCulinaryDecisions/static/js/main.4faa2063.js",
+    "static/js/250.7ea6b5cc.chunk.js": "/TheCulinaryDecisions/static/js/250.7ea6b5cc.chunk.js",
+    "static/js/505.94efaf2b.chunk.js": "/TheCulinaryDecisions/static/js/505.94efaf2b.chunk.js",
+    "static/js/423.ec2a4559.chunk.js": "/TheCulinaryDecisions/static/js/423.ec2a4559.chunk.js",
+    "static/js/916.049d35c4.chunk.js": "/TheCulinaryDecisions/static/js/916.049d35c4.chunk.js",
+    "static/js/617.ba4fb24d.chunk.js": "/TheCulinaryDecisions/static/js/617.ba4fb24d.chunk.js",
     "static/js/281.d7a6a3a5.chunk.js": "/TheCulinaryDecisions/static/js/281.d7a6a3a5.chunk.js",
-    "static/js/808.b4e7ef8c.chunk.js": "/TheCulinaryDecisions/static/js/808.b4e7ef8c.chunk.js",
     "static/js/805.8a44386f.chunk.js": "/TheCulinaryDecisions/static/js/805.8a44386f.chunk.js",
+    "static/js/531.ba2571f2.chunk.js": "/TheCulinaryDecisions/static/js/531.ba2571f2.chunk.js",
     "static/media/WebDevelopment.jpg": "/TheCulinaryDecisions/static/media/WebDevelopment.868dae768280c2713ab1.jpg",
     "static/media/BrandMarketing.jpg": "/TheCulinaryDecisions/static/media/BrandMarketing.8c838af94847958350f9.jpg",
     "static/media/SlideshowCocktail.jpg": "/TheCulinaryDecisions/static/media/SlideshowCocktail.825daebc27155bf142b5.jpg",
@@ -39,19 +39,19 @@
     "static/media/mirage.jpg": "/TheCulinaryDecisions/static/media/mirage.8da5c29d950c69a548d5.jpg",
     "static/media/catch.jpg": "/TheCulinaryDecisions/static/media/catch.9672355c919abb844cdb.jpg",
     "index.html": "/TheCulinaryDecisions/index.html",
-    "main.dc982fc5.css.map": "/TheCulinaryDecisions/static/css/main.dc982fc5.css.map",
-    "main.f7fc1bf5.js.map": "/TheCulinaryDecisions/static/js/main.f7fc1bf5.js.map",
-    "250.09235979.chunk.js.map": "/TheCulinaryDecisions/static/js/250.09235979.chunk.js.map",
-    "505.6fb35d58.chunk.js.map": "/TheCulinaryDecisions/static/js/505.6fb35d58.chunk.js.map",
-    "423.f2488294.chunk.js.map": "/TheCulinaryDecisions/static/js/423.f2488294.chunk.js.map",
-    "916.1e028213.chunk.js.map": "/TheCulinaryDecisions/static/js/916.1e028213.chunk.js.map",
-    "617.4deb566f.chunk.js.map": "/TheCulinaryDecisions/static/js/617.4deb566f.chunk.js.map",
+    "main.12590893.css.map": "/TheCulinaryDecisions/static/css/main.12590893.css.map",
+    "main.4faa2063.js.map": "/TheCulinaryDecisions/static/js/main.4faa2063.js.map",
+    "250.7ea6b5cc.chunk.js.map": "/TheCulinaryDecisions/static/js/250.7ea6b5cc.chunk.js.map",
+    "505.94efaf2b.chunk.js.map": "/TheCulinaryDecisions/static/js/505.94efaf2b.chunk.js.map",
+    "423.ec2a4559.chunk.js.map": "/TheCulinaryDecisions/static/js/423.ec2a4559.chunk.js.map",
+    "916.049d35c4.chunk.js.map": "/TheCulinaryDecisions/static/js/916.049d35c4.chunk.js.map",
+    "617.ba4fb24d.chunk.js.map": "/TheCulinaryDecisions/static/js/617.ba4fb24d.chunk.js.map",
     "281.d7a6a3a5.chunk.js.map": "/TheCulinaryDecisions/static/js/281.d7a6a3a5.chunk.js.map",
-    "808.b4e7ef8c.chunk.js.map": "/TheCulinaryDecisions/static/js/808.b4e7ef8c.chunk.js.map",
-    "805.8a44386f.chunk.js.map": "/TheCulinaryDecisions/static/js/805.8a44386f.chunk.js.map"
+    "805.8a44386f.chunk.js.map": "/TheCulinaryDecisions/static/js/805.8a44386f.chunk.js.map",
+    "531.ba2571f2.chunk.js.map": "/TheCulinaryDecisions/static/js/531.ba2571f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc982fc5.css",
-    "static/js/main.f7fc1bf5.js"
+    "static/css/main.12590893.css",
+    "static/js/main.4faa2063.js"
   ]
 }
