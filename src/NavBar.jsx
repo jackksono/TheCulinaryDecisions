@@ -90,10 +90,8 @@ const NavBar = () => {
                   <ion-icon name="menu" id="menu" onClick={onToggleMenu} ></ion-icon>
               </button>
             </div>
-
-            <div class="nav-links hidden sm:visible bg-gray-200 w-[160px] mt-7 sm:mt-0 h-screen lg:bg-none lg:bg-transparent duration-500 lg:static lg:h-0 lg:flex-row flex-col lg:pt-16 lg:px-5 lg:block lg:w-auto z-20"
-            
-            >
+            <ContactUs trigger={contactPopUp} setTrigger={setContactPopUp}></ContactUs>
+            <div class="nav-links hidden sm:visible bg-gray-200 w-[160px] mt-7 sm:mt-0 h-screen lg:bg-none lg:bg-transparent duration-500 lg:static lg:h-0 lg:flex-row flex-col lg:pt-16 lg:px-5 lg:block lg:w-auto z-20" >
               <ul class={`font-medium left-0 lg:flex lg:justify-between w-full lg:h-full lg:px-20 px-4 sm:p-4 lg:p-0 mt-4 sm:pb-4 sm:gap-4 lg:flex-row lg:space-x-8 lg:mt-0 `}>
                 
                   <div className="z-10 flex flex-col items-start pt-8 sm:pt-0 sm:items-center sm:flex-row lg:bg-transparent lg:gap-10">
@@ -143,7 +141,6 @@ const NavBar = () => {
                               toggleOff()}}>
                             CONTACT US
                         </button>
-                        <ContactUs trigger={contactPopUp} setTrigger={setContactPopUp}></ContactUs>
                     </span>
                   </div>
               </ul>

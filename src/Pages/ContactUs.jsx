@@ -84,8 +84,8 @@ const ContactUs = (props) => {
   };
 
   return props.trigger ? (
-    <div className="fixed z-10 overflow-auto inset-x-0 justify-center mx-auto w-3/4 sm:w-1/2 h-[700px] items-center bg-white  rounded-xl box-shadow-inset-0--3em-3em-opacity-10" 
-    // ref={clickAway}
+    <div className="fixed z-10 overflow-auto inset-x-0 justify-center mx-auto w-3/4 sm:w-1/2 h-[450px] sm:h-[700px] items-center bg-white  rounded-xl box-shadow-inset-0--3em-3em-opacity-10" 
+    ref={clickAway}
     >
         <form className="" method="post" onSubmit={(e) => sendMail(e, serviceRequested)}>
             <div className='flex justify-end pr-5 text-2xl text-black font-Montserrat'>    
