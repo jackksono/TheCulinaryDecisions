@@ -23,11 +23,11 @@ const AboutMe = () => {
   
   return (
     <div>
-      <div className='shadow-lg'>
+      <div className='shadow-lg -z-0'>
         <img 
           src={Dining}
           alt='diningPhoto'
-          className='relative object-cover w-screen sm:object-center h-screen sm:h-[700px] shadow-lg'
+          className='relative object-cover w-screen sm:object-center sm:h-[700px] shadow-lg -z-0'
           loading='lazy'>
         </img>
       </div>

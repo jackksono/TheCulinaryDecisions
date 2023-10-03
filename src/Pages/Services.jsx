@@ -31,7 +31,7 @@ const AboutUs = () => {
   const [ webDevelopmentScreen, setWebDevelopmentScreen ] = useState(false)
 
   return (
-      <div className='flex flex-col h-screen pt-10 bg-white -z-0 sm:pt-40 lg:mt-0 lg:pt-0'>
+      <div className='flex flex-col h-screen bg-white pt-28 sm:pt-40 lg:mt-0 lg:pt-0'>
         <div className='relative flex justify-center w-3/4 py-5 mx-auto text-center bg-black lg:top-1/4 left-1/8'>
             <h1 className='flex items-center justify-center font-extrabold text-white xl:text-4xl font-Montserrat '>SERVICES</h1>
         </div>
