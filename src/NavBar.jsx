@@ -37,12 +37,19 @@ const NavBar = () => {
     }
   }, [isTransitionComplete]);
 
+  setTimeout(() => {
+    console.log(contactPopUp)
+  }, 5000);
+  
   const onToggleMenu = () => {
-    const navLinks = document.querySelector('.nav-links')
-    let tag = document.getElementById("menu")
-    tag.name = tag.name === "close" ? "menu" : "close"
-    navLinks.classList.toggle('hidden')
-  }
+    const navLinks = document.querySelector('.nav-links');
+    let tag = document.getElementById("menu");
+    tag.name = tag.name === "close" ? "menu" : "close";
+    setTimeout(() => {
+      navLinks.classList.toggle('hidden');
+    }, 300); // Adjust the delay time as needed
+  };
+  
 
   const toggleOff = () => {
     const navLinks = document.querySelector('.nav-links')
@@ -66,7 +73,8 @@ const NavBar = () => {
     <>
     
       <Fade duration={3000} onReveal={() => setIsTransitionComplete(true)}>
-        <nav className="hidden nav w-screen sm:p-2 top-0 fixed inset-x-0 bg-white h-[100px] drop-shadow-lg z-10">
+        <nav className="hidden nav w-screen sm:p-2 top-0 fixed inset-x-0 bg-white h-[100px] drop-shadow-lg z-10"
+        ref={clickAway}>
             <div className="z-0">
               <img 
                 src={Logo}
@@ -84,7 +92,8 @@ const NavBar = () => {
             </div>
 
             <div class="nav-links hidden sm:visible bg-gray-200 w-[160px] mt-7 sm:mt-0 h-screen lg:bg-none lg:bg-transparent duration-500 lg:static lg:h-0 lg:flex-row flex-col lg:pt-16 lg:px-5 lg:block lg:w-auto z-20"
-            ref={clickAway}>
+            
+            >
               <ul class={`font-medium left-0 lg:flex lg:justify-between w-full lg:h-full lg:px-20 px-4 sm:p-4 lg:p-0 mt-4 sm:pb-4 sm:gap-4 lg:flex-row lg:space-x-8 lg:mt-0 `}>
                 
                   <div className="z-10 flex flex-col items-start pt-8 sm:pt-0 sm:items-center sm:flex-row lg:bg-transparent lg:gap-10">
