@@ -75,13 +75,13 @@ return (
   <div>
     {showContent ? (
       <Fade duration={5000}>
-        <div className='relative overflow-auto overflow-x-hidden bg-white shadow-lg fade-in'>
-          <div className='justify-center'>
-            <div className='relative justify-center sm:w-screen lg:h-screen'>
+        <div className='relative overflow-auto overflow-x-hidden bg-white sm:shadow-lg pt-28 fade-in'>
+          <div className='justify-center overflow-y-hidden'>
+            <div className='relative justify-center w-screen h-[350px] sm:h-screen '>
               {slides.map((slide, slideIndex) => (
                 <div
                   key={slideIndex}
-                  className={`w-[375px] h-[300px] sm:w-screen  sm:h-full bg-no-repeat bg-cover bg-center rounded-2xl absolute transition-transform duration-${transitionDuration}`}
+                  className={`h-[350px] w-screen  sm:h-full bg-no-repeat bg-cover bg-center rounded-2xl absolute transition-transform duration-${transitionDuration}`}
                   loading='lazy'
                   style={{
                     backgroundImage: `url(${slide.url})`,
@@ -92,12 +92,12 @@ return (
                 ></div>
               ))}
             </div>
-            <div className='absolute items-center justify-center pb-10 transform -translate-x-1/2 bottom-24 left-1/2 place-content-center'>
+            <div className='absolute items-center justify-center transform -translate-x-1/2 sm:pb-10 sm:bottom-24 left-1/2 place-content-center'>
               {slides.map((_, slideIndex) => (
                 <div
                   key={slideIndex}
                   onClick={() => goToSlide(slideIndex)}
-                  className={`inline-block mx-2 text-4xl transition duration-150 ease-in-out cursor-pointer hover:text-white hover:scale-150 ${
+                  className={`inline-block sm:mx-2 sm:text-4xl transition duration-150 ease-in-out cursor-pointer hover:text-white hover:scale-150 ${
                     currentIndex === slideIndex ? 'text-white' : 'text-gray-300'
                   }`}
                   loading='lazy'
@@ -109,14 +109,14 @@ return (
           </div>
           {/* Left Arrow */}
           <div
-            className='group-hover:block absolute lg:top-[50%] top-[25%] -translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 bg-black/20 text-white cursor-pointer hover:bg-white hover:text-black'
+            className='group-hover:block absolute sm:top-[50%] top-[60%] -translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 bg-black/20 text-white cursor-pointer hover:bg-white hover:text-black'
             onClick={prevSlide}
           >
             <ArrowBackIosIcon size={80} />
           </div>
           {/* Right Arrow */}
           <div
-            className='group-hover:block absolute lg:top-[50%] top-[25%] -translate-x-0 translate-y-[-50%] right-5 rounded-full p-2 bg-black/20 text-white cursor-pointer hover:bg-white hover:text-black'
+            className='group-hover:block absolute sm:top-[50%] top-[60%] -translate-x-0 translate-y-[-50%] right-5 rounded-full p-2 bg-black/20 text-white cursor-pointer hover:bg-white hover:text-black'
             onClick={nextSlide}
           >
             <ArrowForwardIosIcon size={80} />
@@ -130,14 +130,14 @@ return (
     <div>
       {showContent ? (
         <>
-        <div className='flex justify-center pt-10 text-center '>
-          <div className='flex w-3/4 text-3xl font-extrabold text-black font-Montserrat'>
+        <div className='flex justify-center pt-5 text-center sm:pt-10'>
+          <div className='flex w-3/4 text-xl font-extrabold text-black sm:text-3xl font-Montserrat'>
             Culinary Decisions, make the best informed decision for <br /> Luxury Lifestyle Hospitality Development, Management and Consulting.
           </div>
         </div>
 
         <div className='flex justify-center pt-10 pb-20 text-center '>
-          <div className='flex w-3/4 text-lg font-semibold text-justify text-black font-Montserrat'>
+          <div className='flex w-3/4 text-sm font-semibold tracking-normal text-justify text-black sm:text-lg font-Montserrat'>
             Culinary Decisions empowers you to make well-informed choices for the world of upscale hospitality development, 
             management, and consulting. Our dedicated team is deeply engaged at every level, playing an integral role in curating,
             developing, and successfully managing luxury concepts for hotels and restaurants. We deliver synergistic results through our 

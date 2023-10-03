@@ -53,7 +53,7 @@ const NavBar = () => {
     <>
     
       <Fade duration={3000} onReveal={() => setIsTransitionComplete(true)}>
-        <nav className="hidden nav w-screen p-2 top-0 fixed inset-x-0 bg-white h-[100px] drop-shadow-lg z-10">
+        <nav className="hidden nav w-screen sm:p-2 top-0 fixed inset-x-0 bg-white h-[100px] drop-shadow-lg z-10">
             <div className="z-0">
               <img 
                 src={Logo}
@@ -64,20 +64,20 @@ const NavBar = () => {
               </img>
             </div>
             
-            <div className="flex pt-3 text-2xl text-color-text sm:hidden">
+            <div className="flex pt-10 pl-5 text-2xl text-color-text sm:hidden">
               <button>
                   <ion-icon name="menu" id="menu" onClick={onToggleMenu} ></ion-icon>
               </button>
             </div>
 
-            <div class="nav-links hidden sm:visible bg-gray-300 w-[360px] lg:bg-none lg:bg-transparent duration-500 lg:static lg:h-0 lg:flex-row flex-col lg:pt-16 lg:px-5 lg:block lg:w-auto z-20">
-              <ul class={`font-medium left-0 lg:flex lg:justify-between w-full lg:h-full lg:px-20 p-4 lg:p-0 mt-4 pb-4 gap-4 lg:flex-row lg:space-x-8 lg:mt-0 `}>
+            <div class="nav-links hidden sm:visible bg-gray-300 w-[160px] mt-7 h-screen lg:bg-none lg:bg-transparent duration-500 lg:static lg:h-0 lg:flex-row flex-col lg:pt-16 lg:px-5 lg:block lg:w-auto z-20">
+              <ul class={`font-medium left-0 lg:flex lg:justify-between w-full lg:h-full lg:px-20 px-4 sm:p-4 lg:p-0 mt-4 sm:pb-4 sm:gap-4 lg:flex-row lg:space-x-8 lg:mt-0 `}>
                 
                   <div className="z-10 flex flex-col items-start sm:items-center sm:flex-row lg:bg-transparent lg:gap-10">
                     <Link to="/">
                       <button 
                         ref={homeLinkRef}
-                        className="text-[10px] font-Montserrat focus:outline-none lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black font-Kanit hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="text-[10px] py-3 font-Montserrat focus:outline-none lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black font-Kanit hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         tabIndex={0}
                         onClick={() => {toggleOff()}}>
                         HOME
@@ -85,7 +85,7 @@ const NavBar = () => {
                     </Link>
                     <Link to="/team">
                       <button 
-                        className="font-Montserrat text-[10px] lg:text-lg lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="font-Montserrat text-[10px] py-3 lg:text-lg lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         onClick={() => {toggleOff()}}
                         >
                         EXECUTIVE LEADERSHIP
@@ -97,7 +97,7 @@ const NavBar = () => {
                   <div className="left-0 flex flex-col items-start sm:flex-row sm:bg-transparent sm:items-center sm:flex-non sm:gap-10">
                     <Link to="/services">
                       <button 
-                        className="font-Montserrat text-[10px] lg:text-lg lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="font-Montserrat text-[10px] py-3 lg:text-lg lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         onClick={() => {toggleOff()}}
                       >
                         SERVICES
@@ -106,14 +106,14 @@ const NavBar = () => {
 
                     <Link to="/media">
                       <button 
-                        className="font-Montserrat text-[10px] lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="font-Montserrat text-[10px] py-3 lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         onClick={() => {toggleOff()}}>
                         MEDIA
                       </button>
                     </Link>
 
                     <span className="" >
-                        <button className="font-Montserrat text-[10px] lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        <button className="font-Montserrat text-[10px] py-3 lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                             value="click"
                             onClick={() => {
                               setContactPopUp(true)

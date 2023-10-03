@@ -27,7 +27,7 @@ const AboutMe = () => {
         <img 
           src={Dining}
           alt='diningPhoto'
-          className='relative object-cover w-screen sm:object-center sm:h-[700px] shadow-lg -z-0'
+          className='relative object-cover w-screen sm:object-center h-[550px] sm:h-[700px] shadow-lg -z-0'
           loading='lazy'>
         </img>
       </div>
@@ -46,7 +46,7 @@ const AboutMe = () => {
                 />
               </Fade>
               <div className='justify-center duration-700 sm:shadow-2xl sm:absolute sm:opacity-0 sm:bottom-20 sm:bg-slate-200 sm:outline-none rounded-2xl sm:left-12 lg:ml-72 sm:group-hover:opacity-80'>
-                <p className='sm:pt-5 sm:m-5 m-2 lg:m-0 lg:p-5 text-black bg-transparent sm:border lg:h-auto lg:text-sm font-semibold lg:leading-8 leading-6 lg:w-[500px] text-sm rounded-2xl sm:opacity-0 sm:group-hover:opacity-100 font-Montserrat'>
+                <p className='sm:pt-5 sm:m-5 m-2 mx-5 text-justify sm:text-base lg:m-0 lg:p-5 pt-5 text-black bg-transparent sm:border lg:h-auto font-semibold lg:leading-8 leading-6 lg:w-[500px] text-sm rounded-2xl sm:opacity-0 sm:group-hover:opacity-100 font-Montserrat'>
                 A first-generation American, Levan offers a diverse and unique perspective. With over 20 years' experience in luxury resort 
                 operations and leadership, she has collaborated with a variety of hospitality powerhouses across the Las Vegas strip. 
                 Her passion for curating new and innovative concepts led her to spearhead the opening of Resorts World Las Vegas as the Director
@@ -64,14 +64,14 @@ const AboutMe = () => {
             <div className='relative'>
               <Fade right when={zoom2InView}>
                 <img 
-                  className='shadow-xl sm:rounded-full sm:h-[500px] w-auto lg:ml-40'
+                  className='shadow-xl sm:rounded-full sm:h-[500px] lg:ml-40 w-screen'
                   alt='Headshot'
                   src={Mich}
                   loading='lazy'
                 />
               </Fade>
-              <div className='justify-center duration-700 sm:shadow-2xl sm:absolute sm:opacity-0 sm:bottom-5 sm:bg-slate-200 rounded-2xl sm:right-12 lg:mr-72 sm:group-hover:opacity-80'>
-                <p className='sm:pt-5 sm:m-5 m-2 lg:m-0 lg:p-5 text-black bg-transparent sm:border lg:h-auto lg:text-sm font-semibold lg:leading-8 leading-6 lg:w-[500px] text-sm rounded-2xl sm:opacity-0 sm:group-hover:opacity-100 font-Montserrat'> 
+              <div className='justify-center pt-5 mx-5 text-justify duration-700 sm:pt-0 sm:text-base sm:shadow-2xl sm:absolute sm:opacity-0 sm:bottom-5 sm:bg-slate-200 rounded-2xl sm:right-12 lg:mr-72 sm:group-hover:opacity-80'>
+                <p className='sm:pt-5 sm:m-5 m-2 lg:m-0 lg:p-5 text-black bg-transparent sm:border lg:h-auto font-semibold lg:leading-8 leading-6 lg:w-[500px] text-sm rounded-2xl sm:opacity-0 sm:group-hover:opacity-100 font-Montserrat'> 
                   Michelle, fueled by her unwavering dedication to the hospitality industry and an impeccable knack for crafting exquisite menus, 
                   boasts an impressive track record of overseeing operations at prestigious high-volume establishments nestled along the 
                   illustrious Las Vegas Strip. Her journey has been punctuated by stints at renowned venues such as Catch Las Vegas and Resorts 

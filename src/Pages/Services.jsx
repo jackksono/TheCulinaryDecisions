@@ -31,7 +31,7 @@ const AboutUs = () => {
   const [ webDevelopmentScreen, setWebDevelopmentScreen ] = useState(false)
 
   return (
-      <div className='flex flex-col h-screen bg-white pt-28 sm:pt-40 lg:mt-0 lg:pt-0'>
+      <div className='flex flex-col h-screen pt-40 bg-white lg:mt-0 lg:pt-0'>
         <div className='relative flex justify-center w-3/4 py-5 mx-auto text-center bg-black lg:top-1/4 left-1/8'>
             <h1 className='flex items-center justify-center font-extrabold text-white xl:text-4xl font-Montserrat '>SERVICES</h1>
         </div>
@@ -66,7 +66,7 @@ const AboutUs = () => {
                   <img className='cursor-pointer' alt='service1' src={BrandMarketing} loading='lazy' onClick={() => setbrandMarketingScreen(true)}></img>
                   {brandMarketingScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setbrandMarketingScreen(false)}>
-                      <button className='absolute z-20 pt-20 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setbrandMarketingScreen(false)}>X</button>
+                      <button className='absolute z-20 pt-[15%] sm:pt-20 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setbrandMarketingScreen(false)}>X</button>
                       <p className='px-10 text-[8px] font-bold text-white sm:text-lg font-Montserrat'>
                         In the competitive hospitality industry, our specialized consulting team crafts unique brand strategies 
                         to drive growth. We analyze markets, understand trends, and create compelling brand identities tailored to
@@ -90,7 +90,7 @@ const AboutUs = () => {
                   <img className='cursor-pointer' alt='service1' src={MerchandiseProduction} loading='lazy' onClick={() => setcustomMerchandiseScreen(true)}></img>
                   {customMerchandiseScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setcustomMerchandiseScreen(false)}>
-                      <button className='absolute z-20 pt-20 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setcustomMerchandiseScreen(false)}>X</button>
+                      <button className='absolute z-20 pt-[15%] sm:pt-20 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setcustomMerchandiseScreen(false)}>X</button>
                       <p className='px-10 text-[8px] font-bold text-white sm:text-lg font-Montserrat'>
                         We understand that one size does not fit all. Our custom product manufacturing service is tailored to your unique 
                         hospitality needs. Whether it's elevating your ambiance, adding luxury and comfort, or creating memorable amenities, 
@@ -118,7 +118,7 @@ const AboutUs = () => {
                   <img className='cursor-pointer' alt='service1' src={EventPlanner} loading='lazy' onClick={() => setEventPlanningScreen(true)}></img>
                   {eventPlanningScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setEventPlanningScreen(false)}>
-                      <button className='absolute z-20 pt-20 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setEventPlanningScreen(false)}>X</button>
+                      <button className='absolute z-20 pt-[15%] sm:pt-20 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setEventPlanningScreen(false)}>X</button>
                       <p className='px-10 text-[8px] font-bold text-white sm:text-lg font-Montserrat'>
                         We are dedicated to crafting unforgettable experiences that leave lasting impressions. Our comprehensive range of services 
                         is designed to transform your event dreams into reality, ensuring every detail is meticulously curated and flawlessly 
