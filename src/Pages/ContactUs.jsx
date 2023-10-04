@@ -14,7 +14,7 @@ const ContactUs = (props) => {
   
   const Result = () => {
     return (
-        <p className='text-black'>Your message has been successfully sent!</p>
+        <p className='text-xs text-black sm:text-base'>Your message has been successfully sent!</p>
     )
   }
 
@@ -25,7 +25,7 @@ const ContactUs = (props) => {
 
   const EmailResponse = () => {
     return (
-        <p>**Please enter a valid email**</p>
+        <p >**Please enter a valid email**</p>
     )
   }
 
