@@ -73,7 +73,7 @@ const NavBar = () => {
     <>
     
       <Fade duration={3000} onReveal={() => setIsTransitionComplete(true)}>
-        <nav className="hidden nav w-screen sm:p-2 top-0 fixed inset-x-0 bg-white h-[100px] drop-shadow-lg z-10"
+        <nav className="hidden nav w-screen sm:p-2 top-0 fixed inset-x-0 bg-white h-[100px] drop-shadow-sm z-10"
         ref={clickAway}>
             <div className="z-0">
               <img 
@@ -91,14 +91,14 @@ const NavBar = () => {
               </button>
             </div>
             <ContactUs trigger={contactPopUp} setTrigger={setContactPopUp}></ContactUs>
-            <div class="nav-links hidden sm:visible bg-gray-200 w-[160px] mt-7 sm:mt-0 h-screen lg:bg-none lg:bg-transparent duration-500 lg:static lg:h-0 lg:flex-row flex-col lg:pt-16 lg:px-5 lg:block lg:w-auto z-20" >
-              <ul class={`font-medium left-0 lg:flex lg:justify-between w-full lg:h-full lg:px-20 px-4 sm:p-4 lg:p-0 mt-4 sm:pb-4 sm:gap-4 lg:flex-row lg:space-x-8 lg:mt-0 `}>
+            <div class="nav-links hidden sm:visible bg-gray-200 w-[160px] mt-7 sm:mt-0 h-screen sm:bg-none sm:bg-transparent duration-500 sm:static sm:h-0 sm:flex-row flex-col sm:pt-16 sm:px-5 sm:block sm:w-auto z-20" >
+              <ul class={`font-medium left-0 sm:flex sm:justify-between w-full sm:h-full sm:px-20 px-4 sm:p-0 mt-4 sm:pb-4 sm:gap-4 sm:flex-row sm:space-x-8 sm:mt-0 `}>
                 
-                  <div className="z-10 flex flex-col items-start pt-8 sm:pt-0 sm:items-center sm:flex-row lg:bg-transparent lg:gap-10">
+                  <div className="z-10 flex flex-col items-start pt-8 sm:pt-0 sm:items-center sm:flex-row sm:bg-transparent sm:gap-10">
                     <Link to="/">
                       <button 
                         ref={homeLinkRef}
-                        className="text-[10px] py-3 font-Montserrat focus:outline-none lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black font-Kanit hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="text-[10px] py-3 font-Montserrat focus:outline-none sm:text-sm font-semibold sm:duration-200 bg-primary-500 text-black font-Kanit hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         tabIndex={0}
                         onClick={() => {toggleOff()}}>
                         HOME
@@ -106,7 +106,7 @@ const NavBar = () => {
                     </Link>
                     <Link to="/team">
                       <button 
-                        className="font-Montserrat text-[10px] py-3 lg:text-lg lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="font-Montserrat text-[10px] py-3 sm:text-sm font-semibold sm:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         onClick={() => {toggleOff()}}
                         >
                         EXECUTIVE LEADERSHIP
@@ -118,7 +118,7 @@ const NavBar = () => {
                   <div className="left-0 flex flex-col items-start sm:flex-row sm:bg-transparent sm:items-center sm:flex-non sm:gap-10">
                     <Link to="/services">
                       <button 
-                        className="font-Montserrat text-[10px] py-3 lg:text-lg lg:font-semibold lg:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="font-Montserrat text-[10px] py-3 sm:text-sm font-semibold sm:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         onClick={() => {toggleOff()}}
                       >
                         SERVICES
@@ -127,14 +127,14 @@ const NavBar = () => {
 
                     <Link to="/media">
                       <button 
-                        className="font-Montserrat text-[10px] py-3 lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="font-Montserrat text-[10px] py-3 sm:text-sm font-semibold sm:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         onClick={() => {toggleOff()}}>
                         MEDIA
                       </button>
                     </Link>
 
                     <span className="" >
-                        <button className="font-Montserrat text-[10px] py-3 lg:text-lg lg:font-semibold lg:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        <button className="font-Montserrat text-[10px] py-3 sm:text-sm font-semibold sm:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                             value="click"
                             onClick={() => {
                               setContactPopUp(true)

@@ -84,18 +84,18 @@ const ContactUs = (props) => {
   };
 
   return props.trigger ? (
-    <div className="fixed z-10 overflow-auto inset-x-0 justify-center mx-auto w-3/4 sm:w-1/2 h-[450px] sm:h-[700px] items-center bg-white  rounded-xl box-shadow-inset-0--3em-3em-opacity-10" 
+    <div className="fixed z-20 overflow-auto inset-x-0 justify-center mx-auto w-3/4 sm:w-1/2 h-[450px] sm:h-[700px] items-center bg-white  rounded-xl box-shadow-inset-0--3em-3em-opacity-10" 
     ref={clickAway}
     >
         <form className="" method="post" onSubmit={(e) => sendMail(e, serviceRequested)}>
             <div className='flex justify-end pr-5 text-2xl text-black font-Montserrat'>    
                 <button  onClick={() => props.setTrigger(false)}>X</button>
             </div>
-            <h1 className="flex justify-center text-2xl font-extrabold text-black sm:text-4xl font-Montserrat">Business Inquiries</h1> 
-            <div className="pl-6 text-lg text-black">
-                <span className="pl-3 text-sm font-bold text-black sm:flex sm:text-lg font-Montserrat">Name  <span className='sm:text-sm'>(required)</span></span>
+            <h1 className="flex justify-center text-xl font-extrabold text-black sm:text-4xl font-Montserrat">Business Inquiries</h1> 
+            <div className="pt-3 pl-6 text-black sm:pt-0">
+                <span className="flex pl-3 text-xs font-bold text-black sm:text-lg font-Montserrat">Name  <span className='sm:text-sm'>(required)</span></span>
                 <input 
-                  className="flex justify-center p-1 m-1 sm:m-1 border-2 h-[20px] sm:h-auto border-black border-solid font-Montserrat w-11/12 text-md sm:text-lg focus:outline-none focus:border-4 focus:border-solid focus:shadow-2xl bg-opacity-90 rounded-xl" 
+                  className="flex justify-center p-1 m-1 sm:m-1 border-2 h-[20px] sm:h-auto border-black border-solid font-Montserrat w-11/12 text-xs sm:text-lg focus:outline-none focus:border-4 focus:border-solid focus:shadow-2xl rounded-xl" 
                   type='text' 
                   name='name' 
                   id=""
@@ -106,10 +106,10 @@ const ContactUs = (props) => {
                  />
             </div>
 
-            <div className="pl-6 text-lg text-black sm:pt-2">
-                <span className="pl-3 text-sm font-bold sm:flex sm:text-lg font-Montserrat">Email <span className='sm:text-sm'>(required)</span></span>
+            <div className="pl-6 text-black sm:pt-2">
+                <span className="flex pl-3 text-xs font-bold sm:text-lg font-Montserrat">Email <span className='sm:text-sm'>(required)</span></span>
                 <input 
-                  className="flex justify-center w-11/12 p-1 m-1 sm:m-1 h-[20px] sm:h-auto border-2 font-Montserrat  border-black border-solid sm:text-lg focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
+                  className="flex justify-center w-11/12 p-1 m-1 sm:m-1 h-[20px] sm:h-auto border-2 font-Montserrat text-xs border-black border-solid sm:text-lg focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
                   type='email' 
                   name='email' 
                   id="" 
@@ -122,15 +122,15 @@ const ContactUs = (props) => {
                 <h2 className= "font-semibold text-center text-red-900 underline text-md font-Montserrat">{validEmail ? <EmailResponse/> : null }</h2> 
             </div>
 
-            <div className="pl-6 text-lg text-black sm:pt-2">
-                <span className="pl-3 text-sm font-bold sm:flex sm:text-lg font-Montserrat">Phone Number:</span>
-                <input className="flex justify-center p-1 m-1 sm:m-1 border-2 h-[20px] sm:h-auto border-black border-solid font-Montserrat w-11/12 text-md sm:text-lg focus:outline-none focus:border-4 focus:border-solid focus:shadow-2xl bg-opacity-90 rounded-xl" 
+            <div className="pl-6 text-black sm:pt-2">
+                <span className="flex pl-3 text-xs font-bold sm:text-lg font-Montserrat">Phone Number:</span>
+                <input className="flex justify-center p-1 m-1 sm:m-1 border-2 h-[20px] sm:h-auto border-black border-solid font-Montserrat w-11/12 text-xs sm:text-lg focus:outline-none focus:border-4 focus:border-solid focus:shadow-2xl rounded-xl" 
                 type='phone' name='phone' id="" onChange={handleChange} value={data.phone} placeholder="+1 (xxx)-xxx-xxxx"/>
             </div>
 
-            <div className="pl-6 text-lg text-black sm:pt-2">
-                <span className="pl-3 text-sm font-bold sm:flex sm:text-lg font-Montserrat">Service Requested <span className='sm:text-sm'>(required)</span></span>
-                  <input className="relative flex justify-center w-11/12 p-1 m-1 sm:m-1 h-[20px] font-Montserrat sm:h-auto text-md sm:text-lg border-2 border-black border-solid focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
+            <div className="pl-6 text-black sm:pt-2">
+                <span className="flex pl-3 text-xs font-bold sm:text-lg font-Montserrat">Service Requested <span className='sm:text-sm'>(required)</span></span>
+                  <input className="relative flex justify-center w-11/12 p-1 m-1 sm:m-1 h-[20px] font-Montserrat sm:h-auto text-xs sm:text-lg border-2 border-black border-solid focus:outline-none rounded-xl focus:border-4 focus:border-solid focus:shadow-2xl" 
                     type='serviceRequested' 
                     name='serviceRequested' 
                     id="" 
@@ -141,32 +141,32 @@ const ContactUs = (props) => {
                     required>
                   </input>
                   <RiArrowDropDownLine 
-                    className='arrow absolute sm:text-[100px] text-black transform sm:-translate-y-1/2 sm:right-0 sm:mb-10 sm:pb-12 sm:mr-12 sm:cursor-pointer'
+                    className='arrow absolute sm:text-[100px] text-black transform -translate-y-6 sm:-translate-y-1/2 right-0 mr-12 sm:pb-12 sm:mr-12 sm:cursor-pointer hover:text-gray-400'
                     onClick={toggle}>
                   </RiArrowDropDownLine>
                   <GrFormClose 
-                    className='close hidden absolute sm:text-[80px] text-gray-500 transform sm:-translate-y-1/2 sm:right-0 sm:mb-10 sm:pb-12 sm:mr-16 sm:cursor-pointer'
+                    className='close hidden absolute sm:text-[80px] text-black transform -translate-y-5 sm:-translate-y-1/2 right-0 pb-1 mr-10 sm:pb-12 sm:mr-16 sm:cursor-pointer hover:text-gray-400'
                     onClick={toggle}>
                   </GrFormClose>
-                  <div className='justify-center sm:pl-4'>
-                    <div className='items-center hidden w-1/2 bg-white border border-black toggle rounded-xl'>
-                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Brand Marketing'); toggle()}}>Brand Marketing</ul>
-                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Event Planning'); toggle()}}>Event Planning</ul>
-                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Food and Beverage Consulting'); toggle()}}>Food and Beverage Consulting</ul>
-                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Hospitality Consulting'); toggle()}}>Hospitality Consulting</ul>
-                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Merchandising'); toggle()}}>Merchandising</ul>
-                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Nightlife Consulting'); toggle()}}>Nightlife Consulting</ul>
-                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Open Venue Protocol'); toggle()}}>Open Venue Protocol</ul>
-                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Sourcing'); toggle()}}>Sourcing</ul>
-                      <ul className='flex p-2 border cursor-pointer border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Other'); toggle()}}>Other</ul>
+                  <div className='justify-center pt-0 pl-1 sm:pl-4'>
+                    <div className='items-center hidden w-1/2 text-[8px] bg-white border border-black sm:text-base toggle rounded-xl'>
+                      <ul className='flex sm:p-2 pl-2  border cursor-pointer h-[20px] sm:h-auto border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Brand Marketing'); toggle()}}>Brand Marketing</ul>
+                      <ul className='flex sm:p-2 pl-2  border cursor-pointer h-[20px] sm:h-auto border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Event Planning'); toggle()}}>Event Planning</ul>
+                      <ul className='flex sm:p-2 pl-2  border cursor-pointer h-[20px] sm:h-auto border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Food and Beverage Consulting'); toggle()}}>Food and Beverage Consulting</ul>
+                      <ul className='flex sm:p-2 pl-2  border cursor-pointer h-[20px] sm:h-auto border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Hospitality Consulting'); toggle()}}>Hospitality Consulting</ul>
+                      <ul className='flex sm:p-2 pl-2  border cursor-pointer h-[20px] sm:h-auto border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Merchandising'); toggle()}}>Merchandising</ul>
+                      <ul className='flex sm:p-2 pl-2  border cursor-pointer h-[20px] sm:h-auto border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Nightlife Consulting'); toggle()}}>Nightlife Consulting</ul>
+                      <ul className='flex sm:p-2 pl-2  border cursor-pointer h-[20px] sm:h-auto border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Open Venue Protocol'); toggle()}}>Open Venue Protocol</ul>
+                      <ul className='flex sm:p-2 pl-2  border cursor-pointer h-[20px] sm:h-auto border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Sourcing'); toggle()}}>Sourcing</ul>
+                      <ul className='flex sm:p-2 pl-2  border cursor-pointer h-[20px] sm:h-auto border-gray-50 rounded-xl hover:bg-gray-400 hover:text-white' onClick={() => {setServiceRequested('Other'); toggle()}}>Other</ul>
                     </div>
                   </div>
             </div>
 
             <div className="pl-6 text-black align-baseline sm:pt-2">
-                <span className="pl-3 text-sm font-bold sm:flex sm:text-lg font-Montserrat">Message <span className='sm:text-sm'>(required)</span></span>
+                <span className="flex pl-3 text-xs font-bold sm:text-lg font-Montserrat">Message <span className='sm:text-sm'>(required)</span></span>
                 <textarea 
-                  className="flex justify-center w-11/12 p-1 m-1 sm:m-1 h-[75px] font-Montserrat sm:h-auto text-md sm:text-lg border-2 border-black border-solid focus:outline-none focus:border-4 rounded-xl focus:border-solid focus:shadow-2xl" 
+                  className="flex justify-center w-11/12 p-1 m-1 sm:m-1 h-[75px] font-Montserrat sm:h-auto text-xs sm:text-lg border-2 border-black border-solid focus:outline-none focus:border-4 rounded-xl focus:border-solid focus:shadow-2xl" 
                   name='message' 
                   id='' 
                   cols='30' 

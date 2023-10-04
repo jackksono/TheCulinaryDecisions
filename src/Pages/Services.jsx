@@ -66,7 +66,7 @@ const AboutUs = () => {
                   <img className='cursor-pointer' alt='service1' src={BrandMarketing} loading='lazy' onClick={() => setbrandMarketingScreen(true)}></img>
                   {brandMarketingScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setbrandMarketingScreen(false)}>
-                      <button className='absolute z-20 pt-[15%] sm:pt-20 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setbrandMarketingScreen(false)}>X</button>
+                      <button className='absolute z-20 pt-2 pr-12 text-2xl text-white sm:pt-20 top-2 right-2 font-Montserrat' onClick={() => setbrandMarketingScreen(false)}>X</button>
                       <p className='px-10 text-[8px] font-bold text-white sm:text-lg font-Montserrat'>
                         In the competitive hospitality industry, our specialized consulting team crafts unique brand strategies 
                         to drive growth. We analyze markets, understand trends, and create compelling brand identities tailored to
@@ -90,7 +90,7 @@ const AboutUs = () => {
                   <img className='cursor-pointer' alt='service1' src={MerchandiseProduction} loading='lazy' onClick={() => setcustomMerchandiseScreen(true)}></img>
                   {customMerchandiseScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setcustomMerchandiseScreen(false)}>
-                      <button className='absolute z-20 pt-[15%] sm:pt-20 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setcustomMerchandiseScreen(false)}>X</button>
+                      <button className='absolute z-20 pt-2 pr-12 text-2xl text-white sm:pt-20 top-2 right-2 font-Montserrat' onClick={() => setcustomMerchandiseScreen(false)}>X</button>
                       <p className='px-10 text-[8px] font-bold text-white sm:text-lg font-Montserrat'>
                         We understand that one size does not fit all. Our custom product manufacturing service is tailored to your unique 
                         hospitality needs. Whether it's elevating your ambiance, adding luxury and comfort, or creating memorable amenities, 
@@ -118,7 +118,7 @@ const AboutUs = () => {
                   <img className='cursor-pointer' alt='service1' src={EventPlanner} loading='lazy' onClick={() => setEventPlanningScreen(true)}></img>
                   {eventPlanningScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setEventPlanningScreen(false)}>
-                      <button className='absolute z-20 pt-[15%] sm:pt-20 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setEventPlanningScreen(false)}>X</button>
+                      <button className='absolute z-20 pt-2 pr-12 text-2xl text-white sm:pt-20 top-2 right-2 font-Montserrat' onClick={() => setEventPlanningScreen(false)}>X</button>
                       <p className='px-10 text-[8px] font-bold text-white sm:text-lg font-Montserrat'>
                         We are dedicated to crafting unforgettable experiences that leave lasting impressions. Our comprehensive range of services 
                         is designed to transform your event dreams into reality, ensuring every detail is meticulously curated and flawlessly 
@@ -144,7 +144,7 @@ const AboutUs = () => {
                   <img className='cursor-pointer' alt='service1' src={FoodandBeverage} loading='lazy' onClick={() => setFoodAndBeverageScreen(true)}></img>
                   {foodandBeverageScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setFoodAndBeverageScreen(false)}>
-                      <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2 font-Montserrat' onClick={() => setFoodAndBeverageScreen(false)}>X</button>
+                      <button className='absolute z-20 pt-2 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setFoodAndBeverageScreen(false)}>X</button>
                       <p className='px-10 text-[8px] font-bold text-white sm:text-lg font-Montserrat'>
                         Our team of industry experts brings a wealth of knowledge in culinary trends, menu development, kitchen operations, 
                         sourcing the finest ingredients, and optimizing cost-efficiency. We work closely with you to understand your brand's 
@@ -171,7 +171,7 @@ const AboutUs = () => {
                   <img className='cursor-pointer' alt='service1' src={HospitalityConsulting} loading='lazy' onClick={() => setHospitalityConsultingScreen(true)}></img>
                   {hospitalityConsultingScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setHospitalityConsultingScreen(false)}>
-                      <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2 font-Montserrat' onClick={() => setHospitalityConsultingScreen(false)}>X</button>
+                      <button className='absolute z-20 pt-2 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setHospitalityConsultingScreen(false)}>X</button>
                       <p className='px-10 text-[8px] font-bold text-white sm:text-lg font-Montserrat'>
                         Our hospitality consulting services are designed to empower your business in the dynamic and competitive world of 
                         hospitality. With a team of seasoned experts and a deep understanding of industry trends, we provide comprehensive solutions 
@@ -200,7 +200,7 @@ const AboutUs = () => {
                   <img className='cursor-pointer' alt='service1' src={NightlifeConsulting} loading='lazy' onClick={() => setNightLifeConsultingScreen(true)}></img>
                   {nightLifeConsultingScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setNightLifeConsultingScreen(false)}>
-                      <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2 font-Montserrat' onClick={() => setNightLifeConsultingScreen(false)}>X</button>
+                      <button className='absolute z-20 pt-2 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setNightLifeConsultingScreen(false)}>X</button>
                       <p className='px-10 text-[8px] font-bold text-white sm:text-lg font-Montserrat'>
                         Our nightlife consulting services are your ticket to creating vibrant and unforgettable entertainment experiences within 
                         the hospitality industry. With a team of nightlife experts deeply attuned to the pulse of trends and innovation, we offer
@@ -226,7 +226,7 @@ const AboutUs = () => {
                   <img className='cursor-pointer' alt='service1' src={OpenVenueProtocol} loading='lazy' onClick={() => setOpenVenueProtocolScreen(true)}></img>
                   {openVenueProtocolScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setOpenVenueProtocolScreen(false)}>
-                      <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2 font-Montserrat' onClick={() => setOpenVenueProtocolScreen(false)}>X</button>
+                      <button className='absolute z-20 pt-2 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setOpenVenueProtocolScreen(false)}>X</button>
                       <p className='px-10 text-[8px] font-bold text-white sm:text-lg font-Montserrat'>
                         Our Open Venue Protocol services for hotels and restaurants set the diamond standard. We understand that creating a safe 
                         and welcoming environment for patrons is a top priority, especially in the face of evolving health and safety concerns. Our 
@@ -253,7 +253,7 @@ const AboutUs = () => {
                   <img className='cursor-pointer' alt='service1' src={Sourcing} loading='lazy' onClick={() => setSourcingScreen(true)}></img>
                   {sourcingScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setSourcingScreen(false)}>
-                      <button className='absolute z-20 pt-10 pr-12 text-2xl text-white sm:pt-20 top-2 right-2 font-Montserrat' onClick={() => setSourcingScreen(false)}>X</button>
+                      <button className='absolute z-20 pt-2 pr-12 text-2xl text-white sm:pt-20 top-2 right-2 font-Montserrat' onClick={() => setSourcingScreen(false)}>X</button>
                       <p className='px-10 text-[8px] font-bold text-white sm:text-lg font-Montserrat'>
                         Our sourcing services in hospitality are all about delivering quality while managing costs. With expertise in market trends 
                         and a vast supplier network, we ensure you access top-notch ingredients, furnishings, and amenities aligned with your brand's
@@ -279,7 +279,7 @@ const AboutUs = () => {
                   <img className='cursor-pointer' alt='service1' src={WebDevelopment} loading='lazy' onClick={() => setWebDevelopmentScreen(true)}></img>
                   {webDevelopmentScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setWebDevelopmentScreen(false)}>
-                      <button className='absolute z-20 pr-12 text-2xl text-white pt-7 top-2 right-2 font-Montserrat' onClick={() => setWebDevelopmentScreen(false)}>X</button>
+                      <button className='absolute z-20 pt-2 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setWebDevelopmentScreen(false)}>X</button>
                       <p className='px-10 text-[8px] font-bold text-white sm:text-lg font-Montserrat' >
                         Our custom web development services are tailored to enhance your presence and performance in the ever-evolving hospitality 
                         industry. Our team of experienced developers specializes in creating bespoke web solutions that not only showcase your 

@@ -4,7 +4,7 @@ import './index.css'
 
 const InitialPage = ({ onFadeOutComplete }) => {
   const [fadeOut, setFadeOut] = useState(false);
-  const navigate = useNavigate(); // Get the navigate function from react-router-dom
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -18,7 +18,7 @@ const InitialPage = ({ onFadeOutComplete }) => {
     if (fadeOut) {
       const fadeOutAnimationDuration = 1000;
       const timer = setTimeout(() => {
-        navigate('/'); // Navigate to the home page when the transition is complete
+        navigate('/'); 
       }, fadeOutAnimationDuration);
 
       return () => clearTimeout(timer);
@@ -27,13 +27,10 @@ const InitialPage = ({ onFadeOutComplete }) => {
   
   return (
     <div
-      className={`fixed w-screen h-screen bg-Logo bg-center bg-contain flex items-center justify-center transition-opacity ${
+      className={`fixed w-screen h-screen bg-Logo sm:bg-center bg-contain flex items-center justify-center transition-opacity ${
         fadeOut ? 'fade-out' : ''
       }`}
     >
-      {/* <h1 className="flex items-center justify-center text-5xl text-white font-Nanum ">
-        "Your Culinary. My Decision."
-      </h1> */}
     </div>
   );
 };

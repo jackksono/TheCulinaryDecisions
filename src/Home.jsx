@@ -77,11 +77,11 @@ return (
       <Fade duration={5000}>
         <div className='relative pt-24 overflow-auto overflow-x-hidden bg-white sm:shadow-lg sm:pt-20 fade-in'>
           <div className='justify-center overflow-x-hidden overflow-y-hidden'>
-            <div className='relative justify-center w-screen h-[350px] sm:h-screen overflow-x-hidden overflow-y-hidden '>
+            <div className='relative justify-center w-screen h-[500px] sm:h-screen overflow-x-hidden overflow-y-hidden '>
               {slides.map((slide, slideIndex) => (
                 <div
                   key={slideIndex}
-                  className={`h-[350px] w-screen sm:h-full bg-no-repeat bg-cover bg-center rounded-2xl absolute transition-transform duration-${transitionDuration}`}
+                  className={` w-screen h-full bg-no-repeat bg-cover bg-center rounded-2xl absolute transition-transform duration-${transitionDuration}`}
                   loading='lazy'
                   style={{
                     backgroundImage: `url(${slide.url})`,
@@ -92,7 +92,7 @@ return (
                 ></div>
               ))}
             </div>
-            <div className='absolute items-center justify-center transform -translate-x-1/2 sm:pb-10 sm:bottom-24 left-1/2 place-content-center'>
+            <div className='absolute items-center justify-center transform -translate-x-1/2 sm:pb-10 bottom-5 sm:bottom-24 left-1/2 place-content-center'>
               {slides.map((_, slideIndex) => (
                 <div
                   key={slideIndex}
@@ -109,14 +109,14 @@ return (
           </div>
           {/* Left Arrow */}
           <div
-            className='group-hover:block absolute sm:top-[50%] top-[60%] -translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 bg-black/20 text-white cursor-pointer hover:bg-white hover:text-black'
+            className='group-hover:block absolute sm:top-[50%] top-[65%] -translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 bg-black/20 text-white cursor-pointer hover:bg-white hover:text-black'
             onClick={prevSlide}
           >
             <ArrowBackIosIcon size={80} />
           </div>
           {/* Right Arrow */}
           <div
-            className='group-hover:block absolute sm:top-[50%] top-[60%] -translate-x-0 translate-y-[-50%] right-5 rounded-full p-2 bg-black/20 text-white cursor-pointer hover:bg-white hover:text-black overflow-x-hidden'
+            className='group-hover:block absolute sm:top-[50%] top-[65%] -translate-x-0 translate-y-[-50%] right-5 rounded-full p-2 bg-black/20 text-white cursor-pointer hover:bg-white hover:text-black overflow-x-hidden'
             onClick={nextSlide}
           >
             <ArrowForwardIosIcon size={80} />
