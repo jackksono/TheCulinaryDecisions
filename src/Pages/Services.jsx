@@ -56,11 +56,8 @@ const AboutUs = () => {
             success in the ever-evolving world of hospitality.
           </p>
       </div>
-
         <div className='justify-center mt-20 sm:mt-20'>
             <Carousel breakPoints={breakPoints} className='px-2'>
-
-
               <div>
                 <div className='relative sm:mr-[20px]'>
                   <img className='cursor-pointer' alt='service1' src={BrandMarketing} loading='lazy' onClick={() => setbrandMarketingScreen(true)}></img>
@@ -165,7 +162,6 @@ const AboutUs = () => {
                   <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setFoodAndBeverageScreen(true)}>See More Details...</button>
                 </div>
               </div>
-
               <div>
                 <div className='relative sm:mr-[20px]'>
                   <img className='cursor-pointer' alt='service1' src={HospitalityConsulting} loading='lazy' onClick={() => setHospitalityConsultingScreen(true)}></img>
@@ -183,6 +179,7 @@ const AboutUs = () => {
                     </div>
                   ) : null}
                 </div>
+
                 <div className='flex flex-col items-center justify-center place-content-center mr-[20px]'>
                   <div className='flex flex-col items-start w-full'>
                     <h1 className='flex pt-3 font-extrabold text-black lg:px-5 font-Montserrat lg:text-xl'>HOSPITALITY CONSULTING</h1>
@@ -192,9 +189,6 @@ const AboutUs = () => {
                   <button className='flex font-bold text-blue-300 duration-500 sm:px-5 hover:text-blue-500 font-Montserrat' onClick={() => setHospitalityConsultingScreen(true)}>See More Details...</button>
                 </div>
               </div>
-
-              
-
               <div>
                 <div className='relative sm:mr-[20px]'>
                   <img className='cursor-pointer' alt='service1' src={NightlifeConsulting} loading='lazy' onClick={() => setNightLifeConsultingScreen(true)}></img>
