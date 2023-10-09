@@ -26,11 +26,15 @@ const InitialPage = ({ onFadeOutComplete }) => {
   }, [fadeOut, navigate]);
   
   return (
+    <div className='h-screen bg-black'>
+
+    
     <div
-      className={`fixed w-screen h-screen bg-Logo sm:bg-center bg-contain flex items-center justify-center transition-opacity ${
+      className={`fixed w-screen h-screen bg-Logo mt-40 sm:mt-0 bg-no-repeat items-center sm:bg-center bg-contain flex justify-center transition-opacity ${
         fadeOut ? 'fade-out' : ''
       }`}
     >
+      </div>
     </div>
   );
 };

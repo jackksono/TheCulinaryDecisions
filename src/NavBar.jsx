@@ -91,7 +91,7 @@ const NavBar = () => {
               </button>
             </div>
             <ContactUs trigger={contactPopUp} setTrigger={setContactPopUp}></ContactUs>
-            <div class="nav-links hidden sm:visible bg-gray-200 w-[160px] mt-7 sm:mt-0 h-screen sm:bg-none sm:bg-transparent duration-500 sm:static sm:h-0 sm:flex-row flex-col sm:pt-16 sm:px-5 sm:block sm:w-auto z-20" >
+            <div class="nav-links hidden sm:visible bg-gray-200 w-[180px] mt-7 sm:mt-0 h-screen sm:bg-none sm:bg-transparent duration-500 sm:static sm:h-0 sm:flex-row flex-col sm:pt-16 sm:px-5 sm:block sm:w-auto z-20" >
               <ul class={`font-medium left-0 sm:flex sm:justify-between w-full sm:h-full sm:px-20 px-4 sm:p-0 mt-4 sm:pb-4 sm:gap-4 sm:flex-row sm:space-x-8 sm:mt-0 `}>
                 
                   <div className="z-10 flex flex-col items-start pt-8 sm:pt-0 sm:items-center sm:flex-row sm:bg-transparent sm:gap-10">
