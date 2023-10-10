@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/TheCulinaryDecisions/static/css/main.e0d2f44f.css",
-    "main.js": "/TheCulinaryDecisions/static/js/main.0be1f042.js",
-    "static/js/250.37aac1cc.chunk.js": "/TheCulinaryDecisions/static/js/250.37aac1cc.chunk.js",
+    "main.css": "/TheCulinaryDecisions/static/css/main.8c2ee649.css",
+    "main.js": "/TheCulinaryDecisions/static/js/main.81703967.js",
+    "static/js/250.53ec5e10.chunk.js": "/TheCulinaryDecisions/static/js/250.53ec5e10.chunk.js",
     "static/js/505.94efaf2b.chunk.js": "/TheCulinaryDecisions/static/js/505.94efaf2b.chunk.js",
     "static/js/423.ec2a4559.chunk.js": "/TheCulinaryDecisions/static/js/423.ec2a4559.chunk.js",
     "static/js/916.c784e987.chunk.js": "/TheCulinaryDecisions/static/js/916.c784e987.chunk.js",
@@ -39,9 +39,9 @@
     "static/media/mirage.jpg": "/TheCulinaryDecisions/static/media/mirage.8da5c29d950c69a548d5.jpg",
     "static/media/catch.jpg": "/TheCulinaryDecisions/static/media/catch.9672355c919abb844cdb.jpg",
     "index.html": "/TheCulinaryDecisions/index.html",
-    "main.e0d2f44f.css.map": "/TheCulinaryDecisions/static/css/main.e0d2f44f.css.map",
-    "main.0be1f042.js.map": "/TheCulinaryDecisions/static/js/main.0be1f042.js.map",
-    "250.37aac1cc.chunk.js.map": "/TheCulinaryDecisions/static/js/250.37aac1cc.chunk.js.map",
+    "main.8c2ee649.css.map": "/TheCulinaryDecisions/static/css/main.8c2ee649.css.map",
+    "main.81703967.js.map": "/TheCulinaryDecisions/static/js/main.81703967.js.map",
+    "250.53ec5e10.chunk.js.map": "/TheCulinaryDecisions/static/js/250.53ec5e10.chunk.js.map",
     "505.94efaf2b.chunk.js.map": "/TheCulinaryDecisions/static/js/505.94efaf2b.chunk.js.map",
     "423.ec2a4559.chunk.js.map": "/TheCulinaryDecisions/static/js/423.ec2a4559.chunk.js.map",
     "916.c784e987.chunk.js.map": "/TheCulinaryDecisions/static/js/916.c784e987.chunk.js.map",
@@ -51,7 +51,7 @@
     "531.ba2571f2.chunk.js.map": "/TheCulinaryDecisions/static/js/531.ba2571f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0d2f44f.css",
-    "static/js/main.0be1f042.js"
+    "static/css/main.8c2ee649.css",
+    "static/js/main.81703967.js"
   ]
 }
