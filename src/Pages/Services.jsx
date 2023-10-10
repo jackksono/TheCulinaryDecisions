@@ -141,7 +141,7 @@ const AboutUs = () => {
                   <img className='cursor-pointer' alt='service1' src={FoodandBeverage} loading='lazy' onClick={() => setFoodAndBeverageScreen(true)}></img>
                   {foodandBeverageScreen ? (
                     <div className='absolute top-0 right-0 flex flex-col items-center justify-center w-full h-full bg-black opacity-80' onClick={() => setFoodAndBeverageScreen(false)}>
-                      <button className='absolute z-20 pt-2 pr-12 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setFoodAndBeverageScreen(false)}>X</button>
+                      <button className='absolute z-20 pt-2 pr-6 text-2xl text-white top-2 right-2 font-Montserrat' onClick={() => setFoodAndBeverageScreen(false)}>X</button>
                       <p className='px-10 text-[8px] font-bold text-white sm:text-lg font-Montserrat'>
                         Our team of industry experts brings a wealth of knowledge in culinary trends, menu development, kitchen operations, 
                         sourcing the finest ingredients, and optimizing cost-efficiency. We work closely with you to understand your brand's 
