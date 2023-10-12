@@ -181,7 +181,7 @@ const ContactUs = (props) => {
             <h2 className= "justify-center pb-2 text-xs text-center text-white sm:text-sm lg:text-lg">{result ? <Result/> : null}</h2>
             
             <div className="items-center justify-center text-centerv sm:py-2">
-                <button className="w-1/5 sm:text-xl p-2 h-[40px] text-white sm:w-1/4 bg-black rounded-xl hover:text-black hover:bg-stone-100" type='submit'>Send</button>
+                <button className="w-1/5 sm:text-xl text-sm p-2 h-[40px] text-white sm:w-1/4 bg-black rounded-xl hover:text-black hover:bg-stone-100" type='submit'>Send</button>
             </div>    
          </form>  
     </div>
