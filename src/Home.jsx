@@ -137,7 +137,7 @@ return (
         </div>
 
         <div className='flex justify-center pt-10 pb-20 text-center '>
-          <div className='flex w-3/4 text-sm font-semibold tracking-normal text-justify text-black sm:text-lg font-Montserrat'>
+          <div className='flex w-3/4 text-sm font-semibold tracking-normal text-center text-black sm:text-lg font-Montserrat'>
             Culinary Decisions empowers you to make well-informed choices for the world of upscale hospitality development, 
             management, and consulting. Our dedicated team is deeply engaged at every level, playing an integral role in curating,
             developing, and successfully managing luxury concepts for hotels and restaurants. We deliver synergistic results through our 

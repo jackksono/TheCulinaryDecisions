@@ -98,7 +98,7 @@ const NavBar = () => {
                     <Link to="/">
                       <button 
                         ref={homeLinkRef}
-                        className="text-[10px] py-3 font-Montserrat focus:outline-none sm:text-sm font-semibold sm:duration-200 bg-primary-500 text-black font-Kanit hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="text-[10px] py-3 font-Montserrat focus:outline-none sm:text-sm md:text-lg font-semibold sm:duration-200 bg-primary-500 text-black font-Kanit hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         tabIndex={0}
                         onClick={() => {toggleOff()}}>
                         HOME
@@ -106,7 +106,7 @@ const NavBar = () => {
                     </Link>
                     <Link to="/team">
                       <button 
-                        className="font-Montserrat text-[10px] py-3 sm:text-sm font-semibold sm:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="font-Montserrat text-[10px] py-3 sm:text-sm md:text-lg font-semibold sm:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         onClick={() => {toggleOff()}}
                         >
                         EXECUTIVE LEADERSHIP
@@ -118,7 +118,7 @@ const NavBar = () => {
                   <div className="left-0 flex flex-col items-start sm:flex-row sm:bg-transparent sm:items-center sm:flex-non sm:gap-10">
                     <Link to="/services">
                       <button 
-                        className="font-Montserrat text-[10px] py-3 sm:text-sm font-semibold sm:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="font-Montserrat text-[10px] py-3 sm:text-sm md:text-lg font-semibold sm:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         onClick={() => {toggleOff()}}
                       >
                         SERVICES
@@ -127,14 +127,14 @@ const NavBar = () => {
 
                     <Link to="/media">
                       <button 
-                        className="font-Montserrat text-[10px] py-3 sm:text-sm font-semibold sm:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="font-Montserrat text-[10px] py-3 sm:text-sm md:text-lg font-semibold sm:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         onClick={() => {toggleOff()}}>
                         MEDIA
                       </button>
                     </Link>
 
                     <span className="" >
-                        <button className="font-Montserrat text-[10px] py-3 sm:text-sm font-semibold sm:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        <button className="font-Montserrat text-[10px] py-3 sm:text-sm md:text-lg font-semibold sm:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                             value="click"
                             onClick={() => {
                               setContactPopUp(true)

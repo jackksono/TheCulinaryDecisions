@@ -94,8 +94,8 @@ const ContactUs = (props) => {
     ref={clickAway}
     >
         <form className="" method="post" onSubmit={(e) => sendMail(e, serviceRequested)}>
-            <div className='flex justify-end pr-5 text-2xl text-black font-Montserrat'>    
-                <button  onClick={() => props.setTrigger(false)}>X</button>
+            <div className='flex justify-end pr-5 text-2xl text-black font-Montserrat '>    
+                <button className='hover:text-stone-300' onClick={() => props.setTrigger(false)}>X</button>
             </div>
             <h1 className="flex justify-center text-xl font-extrabold text-black sm:text-4xl font-Montserrat">Business Inquiries</h1> 
             <div className="pt-3 pl-6 text-black sm:pt-0">
@@ -125,7 +125,7 @@ const ContactUs = (props) => {
                   required>
                 </input>
                
-                <h2 className= "font-semibold text-center text-red-900 underline text-md font-Montserrat">{validEmail ? <EmailResponse/> : null }</h2> 
+                <h2 className= "font-semibold text-center text-red-900 underline text:sm sm:text-base font-Montserrat">{validEmail ? <EmailResponse/> : null }</h2> 
             </div>
 
             <div className="pl-6 text-black sm:pt-2">
@@ -187,7 +187,7 @@ const ContactUs = (props) => {
             <h2 className= "justify-center pb-2 text-xs text-center text-white sm:text-sm lg:text-lg">{result ? <Result/> : null}</h2>
             
             <div className="items-center justify-center text-centerv sm:py-2">
-                <button className="w-1/5 sm:text-xl text-sm p-2 h-[40px] text-white sm:w-1/4 bg-black rounded-xl hover:text-black hover:bg-stone-100" type='submit'>Send</button>
+                <button className="w-1/5 sm:text-xl text-sm p-2 h-[40px] text-white sm:w-1/4 bg-black rounded-xl hover:text-black hover:bg-stone-300" type='submit'>Send</button>
             </div>    
          </form>  
     </div>

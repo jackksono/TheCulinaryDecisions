@@ -30,7 +30,7 @@ const InitialPage = ({ onFadeOutComplete }) => {
 
     
     <div
-      className={`fixed w-screen h-screen bg-Logo mt-40 sm:mt-0 bg-no-repeat items-center sm:bg-center bg-contain flex justify-center transition-opacity ${
+      className={`fixed w-screen h-screen bg-Logo mt-60 sm:mt-0 bg-no-repeat items-center sm:bg-center bg-contain flex justify-center transition-opacity ${
         fadeOut ? 'fade-out' : ''
       }`}
     >
