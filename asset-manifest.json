@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/TheCulinaryDecisions/static/css/main.8c2ee649.css",
-    "main.js": "/TheCulinaryDecisions/static/js/main.81703967.js",
+    "main.css": "/TheCulinaryDecisions/static/css/main.2b4e7de3.css",
+    "main.js": "/TheCulinaryDecisions/static/js/main.c545ce89.js",
     "static/js/250.53ec5e10.chunk.js": "/TheCulinaryDecisions/static/js/250.53ec5e10.chunk.js",
     "static/js/505.94efaf2b.chunk.js": "/TheCulinaryDecisions/static/js/505.94efaf2b.chunk.js",
-    "static/js/423.ec2a4559.chunk.js": "/TheCulinaryDecisions/static/js/423.ec2a4559.chunk.js",
-    "static/js/916.c784e987.chunk.js": "/TheCulinaryDecisions/static/js/916.c784e987.chunk.js",
-    "static/js/617.79d75a62.chunk.js": "/TheCulinaryDecisions/static/js/617.79d75a62.chunk.js",
+    "static/js/423.b8d0e1f6.chunk.js": "/TheCulinaryDecisions/static/js/423.b8d0e1f6.chunk.js",
+    "static/js/916.f7cc3d09.chunk.js": "/TheCulinaryDecisions/static/js/916.f7cc3d09.chunk.js",
+    "static/js/617.fc857491.chunk.js": "/TheCulinaryDecisions/static/js/617.fc857491.chunk.js",
     "static/js/281.d7a6a3a5.chunk.js": "/TheCulinaryDecisions/static/js/281.d7a6a3a5.chunk.js",
     "static/js/805.8a44386f.chunk.js": "/TheCulinaryDecisions/static/js/805.8a44386f.chunk.js",
     "static/js/531.ba2571f2.chunk.js": "/TheCulinaryDecisions/static/js/531.ba2571f2.chunk.js",
@@ -39,19 +39,19 @@
     "static/media/mirage.jpg": "/TheCulinaryDecisions/static/media/mirage.8da5c29d950c69a548d5.jpg",
     "static/media/catch.jpg": "/TheCulinaryDecisions/static/media/catch.9672355c919abb844cdb.jpg",
     "index.html": "/TheCulinaryDecisions/index.html",
-    "main.8c2ee649.css.map": "/TheCulinaryDecisions/static/css/main.8c2ee649.css.map",
-    "main.81703967.js.map": "/TheCulinaryDecisions/static/js/main.81703967.js.map",
+    "main.2b4e7de3.css.map": "/TheCulinaryDecisions/static/css/main.2b4e7de3.css.map",
+    "main.c545ce89.js.map": "/TheCulinaryDecisions/static/js/main.c545ce89.js.map",
     "250.53ec5e10.chunk.js.map": "/TheCulinaryDecisions/static/js/250.53ec5e10.chunk.js.map",
     "505.94efaf2b.chunk.js.map": "/TheCulinaryDecisions/static/js/505.94efaf2b.chunk.js.map",
-    "423.ec2a4559.chunk.js.map": "/TheCulinaryDecisions/static/js/423.ec2a4559.chunk.js.map",
-    "916.c784e987.chunk.js.map": "/TheCulinaryDecisions/static/js/916.c784e987.chunk.js.map",
-    "617.79d75a62.chunk.js.map": "/TheCulinaryDecisions/static/js/617.79d75a62.chunk.js.map",
+    "423.b8d0e1f6.chunk.js.map": "/TheCulinaryDecisions/static/js/423.b8d0e1f6.chunk.js.map",
+    "916.f7cc3d09.chunk.js.map": "/TheCulinaryDecisions/static/js/916.f7cc3d09.chunk.js.map",
+    "617.fc857491.chunk.js.map": "/TheCulinaryDecisions/static/js/617.fc857491.chunk.js.map",
     "281.d7a6a3a5.chunk.js.map": "/TheCulinaryDecisions/static/js/281.d7a6a3a5.chunk.js.map",
     "805.8a44386f.chunk.js.map": "/TheCulinaryDecisions/static/js/805.8a44386f.chunk.js.map",
     "531.ba2571f2.chunk.js.map": "/TheCulinaryDecisions/static/js/531.ba2571f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c2ee649.css",
-    "static/js/main.81703967.js"
+    "static/css/main.2b4e7de3.css",
+    "static/js/main.c545ce89.js"
   ]
 }
