@@ -33,21 +33,27 @@ const ContactUs = (props) => {
       setMessage(e.target.value)
   }
 
-  const onChangeValidEmail = () => {
-    let re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (re.test(data.email)) {setValidEmail(false)}
-    else setValidEmail(true)
-  }
+  // const onChangeValidEmail = () => {
+  //   let re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  //   if (re.test(data.email)) {setValidEmail(false)}
+  //   else setValidEmail(true)
+  // }
   const handleChange = (e) => {
     const name = e.target.name
     const value = e.target.value
+
+    if (name === 'email') {
+      let re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      setValidEmail(!re.test(value));
+  }
+
     setData({...data, [name]:value}) 
   }
 
-  const twoCalls = (e) => {
-      onChangeValidEmail();
-      handleChange(e)
-  }
+  // const twoCalls = (e) => {
+  //     onChangeValidEmail();
+  //     handleChange(e)
+  // }
 
   const toggle = () => {
     const open = document.querySelector('.toggle')
@@ -113,7 +119,7 @@ const ContactUs = (props) => {
                   type='email' 
                   name='email' 
                   id="" 
-                  onChange={twoCalls}  
+                  onChange={handleChange}  
                   value={data.email} 
                   placeholder="example@gmail.com"
                   required>
