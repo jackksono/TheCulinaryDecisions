@@ -79,7 +79,7 @@ const NavBar = () => {
               <img 
                 src={Logo}
                 alt="logo"
-                className="z-0 h-[175px] w-[300px] sm:h-[200px] sm:w-[400px] absolute top-1/2 left-1/2 sm:transform sm:scale-150 mt-2 -translate-x-1/2 -translate-y-1/2"
+                className="z-0 h-[175px] w-[300px] lg:h-[200px] lg:w-[400px] absolute top-1/2 left-1/2 sm:transform sm:scale-150 mt-2 -translate-x-1/2 -translate-y-1/2"
                 loading='lazy'
                 style={{ zIndex: 0 }}>
               </img>
@@ -92,13 +92,13 @@ const NavBar = () => {
             </div>
             <ContactUs trigger={contactPopUp} setTrigger={setContactPopUp}></ContactUs>
             <div class="nav-links hidden sm:visible bg-gray-200 w-[180px] mt-7 sm:mt-0 h-screen sm:bg-none sm:bg-transparent duration-500 sm:static sm:h-0 sm:flex-row flex-col sm:pt-16 sm:px-5 sm:block sm:w-auto z-20" >
-              <ul class={`font-medium left-0 sm:flex sm:justify-between w-full sm:h-full sm:px-20 px-4 sm:p-0 mt-4 sm:pb-4 sm:gap-4 sm:flex-row sm:space-x-8 sm:mt-0 `}>
+              <ul class={`font-medium left-0 sm:flex sm:justify-between w-full sm:h-full sm:px-2 md:px-10 lg:px-20 px-4 sm:p-0 mt-4 sm:pb-4 sm:gap-4 sm:flex-row sm:space-x-8 sm:mt-0 `}>
                 
-                  <div className="z-10 flex flex-col items-start pt-8 sm:pt-0 sm:items-center sm:flex-row sm:bg-transparent sm:gap-10">
+                  <div className="z-10 flex flex-col items-start pt-8 sm:pt-0 sm:items-center sm:flex-row sm:bg-transparent sm:gap-5 md:gap-10">
                     <Link to="/">
                       <button 
                         ref={homeLinkRef}
-                        className="text-[10px] py-3 font-Montserrat focus:outline-none sm:text-sm md:text-lg font-semibold sm:duration-200 bg-primary-500 text-black font-Kanit hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="text-[10px] py-3 font-Montserrat focus:outline-none sm:text-xs lg:text-lg font-semibold sm:duration-200 bg-primary-500 text-black font-Kanit hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         tabIndex={0}
                         onClick={() => {toggleOff()}}>
                         HOME
@@ -106,7 +106,7 @@ const NavBar = () => {
                     </Link>
                     <Link to="/team">
                       <button 
-                        className="font-Montserrat text-[10px] py-3 sm:text-sm md:text-lg font-semibold sm:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="font-Montserrat text-[10px] py-3 sm:text-xs lg:text-lg font-semibold sm:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         onClick={() => {toggleOff()}}
                         >
                         EXECUTIVE LEADERSHIP
@@ -115,10 +115,10 @@ const NavBar = () => {
                   </div>
                   
                 
-                  <div className="left-0 flex flex-col items-start sm:flex-row sm:bg-transparent sm:items-center sm:flex-non sm:gap-10">
+                  <div className="left-0 flex flex-col items-start sm:flex-row sm:bg-transparent sm:items-center sm:flex-non sm:gap-5 md:gap-10">
                     <Link to="/services">
                       <button 
-                        className="font-Montserrat text-[10px] py-3 sm:text-sm md:text-lg font-semibold sm:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="font-Montserrat text-[10px] py-3 sm:text-xs lg:text-lg font-semibold sm:duration-200 md:bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         onClick={() => {toggleOff()}}
                       >
                         SERVICES
@@ -127,14 +127,14 @@ const NavBar = () => {
 
                     <Link to="/media">
                       <button 
-                        className="font-Montserrat text-[10px] py-3 sm:text-sm md:text-lg font-semibold sm:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        className="font-Montserrat text-[10px] py-3 sm:text-xs lg:text-lg font-semibold sm:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                         onClick={() => {toggleOff()}}>
                         MEDIA
                       </button>
                     </Link>
 
                     <span className="" >
-                        <button className="font-Montserrat text-[10px] py-3 sm:text-sm md:text-lg font-semibold sm:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
+                        <button className="font-Montserrat text-[10px] py-3 sm:text-xs lg:text-lg font-semibold sm:duration-200 bg-primary-500 text-black hover:scale-110 duration-500 focus:underline focus:underline-black focus:underline-offset-4"
                             value="click"
                             onClick={() => {
                               setContactPopUp(true)
