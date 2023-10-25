@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TheCulinaryDecisions/static/css/main.a3b5d5bc.css",
-    "main.js": "/TheCulinaryDecisions/static/js/main.2e6a9735.js",
+    "main.js": "/TheCulinaryDecisions/static/js/main.74721c26.js",
     "static/js/250.6f2d0708.chunk.js": "/TheCulinaryDecisions/static/js/250.6f2d0708.chunk.js",
     "static/js/505.94efaf2b.chunk.js": "/TheCulinaryDecisions/static/js/505.94efaf2b.chunk.js",
     "static/js/423.bf0535a6.chunk.js": "/TheCulinaryDecisions/static/js/423.bf0535a6.chunk.js",
@@ -40,7 +40,7 @@
     "static/media/catch.jpg": "/TheCulinaryDecisions/static/media/catch.9672355c919abb844cdb.jpg",
     "index.html": "/TheCulinaryDecisions/index.html",
     "main.a3b5d5bc.css.map": "/TheCulinaryDecisions/static/css/main.a3b5d5bc.css.map",
-    "main.2e6a9735.js.map": "/TheCulinaryDecisions/static/js/main.2e6a9735.js.map",
+    "main.74721c26.js.map": "/TheCulinaryDecisions/static/js/main.74721c26.js.map",
     "250.6f2d0708.chunk.js.map": "/TheCulinaryDecisions/static/js/250.6f2d0708.chunk.js.map",
     "505.94efaf2b.chunk.js.map": "/TheCulinaryDecisions/static/js/505.94efaf2b.chunk.js.map",
     "423.bf0535a6.chunk.js.map": "/TheCulinaryDecisions/static/js/423.bf0535a6.chunk.js.map",
@@ -52,6 +52,6 @@
   },
   "entrypoints": [
     "static/css/main.a3b5d5bc.css",
-    "static/js/main.2e6a9735.js"
+    "static/js/main.74721c26.js"
   ]
 }
