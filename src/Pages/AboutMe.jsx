@@ -45,7 +45,7 @@ const AboutMe = () => {
                   loading='lazy'
                 />
               </Fade>
-              <div className='justify-center duration-700 sm:shadow-2xl sm:absolute sm:opacity-0 sm:bottom-0 sm:bg-gray-200 sm:outline-none rounded-2xl sm:left-12 lg:ml-72 sm:group-hover:opacity-80'>
+              <div className='z-10 justify-center duration-700 sm:shadow-2xl sm:absolute sm:opacity-0 sm:bottom-0 sm:bg-gray-200 sm:outline-none rounded-2xl sm:left-12 lg:ml-72 sm:group-hover:opacity-80'>
                 <p className='sm:m-5 m-2 mx-5 text-center sm:text-justify sm:text-base text-sm lg:m-0 lg:p-5 pt-5 text-black bg-transparent sm:border lg:h-auto font-semibold lg:leading-8 leading-6 lg:w-[500px] rounded-2xl sm:opacity-0 sm:group-hover:opacity-100 font-Montserrat'>
                 A first-generation American, Levan offers a diverse and unique perspective. With over 20 years' experience in luxury resort 
                 operations and leadership, she has collaborated with a variety of hospitality powerhouses across the Las Vegas strip. 
@@ -70,7 +70,7 @@ const AboutMe = () => {
                   loading='lazy'
                 />
               </Fade>
-              <div className='justify-center pt-5 mx-5 text-sm text-center duration-700 sm:text-justify sm:pt-0 sm:text-base sm:shadow-2xl sm:absolute sm:opacity-0 sm:bottom-5 sm:bg-gray-200 rounded-2xl sm:right-12 lg:mr-72 sm:group-hover:opacity-80'>
+              <div className='z-10 justify-center pt-5 mx-5 text-sm text-center duration-700 sm:text-justify sm:pt-0 sm:text-base sm:shadow-2xl sm:absolute sm:opacity-0 sm:bottom-5 sm:bg-gray-200 rounded-2xl sm:right-12 lg:mr-72 sm:group-hover:opacity-80'>
                 <p className='sm:pt-5 sm:m-5 m-2 lg:m-0 lg:p-5 text-black bg-transparent sm:border lg:h-auto font-semibold lg:leading-8 leading-6 lg:w-[500px] text-sm rounded-2xl sm:opacity-0 sm:group-hover:opacity-100 font-Montserrat'> 
                   Michelle, fueled by her unwavering dedication to the hospitality industry and an impeccable knack for crafting exquisite menus, 
                   boasts an impressive track record of overseeing operations at prestigious high-volume establishments nestled along the 
