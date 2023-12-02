@@ -130,13 +130,13 @@ return (
     <div>
       {showContent ? (
         <>
-        <div className='flex justify-center pt-5 text-center sm:pt-10'>
-          <div className='flex w-3/4 text-xl font-extrabold text-black sm:text-3xl font-Montserrat'>
+        <div className='flex items-center justify-center pt-5 text-center sm:pt-10'>
+          <div className='flex items-center justify-center w-3/4 text-xl font-extrabold text-black sm:text-3xl font-Montserrat '>
             Culinary Decisions, make the best informed decision for <br /> Luxury Lifestyle Hospitality Development, Management and Consulting.
           </div>
         </div>
 
-        <div className='flex justify-center pt-10 pb-20 text-center '>
+        <div className='flex items-center justify-center pt-10 pb-20 text-center'>
           <div className='flex w-3/4 text-sm font-semibold tracking-normal text-center text-black sm:text-justify sm:text-lg font-Montserrat'>
             Culinary Decisions empowers you to make well-informed choices for the world of upscale hospitality development, 
             management, and consulting. Our dedicated team is deeply engaged at every level, playing an integral role in curating,
